@@ -23,7 +23,7 @@ overview:
     collateral types. In contrast, DAI is the protocol's collateral-backed stablecoin soft-pegged to the US Dollar (USD).
     Minting DAI via Maker entails over-collateralizing a loan with assets approved by MakerDAO via the protocol's
     governance mechanism.
-  Crypto-Collateralized Stablecoins: |
+  Type of Stablecoin: |
     DAI is a crypto-collateralized stablecoin created by the MakerDAO system on the Ethereum blockchain.
     Unlike fiat or commodity-collateralized stablecoins, DAI maintains its dollar-peg through a mix of
     other cryptocurrencies used as collateral. Users generate DAI by locking these assets into a smart
@@ -38,47 +38,21 @@ overview:
        movements in the crypto market), the MakerDAO system automatically initiates a liquidation process.
        This involves selling the collateral in an open market auction for DAI to reduce the circulating supply of
        DAI and ensure that each DAI remains adequately backed by collateral.
+  Backing Assets: |
+    1. Ethereum (ETH): ETH was the first and primary collateral type used to mint DAI. It remains a significant part
+       of the collateral pool due to its liquidity and market presence.
+    2. Real-World Assets (RWAs): MakerDAO has also explored using real-world assets as collateral. This involves
+       tokenized versions of physical or traditional financial assets, expanding the possibilities for DAI collateral
+       beyond digital assets alone.
+    3. USDC and other Stablecoins: Other stablecoins like USDC have been added as collateral options to provide more
+       stability and flexibility in the types of collateral that can be used.
+    4. Wrapped Bitcoin (WBTC): WBTC allows Bitcoin holders to participate in the Ethereum ecosystem. It's used as
+       collateral due to its value and stability as a digital representation of Bitcoin.
+    5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
+       These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
+       market cap, and community trust.
 
 overviews:
-  - title: Crypto-Collateralized Stablecoins
-    value: |
-      DAI is a crypto-collateralized stablecoin created by the MakerDAO system on the Ethereum blockchain.
-      Unlike fiat or commodity-collateralized stablecoins, DAI maintains its dollar-peg through a mix of
-      other cryptocurrencies used as collateral. Users generate DAI by locking these assets into a smart
-      contract, ensuring the stablecoin is over-collateralized to handle asset volatility. Automated mechanisms
-      liquidate the collateral if its value drops too low, maintaining DAI's stability. This method distinguishes
-      DAI from other types of stablecoins.
-  - title: Stability Mechanism
-    value: |
-      1. Over-Collateralization: DAI it backed by other cryptocurrencies. Users must lock up more value in
-         collateral than the amount of DAI they wish to mint, creating a buffer against the volatility of
-         the collateral assets.
-      2. Liquidation Process: If the value of the collateral falls below a certain threshold (due to price
-         movements in the crypto market), the MakerDAO system automatically initiates a liquidation process.
-         This involves selling the collateral in an open market auction for DAI to reduce the circulating supply of
-         DAI and ensure that each DAI remains adequately backed by collateral.
-  - title: Backing Assets
-    value: |
-      1. Ethereum (ETH): ETH was the first and primary collateral type used to mint DAI. It remains a significant part
-         of the collateral pool due to its liquidity and market presence.
-      2. Real-World Assets (RWAs): MakerDAO has also explored using real-world assets as collateral. This involves
-         tokenized versions of physical or traditional financial assets, expanding the possibilities for DAI collateral
-         beyond digital assets alone.
-      3. USDC and other Stablecoins: Other stablecoins like USDC have been added as collateral options to provide more
-         stability and flexibility in the types of collateral that can be used.
-      4. Wrapped Bitcoin (WBTC): WBTC allows Bitcoin holders to participate in the Ethereum ecosystem. It's used as
-         collateral due to its value and stability as a digital representation of Bitcoin.
-      5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
-         These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
-         market cap, and community trust.
-  - title: Overview
-    value: |
-      Maker is a self-described “Multi-Collateral Dai (MCD)” lending protocol designed “to bring stability to the
-      cryptocurrency economy.” To achieve this, Maker employs a two-token strategy - MKR and DAI. MKR is the protocol's
-      governance token used to vote on various aspects of the protocol, such as technical upgrades, risk parameters, and
-      collateral types. In contrast, DAI is the protocol's collateral-backed stablecoin soft-pegged to the US Dollar (USD).
-      Minting DAI via Maker entails over-collateralizing a loan with assets approved by MakerDAO via the protocol's
-      governance mechanism.
   - title: History
     value: |
       The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
