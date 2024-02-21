@@ -17,21 +17,21 @@ links:
     url: https://t.me/makerdao
 
 overview:
-  Overview: |
+  overview: |
     Maker is a self-described “Multi-Collateral Dai (MCD)” lending protocol designed “to bring stability to the
     cryptocurrency economy.” To achieve this, Maker employs a two-token strategy - MKR and DAI. MKR is the protocol's
     governance token used to vote on various aspects of the protocol, such as technical upgrades, risk parameters, and
     collateral types. In contrast, DAI is the protocol's collateral-backed stablecoin soft-pegged to the US Dollar (USD).
     Minting DAI via Maker entails over-collateralizing a loan with assets approved by MakerDAO via the protocol's
     governance mechanism.
-  Type of Stablecoin: |
+  type of stablecoin: |
     DAI is a crypto-collateralized stablecoin created by the MakerDAO system on the Ethereum blockchain.
     Unlike fiat or commodity-collateralized stablecoins, DAI maintains its dollar-peg through a mix of
     other cryptocurrencies used as collateral. Users generate DAI by locking these assets into a smart
     contract, ensuring the stablecoin is over-collateralized to handle asset volatility. Automated mechanisms
     liquidate the collateral if its value drops too low, maintaining DAI's stability. This method distinguishes
     DAI from other types of stablecoins.
-  Stability Mechanism: |
+  stability mechanism: |
     1. Over-Collateralization: DAI it backed by other cryptocurrencies. Users must lock up more value in
        collateral than the amount of DAI they wish to mint, creating a buffer against the volatility of
        the collateral assets.
@@ -39,7 +39,7 @@ overview:
        movements in the crypto market), the MakerDAO system automatically initiates a liquidation process.
        This involves selling the collateral in an open market auction for DAI to reduce the circulating supply of
        DAI and ensure that each DAI remains adequately backed by collateral.
-  Backing Assets: |
+  backing assets: |
     1. Ethereum (ETH): ETH was the first and primary collateral type used to mint DAI. It remains a significant part
        of the collateral pool due to its liquidity and market presence.
     2. Real-World Assets (RWAs): MakerDAO has also explored using real-world assets as collateral. This involves
@@ -52,7 +52,7 @@ overview:
     5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
        These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
        market cap, and community trust.
-  History: |
+  history: |
     The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
     Ultimate Stablecoin Built on Ethereum” with the goal of creating a permissionless credit system that would allow users
     to take out loans collateralized by crypto assets. <br /><br />
@@ -73,7 +73,7 @@ overview:
     January 2024, no further actions have been taken toward bringing T-Bills onchain. The project team ratified universal governing
     laws, named the "Atlas Immutable Alignment Artifacts" for the Maker ecosystem on March 27, 2023, in preparation for
     continued decentralization.
-  Roadmap: |
+  roadmap: |
     On May 12, 2023, MakerDAO announced the release of a five-phase roadmap for the project. Per a forum post by Rune Christensen, 
     the new roadmap, dubbed "Endgame" will be rolled out as follows:
     <br /><br />
@@ -121,6 +121,14 @@ team:
     title: Asia Lead
     twitter: https://twitter.com/doowannam
     linkedin: https://www.linkedin.com/in/doo-wan-nam-b8943443
+
+social media:
+  twitter: # [Last Week, 2 Weeks Ago, 3 Weeks Ago]
+    tweets: [5, 9, 2]
+    views: [41.54K/8.31K,	87.27K/9.70K, 18.03K/9.01K]
+    likes: [175/35, 401/44, 165/82]
+    comments: [22/4, 62/6, 13/6]
+    shares: [42/8, 90/10, 81/40]
 
 information:
   - title: Security Assurance
