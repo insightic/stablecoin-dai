@@ -51,30 +51,29 @@ overview:
     5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
        These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
        market cap, and community trust.
+  History:
+    The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
+    Ultimate Stablecoin Built on Ethereum” with the goal of creating a permissionless credit system that would allow users
+    to take out loans collateralized by crypto assets. <br />
+    On Dec. 10, 2017, Maker's original whitepaper, "Dai (now Sai) Stablecoin System" was published. The system utilized
+    Collateral Debt Position (CDP) smart contracts with ether (ETH) as the only acceptable form of collateral, resulting in
+    the name Single-Collateral Dai (SCD), or Sai. While SCD proved effective, the goal was eventually transitioning to
+    Multi-Collateral Dai (MCD), allowing other forms of collateral to be used. <br />
+    On Nov. 18, 2019, the protocol was upgraded to MCD, with Basic Attention Token (BAT) being voted as the second collateral
+    available. In addition to allowing new forms of collateral, MCD also introduced (i) the DAI Savings Rate (DSR), allowing
+    tokenholders to earn yield by depositing DAI into a “Pot” that employs various DeFi strategies, and (ii) Collateral Auctions,
+    creating a competitive market in the event of liquidations. <br />
+    Notably, Maker was originally built by Maker Foundation, which controlled the protocol's contract at launch. However, on March
+    25, 2020, the foundation transitioned control to MakerDAO, a decentralized autonomous organization composed of MKR
+    tokenholders. <br />
+    A governance proposal was launched in March 2021 to onboard real-world assets (RWAs) to Maker Vaults. Several types of RWAs have
+    been integrated, including but not limited to real estate loans, freight invoices, and silver. In addition, a forum discussion
+    was initiated on Sept. 7, 2023, that contemplated using ~$100.00 million to explore ways to offer tokenized T-Bills. As of
+    January 2024, no further actions have been taken toward bringing T-Bills onchain. The project team ratified universal governing
+    laws, named the "Atlas Immutable Alignment Artifacts" for the Maker ecosystem on March 27, 2023, in preparation for
+    continued decentralization.
 
 overviews:
-  - title: History
-    value: |
-      The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
-      Ultimate Stablecoin Built on Ethereum” with the goal of creating a permissionless credit system that would allow users
-      to take out loans collateralized by crypto assets. <br />
-      On Dec. 10, 2017, Maker's original whitepaper, "Dai (now Sai) Stablecoin System" was published. The system utilized
-      Collateral Debt Position (CDP) smart contracts with ether (ETH) as the only acceptable form of collateral, resulting in
-      the name Single-Collateral Dai (SCD), or Sai. While SCD proved effective, the goal was eventually transitioning to
-      Multi-Collateral Dai (MCD), allowing other forms of collateral to be used. <br />
-      On Nov. 18, 2019, the protocol was upgraded to MCD, with Basic Attention Token (BAT) being voted as the second collateral
-      available. In addition to allowing new forms of collateral, MCD also introduced (i) the DAI Savings Rate (DSR), allowing
-      tokenholders to earn yield by depositing DAI into a “Pot” that employs various DeFi strategies, and (ii) Collateral Auctions,
-      creating a competitive market in the event of liquidations. <br />
-      Notably, Maker was originally built by Maker Foundation, which controlled the protocol's contract at launch. However, on March
-      25, 2020, the foundation transitioned control to MakerDAO, a decentralized autonomous organization composed of MKR
-      tokenholders. <br />
-      A governance proposal was launched in March 2021 to onboard real-world assets (RWAs) to Maker Vaults. Several types of RWAs have
-      been integrated, including but not limited to real estate loans, freight invoices, and silver. In addition, a forum discussion
-      was initiated on Sept. 7, 2023, that contemplated using ~$100.00 million to explore ways to offer tokenized T-Bills. As of
-      January 2024, no further actions have been taken toward bringing T-Bills onchain. The project team ratified universal governing
-      laws, named the "Atlas Immutable Alignment Artifacts" for the Maker ecosystem on March 27, 2023, in preparation for
-      continued decentralization.
   - title: Roadmap
     value: |
       On May 12, 2023, MakerDAO announced the release of a five-phase roadmap for the project. Per a forum post by Rune Christensen,
