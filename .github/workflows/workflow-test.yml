@@ -35,6 +35,7 @@ jobs:
         if [ -f "${dir}data.yml" ]; then
             echo "Processing folder: $dir"
             export PYTHONPATH="$PYTHONPATH:$(pwd)"
+            pip list
             python -c "import os; os.chdir('${dir}'); analysis = pyinsightic.SosoValue(project_dir='$dir'); analysis.run_analysis();"
             echo "Analysis completed for $dir"
             cat "${dir}sosovalue.json"
