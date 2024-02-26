@@ -24,92 +24,68 @@ overview: |
   conducted by Deloitte. Attestations and real-time stability metrics can be viewed here.
 
 details:
-  - title: Type of Stablecoin
+  - title: Fiat-Backed Stablecoins
     value: |
-      DAI is a crypto-collateralized stablecoin created by the MakerDAO system on the Ethereum blockchain.
-      Unlike fiat or commodity-collateralized stablecoins, DAI maintains its dollar-peg through a mix of
-      other cryptocurrencies used as collateral. Users generate DAI by locking these assets into a smart
-      contract, ensuring the stablecoin is over-collateralized to handle asset volatility. Automated mechanisms
-      liquidate the collateral if its value drops too low, maintaining DAI's stability. This method distinguishes
-      DAI from other types of stablecoins.
+      USDC is a fiat-backed stablecoin. When users purchase USDC from Circle, the company will deposit the
+      corresponding amount of US dollars in its bank account, and then issue the corresponding amount of USDC
+      on the blockchain. <br />
+      On the other hand, when users want to exchange USDC for US dollars, they can send USDC to Circle Company.
+      The company will withdraw the corresponding amount of US dollars from its bank account for the user, and
+      then destroy/burn the corresponding amount of USDC. 
   - title: Stability Mechanism
     value: |
-      1. Over-Collateralization: DAI it backed by other cryptocurrencies. Users must lock up more value in
-        collateral than the amount of DAI they wish to mint, creating a buffer against the volatility of
-        the collateral assets.
-      2. Liquidation Process: If the value of the collateral falls below a certain threshold (due to price
-        movements in the crypto market), the MakerDAO system automatically initiates a liquidation process.
-        This involves selling the collateral in an open market auction for DAI to reduce the circulating supply of
-        DAI and ensure that each DAI remains adequately backed by collateral.
+      1. When users purchase USDC from Circle, the company will deposit the corresponding amount of US dollars in
+         its bank account, and then issue the corresponding amount of USDC on the blockchain.
+      2. On the other hand, when users want to exchange USDC for US dollars, they can send USDC to Circle Company.
+         The company will withdraw the corresponding amount of US dollars from its bank account for the user, and
+         then destroy/burn the corresponding amount of USDC. 
   - title: Backing Assets
     value: |
-      1. Ethereum (ETH): ETH was the first and primary collateral type used to mint DAI. It remains a significant part
-        of the collateral pool due to its liquidity and market presence.
-      2. Real-World Assets (RWAs): MakerDAO has also explored using real-world assets as collateral. This involves
-        tokenized versions of physical or traditional financial assets, expanding the possibilities for DAI collateral
-        beyond digital assets alone.
-      3. USDC and other Stablecoins: Other stablecoins like USDC have been added as collateral options to provide more
-        stability and flexibility in the types of collateral that can be used.
-      4. Wrapped Bitcoin (WBTC): WBTC allows Bitcoin holders to participate in the Ethereum ecosystem. It's used as
-        collateral due to its value and stability as a digital representation of Bitcoin.
-      5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
-        These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
-        market cap, and community trust.
+      1. U.S. TREASURY SECURITIES
+      2. U.S. Treasury Repurchase Agreements
+      3. Cash
   - title: History
     value: |
-      The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
-      Ultimate Stablecoin Built on Ethereum” with the goal of creating a permissionless credit system that would allow users
-      to take out loans collateralized by crypto assets. <br /><br />
-      On Dec. 10, 2017, Maker's original whitepaper, "Dai (now Sai) Stablecoin System" was published. The system utilized
-      Collateral Debt Position (CDP) smart contracts with ether (ETH) as the only acceptable form of collateral, resulting in
-      the name Single-Collateral Dai (SCD), or Sai. While SCD proved effective, the goal was eventually transitioning to
-      Multi-Collateral Dai (MCD), allowing other forms of collateral to be used. <br /><br />
-      On Nov. 18, 2019, the protocol was upgraded to MCD, with Basic Attention Token (BAT) being voted as the second collateral
-      available. In addition to allowing new forms of collateral, MCD also introduced (i) the DAI Savings Rate (DSR), allowing
-      tokenholders to earn yield by depositing DAI into a “Pot” that employs various DeFi strategies, and (ii) Collateral Auctions,
-      creating a competitive market in the event of liquidations. <br /><br />
-      Notably, Maker was originally built by Maker Foundation, which controlled the protocol's contract at launch. However, on March
-      25, 2020, the foundation transitioned control to MakerDAO, a decentralized autonomous organization composed of MKR
-      tokenholders. <br /><br />
-      A governance proposal was launched in March 2021 to onboard real-world assets (RWAs) to Maker Vaults. Several types of RWAs have
-      been integrated, including but not limited to real estate loans, freight invoices, and silver. In addition, a forum discussion
-      was initiated on Sept. 7, 2023, that contemplated using ~$100.00 million to explore ways to offer tokenized T-Bills. As of
-      January 2024, no further actions have been taken toward bringing T-Bills onchain. The project team ratified universal governing
-      laws, named the "Atlas Immutable Alignment Artifacts" for the Maker ecosystem on March 27, 2023, in preparation for
-      continued decentralization.
-  - title: Roadmap
-    value: |
-      On May 12, 2023, MakerDAO announced the release of a five-phase roadmap for the project. Per a forum post by Rune Christensen, 
-      the new roadmap, dubbed "Endgame" will be rolled out as follows:
-      <br /><br />
-      * Phase One (Beta Launch) - This phase will introduce a full rebrand of the project, establishing a unified brand for DAI and
-        Maker while launching two new tokens codenamed "NewStable" and "NewGovToken". In this phase, DAI and MKR will not be phased
-        out, although users will be able to upgrade both tokens for "NewStable" and "NewGovToken" respectively. "NewGovToken" will
-        also include a redenomination from the MKR token supply at a rate of 12,000:1.
-      * Phase Two (SubDAO Launch) - This phase will introduce six SubDAOs funded by "NewStable" token emissions. These subDAOs will
-        represent decentralized and specialized divisions of MakerDAO, bringing greater governance efficiency to the ecosystem. SubDAOs
-        will be categorized as "FacilitatorDAOs" and "AllocatorDAOs" with each subDAO having a unique governance process to enable
-        specialization and independent decision-making.
-      * Phase Three (Governance AI Tools Launch) - This phase will introduce AI Governance tools that will modify, improve, summarize,
-        and interpret "the Atlas" a governance rulebook containing all governance processes within the ecosystem. Another notable addition
-        will be Aligned Voter Committees (AVCs), which will enable tokenholders to access governance and AI tools to make more
-        informed governance decisions.
-      * Phase Four (Governance Participation Incentive Launch) - This phase will introduce the Sagittarius Lockstake Engine (SLE) to promote
-        user participation in governance by unlocking “NewStable.” Six farms for SubDAO tokens will also be introduced, where users will earn
-        (farm) "NewGovToken" while participating in SubDAO governance. Notably, users (i) with IP addresses from the United States or (ii)
-        using VPNs will be prohibited from farming these SubDAO tokens.
-      * Phase Five (NewChain Launch and Final Endgame State) - The fifth and final phase will introduce the release of a blockchain that will
-        house all backend logic for SubDAO tokenomics and MakerDAO governance security. Once the chain launches, "MakerDAO will permanently enter
-        the Endgame State where further major changes are impossible, and it's core processes and balance of power remain decentralized,
-        self-sustainable and immutable forever". Rune Christiansen created a forum post on Sept. 1, 2023, suggesting that NewChain would be best
-        created by forking Solana's source code, with Cosmos as the next best option. A commercially reasonable search found no other information
-        regarding the development of NewChain.
-      <br /><br />
-      As of January 2024, the features in the Endgame roadmap are still under development and are expected to begin rolling out in early 2024. To
-      this end, MakerDAO approved two proposals (MIP102c2 SP20 and MIP102c2 SP21) that serve as amendments to the Alignment Artifacts in preparation
-      for the beginning of Phase One. However, no additional timeline was given for the start of Phase One. Additional details regarding Maker's roadmap
-      can be seen here. As of the same date, Maker and the MKR token are fully operational, and Core Units elected by MakerDAO are responsible for
-      operating as the protocol's "next-generation workforce".
+      USDC was created by Centre, a consortium co-founded by Circle and Coinbase to develop price-stable cryptocurrencies.
+      Centre and USDC were simultaneously announced in May 2018. USDC was officially introduced and launched on Sept. 26,
+      2018, as an open, interoperable, safe, transparent, and trustworthy stablecoin. In August 2023, Centre was sunset as
+      a stand-alone entity, and its responsibilities were fully transferred to Circle due to increased regulatory clarity
+      and an attempt to streamline operations. Coinbase agreed to take an undisclosed equity stake in Circle and receive a
+      portion of USDC reserve asset interest revenue. <br />
+      Originally on Ethereum, USDC has expanded to offer native support (minted and burned) on an additional 14 networks.
+      After an expansion to six new networks between September and October 2023, USDC is natively supported on Algorand,
+      Arbitrum, Avalanche, Base, Flow, Hedera, NEAR, Cosmos via the Noble appchain, OP Mainnet, Polkadot via the Polkadot
+      Asset Hub parachain, Polygon PoS, Solana, Stellar, and TRON. USDC also exists as a wrapped token bridged from
+      Ethereum to networks such as BNB Smart Chain, Fantom, and zkSync, with Circle supporting a path to native support
+      for networks that follow the Bridged USDC Standard. <br />
+      First announced in September 2022, Cross-Chain Transfer Protocol (CCTP) went live on Ethereum and Avalanche in April
+      2023. CCTP facilitates the transfer of native USDC across networks, reducing bridge and wrapped token risks associated
+      with traditional “lock and mint” bridging methods. To use CCTP, users transfer native USDC on a supported source
+      network to be burned. In return, an equivalent amount of native USDC is minted on a supported destination network and
+      sent to the user’s specified beneficiary wallet address. CCTP supports transfers between Ethereum, Avalanche, Arbitrum,
+      OP Mainnet, Base, Polygon PoS, and Noble. <br />
+      In August 2023, Circle launched the Programmable Wallets product, allowing developers to embed customized crypto wallets
+      into applications. Developers can customize wallets by integrating USDC, opting for wallet infrastructure models such as
+      developer-controlled wallets or user-controlled wallets, opting for wallet account types such as externally owned
+      accounts (EOA) or smart contract accounts (SCA), etc. ****Since this launch, Circle has expanded its Web3 services
+      offering by introducing features such as the following: <br />
+      Postman Collection: Developers can test features and experiment with Programmable Wallets on testnets. <br />
+      Smart Contract Platform: Developers can integrate and manage smart contracts to allow for app features such as
+      decentralized finance (DeFi) integrations, programmatic USDC transactions, NFTs, onchain loyalty programs, 
+      CCTP integration, etc. <br />
+      Gas Station: Developers can abstract away gas fees for end-users by sponsoring the fees. This ability can be subject
+      to customized restrictions on the value of transactions, limits on gas used, etc. <br />
+      After creating an account, developers can access Circle's Web3 services through the Web3 Services Console. Notably,
+      these services are typically free up to a certain usage level. Once the free usage tier has been hit, developers must
+      pay for additional usage of the product, with the price decreasing as usage grows to certain levels. <br />
+      In September 2023, Circle launched its Circle Research arm to “accelerate and amplify technical innovation within
+      crypto, blockchain, and Web3 through open-source research.” Its first contribution was releasing the open-source
+      Perimeter Protocol, which allows developers to build USDC credit applications using the protocol's smart contracts
+      for lending pools, loan constructs, and permissioning. Since then, Circle Research has continued to publish research
+      related to Robust Thresholds ECDSA Signatures, Recoverable Wrapper Tokens, and R-Pools. <br />
+      Occasionally, Circle releases backward-compatible updates to USDC. In November 2023, the first upgrade since early
+      2021 was announced for a phased rollout through January 2024. The USDC v2.2 upgrade “significantly reduced gas costs,
+      improved support for account abstraction, and further bolstered security for transactions on EVM blockchains.”
 
 team:
   - avatar: https://pbs.twimg.com/profile_images/1564609416409784325/MEOn4pWw_400x400.jpg
