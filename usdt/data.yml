@@ -17,92 +17,48 @@ overview: |
   by Tether's reserves.”
 
 details:
-  - title: Type of Stablecoin
+  - title: Fiat-Backed Stablecoins
     value: |
-      DAI is a crypto-collateralized stablecoin created by the MakerDAO system on the Ethereum blockchain.
-      Unlike fiat or commodity-collateralized stablecoins, DAI maintains its dollar-peg through a mix of
-      other cryptocurrencies used as collateral. Users generate DAI by locking these assets into a smart
-      contract, ensuring the stablecoin is over-collateralized to handle asset volatility. Automated mechanisms
-      liquidate the collateral if its value drops too low, maintaining DAI's stability. This method distinguishes
-      DAI from other types of stablecoins.
+      The primary purpose of USDT is to provide stability in the volatile crypto market. Unlike other cryptocurrencies like
+      Bitcoin or Ethereum, which have prices that fluctuate wildly, one USDT token is designed to remain exactly equal to
+      one USD. This is achieved by maintaining a reserve of real-world assets, including cash and equivalents, which back
+      each token issued.
   - title: Stability Mechanism
     value: |
-      1. Over-Collateralization: DAI it backed by other cryptocurrencies. Users must lock up more value in
-        collateral than the amount of DAI they wish to mint, creating a buffer against the volatility of
-        the collateral assets.
-      2. Liquidation Process: If the value of the collateral falls below a certain threshold (due to price
-        movements in the crypto market), the MakerDAO system automatically initiates a liquidation process.
-        This involves selling the collateral in an open market auction for DAI to reduce the circulating supply of
-        DAI and ensure that each DAI remains adequately backed by collateral.
+      1. USDT Token: USDT is a type of cryptocurrency known as a stablecoin. Its value is meant to mirror that of the US
+      dollar (USD) on a 1:1 basis. USDT operates on multiple blockchains through a process called 'multichain support', so
+      that can leverage the security and features of these networks, such as smart contract capabilities, fast transactions,
+      and broad interoperability. Tether claims each USDT unit issued is backed by a US dollar held in reserve.
   - title: Backing Assets
     value: |
-      1. Ethereum (ETH): ETH was the first and primary collateral type used to mint DAI. It remains a significant part
-        of the collateral pool due to its liquidity and market presence.
-      2. Real-World Assets (RWAs): MakerDAO has also explored using real-world assets as collateral. This involves
-        tokenized versions of physical or traditional financial assets, expanding the possibilities for DAI collateral
-        beyond digital assets alone.
-      3. USDC and other Stablecoins: Other stablecoins like USDC have been added as collateral options to provide more
-        stability and flexibility in the types of collateral that can be used.
-      4. Wrapped Bitcoin (WBTC): WBTC allows Bitcoin holders to participate in the Ethereum ecosystem. It's used as
-        collateral due to its value and stability as a digital representation of Bitcoin.
-      5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
-        These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
-        market cap, and community trust.
+      1. U.S. TREASURY SECURITIES
+      2. U.S. Treasury Repurchase Agreements
+      3. Cash
   - title: History
     value: |
-      The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
-      Ultimate Stablecoin Built on Ethereum” with the goal of creating a permissionless credit system that would allow users
-      to take out loans collateralized by crypto assets. <br /><br />
-      On Dec. 10, 2017, Maker's original whitepaper, "Dai (now Sai) Stablecoin System" was published. The system utilized
-      Collateral Debt Position (CDP) smart contracts with ether (ETH) as the only acceptable form of collateral, resulting in
-      the name Single-Collateral Dai (SCD), or Sai. While SCD proved effective, the goal was eventually transitioning to
-      Multi-Collateral Dai (MCD), allowing other forms of collateral to be used. <br /><br />
-      On Nov. 18, 2019, the protocol was upgraded to MCD, with Basic Attention Token (BAT) being voted as the second collateral
-      available. In addition to allowing new forms of collateral, MCD also introduced (i) the DAI Savings Rate (DSR), allowing
-      tokenholders to earn yield by depositing DAI into a “Pot” that employs various DeFi strategies, and (ii) Collateral Auctions,
-      creating a competitive market in the event of liquidations. <br /><br />
-      Notably, Maker was originally built by Maker Foundation, which controlled the protocol's contract at launch. However, on March
-      25, 2020, the foundation transitioned control to MakerDAO, a decentralized autonomous organization composed of MKR
-      tokenholders. <br /><br />
-      A governance proposal was launched in March 2021 to onboard real-world assets (RWAs) to Maker Vaults. Several types of RWAs have
-      been integrated, including but not limited to real estate loans, freight invoices, and silver. In addition, a forum discussion
-      was initiated on Sept. 7, 2023, that contemplated using ~$100.00 million to explore ways to offer tokenized T-Bills. As of
-      January 2024, no further actions have been taken toward bringing T-Bills onchain. The project team ratified universal governing
-      laws, named the "Atlas Immutable Alignment Artifacts" for the Maker ecosystem on March 27, 2023, in preparation for
-      continued decentralization.
-  - title: Roadmap
-    value: |
-      On May 12, 2023, MakerDAO announced the release of a five-phase roadmap for the project. Per a forum post by Rune Christensen, 
-      the new roadmap, dubbed "Endgame" will be rolled out as follows:
-      <br /><br />
-      * Phase One (Beta Launch) - This phase will introduce a full rebrand of the project, establishing a unified brand for DAI and
-        Maker while launching two new tokens codenamed "NewStable" and "NewGovToken". In this phase, DAI and MKR will not be phased
-        out, although users will be able to upgrade both tokens for "NewStable" and "NewGovToken" respectively. "NewGovToken" will
-        also include a redenomination from the MKR token supply at a rate of 12,000:1.
-      * Phase Two (SubDAO Launch) - This phase will introduce six SubDAOs funded by "NewStable" token emissions. These subDAOs will
-        represent decentralized and specialized divisions of MakerDAO, bringing greater governance efficiency to the ecosystem. SubDAOs
-        will be categorized as "FacilitatorDAOs" and "AllocatorDAOs" with each subDAO having a unique governance process to enable
-        specialization and independent decision-making.
-      * Phase Three (Governance AI Tools Launch) - This phase will introduce AI Governance tools that will modify, improve, summarize,
-        and interpret "the Atlas" a governance rulebook containing all governance processes within the ecosystem. Another notable addition
-        will be Aligned Voter Committees (AVCs), which will enable tokenholders to access governance and AI tools to make more
-        informed governance decisions.
-      * Phase Four (Governance Participation Incentive Launch) - This phase will introduce the Sagittarius Lockstake Engine (SLE) to promote
-        user participation in governance by unlocking “NewStable.” Six farms for SubDAO tokens will also be introduced, where users will earn
-        (farm) "NewGovToken" while participating in SubDAO governance. Notably, users (i) with IP addresses from the United States or (ii)
-        using VPNs will be prohibited from farming these SubDAO tokens.
-      * Phase Five (NewChain Launch and Final Endgame State) - The fifth and final phase will introduce the release of a blockchain that will
-        house all backend logic for SubDAO tokenomics and MakerDAO governance security. Once the chain launches, "MakerDAO will permanently enter
-        the Endgame State where further major changes are impossible, and it's core processes and balance of power remain decentralized,
-        self-sustainable and immutable forever". Rune Christiansen created a forum post on Sept. 1, 2023, suggesting that NewChain would be best
-        created by forking Solana's source code, with Cosmos as the next best option. A commercially reasonable search found no other information
-        regarding the development of NewChain.
-      <br /><br />
-      As of January 2024, the features in the Endgame roadmap are still under development and are expected to begin rolling out in early 2024. To
-      this end, MakerDAO approved two proposals (MIP102c2 SP20 and MIP102c2 SP21) that serve as amendments to the Alignment Artifacts in preparation
-      for the beginning of Phase One. However, no additional timeline was given for the start of Phase One. Additional details regarding Maker's roadmap
-      can be seen here. As of the same date, Maker and the MKR token are fully operational, and Core Units elected by MakerDAO are responsible for
-      operating as the protocol's "next-generation workforce".
+      Founded in July 2014 by Brock Pierce, Craig Sellars, and Reeve Collins, Tether (USDT), originally known as "Realcoin,"
+      is a stablecoin that aims to keep a fixed 1:1 exchange ratio with the US Dollar (USD). Tether was one of the first
+      stablecoins created, built upon Mastercoin (Omni), a protocol layer for Bitcoin that introduced the stablecoin concept
+      in 2012. The first tokens were issued on Omni in October 2014, with the project rebranding to “Tether” in November 2014.
+      Tether pioneered what is now known as a fiat-collateralized stablecoin model and is the most widely transacted stablecoin. <br />
+      In January 2015, Bitfinex became the first platform to enable trading of USDT. <br />
+      In November 2017, Tether was hacked, in which the “Tether Treasury” wallet address was drained of ~$30.95 million in USDT
+      tokens. While these funds were not recovered, the project team marked these stolen tokens as “unredeemable.” <br />
+      In 2018, Bitfinex, facing an alleged $850.00 million loss due to Crypto Capital's actions, secured a line of credit from
+      Tether. This loan was scrutinized by the New York State Attorney General (NYAG) since Tether's reserves, believed to fully
+      back USDT, were used. In April 2019, the NYAG revealed conflicting transactions between Bitfinex and Tether in an alleged
+      attempt to cover the loss. By 2021, Bitfinex claimed that it had repaid the loan; however, the NYAG found that Bitfinex and
+      Tether made additional false statements to conceal the losses, ultimately leading to financial arrangements between the two
+      to cover the losses. Tether and Bitfinex settled with the NYAG in February 2021, agreeing to pay an $18.50 million fine,
+      ceasing trading activity with residents of New York (United States), and implementing “a number of steps to increase
+      transparency.” Of note, a Tether blog post states, “Under the terms of the settlement, we admit no wrongdoing.” <br />
+      In October 2021, the United States Commodity Futures Trading Commission (CFTC) issued an order filing and settling charges
+      against Tether Holdings Limited, Tether Limited, Tether Operations Limited, and Tether International Limited “for making untrue
+      or misleading statements and omissions of material fact in connection with the U.S. dollar tether token (USDT) stablecoin.
+      The order requires Tether to pay a civil monetary penalty of $41.00 million and cease and desist from further violations of the
+      Commodity Exchange Act (CEA) and CFTC regulations, as charged.” Additional case background information can be seen here. <br />
+      In October 2023, long-time CTO Paolo Ardoino was appointed as CEO of Tether, succeeding Jean-Louis van der Velde. According
+      to the announcement, Ardoino's CEO duties would begin in December 2023.
 
 team:
   - avatar: https://pbs.twimg.com/profile_images/1564609416409784325/MEOn4pWw_400x400.jpg
