@@ -27,7 +27,7 @@ jobs:
       run: |
         pip install git+https://$GITHUB_TOKEN:x-oauth-basic@github.com/insightic/pyinsightic.git#egg=pyinsightic
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
     
     - name: Run pyinsightic SosoValue analysis for the first project directory
       run: |
