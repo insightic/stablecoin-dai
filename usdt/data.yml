@@ -1,0 +1,454 @@
+name: USDT
+description: USDT, also known as Tether, is the stablecoin with the highest
+  market capitalization, backed by US dollar. 
+logo: assets/logo.png
+rating: A-
+links:
+  - name: Website
+    url: https://tether.to
+  - name: Twitter
+    url: https://twitter.com/Tether_to
+whitepaper: https://assets.ctfassets.net/vyse88cgwfbl/5UWgHMvz071t2Cq5yTw5vi/c9798ea8db99311bf90ebe0810938b01/TetherWhitePaper.pdf
+overview: |
+  Tether is a fiat-collateralized stablecoin offering individuals the advantage of transacting on blockchains while
+  mitigating price risk. Tether offers five stablecoins pegged to different fiat currencies and commodities: USDT
+  (US Dollar), EURT (Euro), CNHT (Chinese Yuan), MXNT (Mexican Peso), and XAUT (gold). Tether's FAQ states, “All
+  Tether tokens are pegged at 1-to-1 with a matching fiat currency (e.g., one USDT = one USD) and are backed 100%
+  by Tether's reserves.”
+
+details:
+  - title: Type of Stablecoin
+    value: |
+      DAI is a crypto-collateralized stablecoin created by the MakerDAO system on the Ethereum blockchain.
+      Unlike fiat or commodity-collateralized stablecoins, DAI maintains its dollar-peg through a mix of
+      other cryptocurrencies used as collateral. Users generate DAI by locking these assets into a smart
+      contract, ensuring the stablecoin is over-collateralized to handle asset volatility. Automated mechanisms
+      liquidate the collateral if its value drops too low, maintaining DAI's stability. This method distinguishes
+      DAI from other types of stablecoins.
+  - title: Stability Mechanism
+    value: |
+      1. Over-Collateralization: DAI it backed by other cryptocurrencies. Users must lock up more value in
+        collateral than the amount of DAI they wish to mint, creating a buffer against the volatility of
+        the collateral assets.
+      2. Liquidation Process: If the value of the collateral falls below a certain threshold (due to price
+        movements in the crypto market), the MakerDAO system automatically initiates a liquidation process.
+        This involves selling the collateral in an open market auction for DAI to reduce the circulating supply of
+        DAI and ensure that each DAI remains adequately backed by collateral.
+  - title: Backing Assets
+    value: |
+      1. Ethereum (ETH): ETH was the first and primary collateral type used to mint DAI. It remains a significant part
+        of the collateral pool due to its liquidity and market presence.
+      2. Real-World Assets (RWAs): MakerDAO has also explored using real-world assets as collateral. This involves
+        tokenized versions of physical or traditional financial assets, expanding the possibilities for DAI collateral
+        beyond digital assets alone.
+      3. USDC and other Stablecoins: Other stablecoins like USDC have been added as collateral options to provide more
+        stability and flexibility in the types of collateral that can be used.
+      4. Wrapped Bitcoin (WBTC): WBTC allows Bitcoin holders to participate in the Ethereum ecosystem. It's used as
+        collateral due to its value and stability as a digital representation of Bitcoin.
+      5. Other ERC-20 Tokens: A variety of other ERC-20 tokens approved by MakerDAO governance can be used as collateral.
+        These include tokens like Basic Attention Token (BAT), Aave (AAVE), and others, chosen based on their liquidity,
+        market cap, and community trust.
+  - title: History
+    value: |
+      The idea of Maker was first introduced on March 26, 2015, when Rune Christensen published “Introducing eDollar, the
+      Ultimate Stablecoin Built on Ethereum” with the goal of creating a permissionless credit system that would allow users
+      to take out loans collateralized by crypto assets. <br /><br />
+      On Dec. 10, 2017, Maker's original whitepaper, "Dai (now Sai) Stablecoin System" was published. The system utilized
+      Collateral Debt Position (CDP) smart contracts with ether (ETH) as the only acceptable form of collateral, resulting in
+      the name Single-Collateral Dai (SCD), or Sai. While SCD proved effective, the goal was eventually transitioning to
+      Multi-Collateral Dai (MCD), allowing other forms of collateral to be used. <br /><br />
+      On Nov. 18, 2019, the protocol was upgraded to MCD, with Basic Attention Token (BAT) being voted as the second collateral
+      available. In addition to allowing new forms of collateral, MCD also introduced (i) the DAI Savings Rate (DSR), allowing
+      tokenholders to earn yield by depositing DAI into a “Pot” that employs various DeFi strategies, and (ii) Collateral Auctions,
+      creating a competitive market in the event of liquidations. <br /><br />
+      Notably, Maker was originally built by Maker Foundation, which controlled the protocol's contract at launch. However, on March
+      25, 2020, the foundation transitioned control to MakerDAO, a decentralized autonomous organization composed of MKR
+      tokenholders. <br /><br />
+      A governance proposal was launched in March 2021 to onboard real-world assets (RWAs) to Maker Vaults. Several types of RWAs have
+      been integrated, including but not limited to real estate loans, freight invoices, and silver. In addition, a forum discussion
+      was initiated on Sept. 7, 2023, that contemplated using ~$100.00 million to explore ways to offer tokenized T-Bills. As of
+      January 2024, no further actions have been taken toward bringing T-Bills onchain. The project team ratified universal governing
+      laws, named the "Atlas Immutable Alignment Artifacts" for the Maker ecosystem on March 27, 2023, in preparation for
+      continued decentralization.
+  - title: Roadmap
+    value: |
+      On May 12, 2023, MakerDAO announced the release of a five-phase roadmap for the project. Per a forum post by Rune Christensen, 
+      the new roadmap, dubbed "Endgame" will be rolled out as follows:
+      <br /><br />
+      * Phase One (Beta Launch) - This phase will introduce a full rebrand of the project, establishing a unified brand for DAI and
+        Maker while launching two new tokens codenamed "NewStable" and "NewGovToken". In this phase, DAI and MKR will not be phased
+        out, although users will be able to upgrade both tokens for "NewStable" and "NewGovToken" respectively. "NewGovToken" will
+        also include a redenomination from the MKR token supply at a rate of 12,000:1.
+      * Phase Two (SubDAO Launch) - This phase will introduce six SubDAOs funded by "NewStable" token emissions. These subDAOs will
+        represent decentralized and specialized divisions of MakerDAO, bringing greater governance efficiency to the ecosystem. SubDAOs
+        will be categorized as "FacilitatorDAOs" and "AllocatorDAOs" with each subDAO having a unique governance process to enable
+        specialization and independent decision-making.
+      * Phase Three (Governance AI Tools Launch) - This phase will introduce AI Governance tools that will modify, improve, summarize,
+        and interpret "the Atlas" a governance rulebook containing all governance processes within the ecosystem. Another notable addition
+        will be Aligned Voter Committees (AVCs), which will enable tokenholders to access governance and AI tools to make more
+        informed governance decisions.
+      * Phase Four (Governance Participation Incentive Launch) - This phase will introduce the Sagittarius Lockstake Engine (SLE) to promote
+        user participation in governance by unlocking “NewStable.” Six farms for SubDAO tokens will also be introduced, where users will earn
+        (farm) "NewGovToken" while participating in SubDAO governance. Notably, users (i) with IP addresses from the United States or (ii)
+        using VPNs will be prohibited from farming these SubDAO tokens.
+      * Phase Five (NewChain Launch and Final Endgame State) - The fifth and final phase will introduce the release of a blockchain that will
+        house all backend logic for SubDAO tokenomics and MakerDAO governance security. Once the chain launches, "MakerDAO will permanently enter
+        the Endgame State where further major changes are impossible, and it's core processes and balance of power remain decentralized,
+        self-sustainable and immutable forever". Rune Christiansen created a forum post on Sept. 1, 2023, suggesting that NewChain would be best
+        created by forking Solana's source code, with Cosmos as the next best option. A commercially reasonable search found no other information
+        regarding the development of NewChain.
+      <br /><br />
+      As of January 2024, the features in the Endgame roadmap are still under development and are expected to begin rolling out in early 2024. To
+      this end, MakerDAO approved two proposals (MIP102c2 SP20 and MIP102c2 SP21) that serve as amendments to the Alignment Artifacts in preparation
+      for the beginning of Phase One. However, no additional timeline was given for the start of Phase One. Additional details regarding Maker's roadmap
+      can be seen here. As of the same date, Maker and the MKR token are fully operational, and Core Units elected by MakerDAO are responsible for
+      operating as the protocol's "next-generation workforce".
+
+team:
+  - avatar: https://pbs.twimg.com/profile_images/1564609416409784325/MEOn4pWw_400x400.jpg
+    name: Rune Christensen
+    title: Co-founder and CEO
+    twitter: https://twitter.com/runekek
+    linkedin: https://www.linkedin.com/in/runebentsenchristensen
+  - avatar: https://pbs.twimg.com/profile_images/1699607742049337344/EVQCcUOn_400x400.jpg
+    name: Sam MacPherson
+    title: Co-founder and Lead Developer
+    twitter: https://twitter.com/hexonaut
+  - avatar: https://pbs.twimg.com/profile_images/1446204936392359947/sIpYm-BI_400x400.jpg
+    name: Doo Wan Nam
+    title: Asia Lead
+    twitter: https://twitter.com/doowannam
+    linkedin: https://www.linkedin.com/in/doo-wan-nam-b8943443
+
+social_media:
+  twitter: # [Last Week, 2 Weeks Ago, 3 Weeks Ago]
+    - title: Tweets
+      value: [5, 9, 2]
+    - title: Views
+      value: [41.54K/8.31K, 87.27K/9.70K, 18.03K/9.01K]
+    - title: Likes
+      value: [175/35, 401/44, 165/82]
+    - title: Comments
+      value: [22/4, 62/6, 13/6]
+    - title: Shares
+      value: [42/8, 90/10, 81/40]
+
+financial_analysis:
+  financial_audit:
+    auditors: N.A.
+    score: N.A.
+    analysis: N.A.
+    reserve_holdings_percentage:
+      - title: RWA
+        value: 0.56
+      - title: ETH
+        value: 0.36
+      - title: Stablecoins
+        value: 0.04
+      - title: BTC
+        value: 0.03
+      - title: Others
+        value: 0.01
+  market_capitalization_and_liquidity:
+    - title: Dollar volume (24H)
+      value: $238,544,833.18
+    - title: Market cap	Rank
+      value: 23 ($4,888,486,141.03)
+    - title: FDV
+      value: $4,888,486,141.03
+    - title: Turnover rate
+      value: 4.88%
+    - title: Circulating supply
+      value: 4,892,546,955.00
+    - title: Total supply
+      value: 4,892,546,955.00
+    - title: Max supply
+      value: Unlimited
+    - title: All time high
+      value: $1.059
+    - title: All time high date
+      value: 2020.03.15
+    - title: Down from all time high
+      value: -5.65%
+    - title: All time low
+      value: $0.96699
+    - title: All time low date
+      value: 2023.03.15
+    - title: Up from all time low
+      value: +3.33%
+    - title: Risks of depegging
+      value: Minimum
+  investments:
+    - round: "-"
+      amount: $12,000,000
+      valuation: "-"
+      date: 2017/12
+      investors: |
+        * Andreessen Horowitz
+        * Polychain
+        * FBG Capital
+        * 1confirmation
+        * Distributed Capital Partners
+        * Walden Bridge Capital
+        * Wyre Capital
+        * Scanate
+    - round: "-"
+      amount: $15,000,000
+      valuation: "-"
+      date: 2018/09
+      investors: |
+        * Andreessen Horowitz
+    - round: "-"
+      amount: $27,500,000
+      valuation: "-"
+      date: 2019/12
+      investors: |
+        * Dragonfly
+        * Paradigm
+  list_of_investors:
+    - name: 1confirmation
+      logo: assets/1confirmation.jpg
+    - name: A.Capital
+      logo: assets/A.Capital.png
+    - name: Andreessen Horowitz
+      logo: assets/Andreessen Horowitz.png
+    - name: Bain Capital Ventures
+      logo: assets/Bain Capital Ventures.png
+    - name: Distributed Capital Partners
+      logo: assets/Distributed Capital Partners.jpg
+    - name: Dragonfly
+      logo: assets/Dragonfly.jpg
+    - name: FBG Capital
+      logo: assets/FBG Capital.jpg
+    - name: FinTech Collective
+      logo: assets/FinTech Collective.jpg
+    - name: Hack VC
+      logo: assets/Hack VC.jpg
+    - name: IDEO CoLab Ventures
+      logo: assets/IDEO CoLab Ventures.png
+    - name: IOSG
+      logo: assets/IOSG.jpg
+    - name: Inflection
+      logo: assets/Inflection.jpg
+    - name: ParaFi Capital
+      logo: assets/ParaFi Capital.jpg
+    - name: Paradigm
+      logo: assets/Paradigm.jpg
+    - name: Placeholder VC
+      logo: assets/Placeholder VC.jpg
+    - name: Polychain
+      logo: assets/Polychain.png
+    - name: Standard Crypto
+      logo: assets/Standard Crypto.jpg
+    - name: Uncorrelated
+      logo: assets/Uncorrelated.png
+    - name: Walden Bridge Capital
+      logo: assets/Walden Bridge Capital.jpg
+
+security_and_compliance:
+  - title: Security Assurance
+    value:
+      - title: Smart Contract Audits
+        value: Contracts audited by two reputable firms; all findings addressed before implementation.
+      - title: Security Auditors
+        value: |
+          * Trail of Bits (Tier 1)
+          * PeckShield (Tier 1)
+          * Runtime Verification
+      - title: Security Audit Rating
+        value: A-
+      - title: Bug Bounty Programs
+        value: |
+          Active bug bounty program with rewards up to $100,000 for critical vulnerabilities.
+          Since the launch of the program, three high-severity bugs and one critical-severity bug have been discovered,
+          resulting in bounty reward payments totaling $90,000. https://security.makerdao.com/bug-bounty-program
+      - title: Insurance Coverage
+        value: No
+      - title: Security Issue History
+        value: No security breaches. No fund losses. Critical vulnerability was found and fixed in 2019.
+      - title: Resolution of Past Incidents
+        value: N.A.
+      - title: Multi-Signature Wallets
+        value: Use of multi-signature wallets for treasury and operational funds to prevent unauthorized access.
+      - title: External Security Partners
+        value: Unknown
+      - title: Decentralized Security Measures
+        value: Unknown
+      - title: Two-Factor Authentication (2FA)
+        value: Unknown
+      - title: Incident Response Plan
+        value: Unknown
+      - title: Community Security Awareness
+        value: Programs to educate the user community on security best practices and personal account safety.
+      - title: Network Security Measures
+        value: Unknown
+
+  - title: Regulatory Compliance
+    value:
+      - title: Regulatory Framework
+        value: |
+          MakerDAO operates in a decentralized manner, making it challenging to classify within traditional
+          financial services regulatory frameworks in the UK and Europe. Its structure as a DAO and the way
+          it facilitates transactions without acting as a lender in a traditional sense place it outside of
+          many existing regulations that would apply to consumer credit providers or P2P lending platforms.
+      - title: Licenses Obtained
+        value: N.A.
+      - title: AML/CFT Compliance KYC Procedures
+        value: |
+          The decentralized nature of MakerDAO complicates the application of typical Anti-Money Laundering
+          (AML) and Counter-Financing of Terrorism (CFT) regulations, as well as Know Your Customer (KYC) procedures.
+          Traditional compliance mechanisms, like customer information collection, are not straightforwardly
+          applicable to a system where lending and borrowing are mediated by smart contracts without a central authority.
+      - title: Data Protection
+        value: |
+          * Blockchain Transparency: Transactions on the Ethereum blockchain are transparent and immutable.
+            This means once a transaction is recorded, it cannot be altered or deleted, providing a clear audit trail.
+          * Anonymity and Pseudonymity: Users interact with the blockchain using addresses that do not directly
+            reveal their real-world identities. However, this does not mean activities are entirely anonymous but pseudonymous, offering a level of privacy.
+          * Smart Contract Security: MakerDAO's operations are managed by smart contracts, which are self-executing
+            contracts with the terms of the agreement directly written into code. While smart contracts are secure
+            by design, their security heavily depends on the quality of the code. Vulnerabilities in smart contracts
+            can potentially be exploited, highlighting the importance of rigorous code audits and security practices.
+      - title: Consumer Protection Measures
+        value: |
+          * Decentralization and Governance: MakerDAO is governed by a decentralized community of MKR token holders who
+            vote on changes to the protocol. This governance model allows for a democratic decision-making process, where
+            changes aimed at protecting consumers or adjusting the system for better stability can be proposed and voted upon.
+          * Collateralization and Liquidation Mechanisms: To mint DAI, users must over-collateralize, meaning they must
+            deposit more value in Ethereum or other accepted assets than the amount of DAI they wish to generate. This mechanism
+            protects against volatility. If the collateral's value falls below a certain threshold, it can be liquidated to
+            ensure the system remains solvent, protecting the value of DAI.
+          * Integration with External Platforms: Consumer protection on the user interface level, such as data privacy and
+            transaction security, also depends on how third-party platforms integrating MakerDAO's protocols handle user data
+            and security.
+      - title: Reporting and Transparency
+        value: |
+          The open nature of blockchain technology ensures that all transactions and the status of collateralized positions within
+          MakerDAO and decision-making processes are publicly visible and verifiable on the Ethereum blockchain. This provides
+          a form of transparency and allows for independent audits, although the DAO itself does not follow traditional
+          reporting mechanisms.
+      - title: Jurisdictional Operation Limits
+        value: N.A.
+      - title: Tax Compliance
+        value: |
+          MakerDAO is paying taxes on its US ETF trades in Switzerland. The investments are part of MakerDAO's growing real-world asset
+          exposure. https://www.dlnews.com/articles/defi/makerdao-pays-over-a-million-in-stamp-duty-tax-to-switzerland
+      - title: Legal Entity Structure
+        value: |
+          Maker Ecosystem Growth Holdings, Inc <br />
+          MakerDAO, which is not a traditional legal entity structure
+      - title: Ongoing Compliance Monitoring
+        value: Unknown
+      - title: Regulatory Engagement
+        value: |
+          MakerDAO has approved the creation of a new 5m fund dedicated to expenses related to legal defense.
+          https://cointelegraph.com/news/maker-dao-launches-5m-legal-defense-fund
+      - title: External Compliance Audits
+        value: No
+      - title: Operational Compliance
+        value: |
+          The operation of MakerDAO relies on the principles of decentralization, with mechanisms such as automated trading bots (Keepers)
+          to maintain DAI's peg to the dollar and manage the liquidation of collateral in a decentralized manner. These operational aspects
+          are designed to ensure the protocol's stability and compliance with its internal rules without central oversight.
+
+  - title: Technological Details
+    value:
+      - title: Technical Documents
+        value: https://docs.makerdao.com
+      - title: Smart Contract
+        value: https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f#code
+      - title: Token launch
+        value: |
+          * Ethereum: 0x6b175474e89094c44da98b954eedeac495271d0f
+          * Solana: EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o
+          * BNB Smart Chain: 0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3
+          * Polygon: 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
+          * Optimism: 0xda10009cbd5d07dd0cecc66161fc93d7c9000da1
+          * Arbitrum: 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1
+      - title: Detailed Description of Technology
+        value: |
+          * DAI is created and managed by the MakerDAO protocol, which is a decentralized autonomous organization (DAO) running on the Ethereum
+            blockchain. This protocol includes a series of smart contracts that manage the issuance and stability of DAI.
+          * To mint DAI, users lock collateral, such as ETH or other supported assets, into a smart contract called a Vault (previously known as
+            a Collateralized Debt Position or CDP). The user can then generate DAI against this collateral. The amount of DAI that can be minted
+            is determined by the collateralization ratio, which ensures that there is always more value locked up than the amount of DAI in circulation.
+          * DAI maintains its peg to the USD through external market mechanisms and internal economic incentives. For example, when the price of
+            DAI is above $1, users are incentivized to pay back their DAI (which burns the token) and unlock their collateral, increasing the supply
+            of DAI and pushing the price down. Conversely, when the price is below $1, users are encouraged to mint more DAI by opening new Vaults.
+          * DAI represents a significant technological advancement in creating a decentralized, stable, and scalable currency. Its success has not only
+            proven the concept of a stablecoin but also paved the way for more complex financial systems to be built on blockchain technology.
+
+  - title: Governance and Decentralization
+    value:
+      - title: Governance Structure
+        value: |
+          MakerDAO's governance structure is decentralized, meaning it operates based on the collective decision-making of its token holders. The
+          organization uses a DAO model, where decisions are made through proposals and voting to ensure democratic governance over its protocols
+          and operations.
+      - title: Voting Rights
+        value: |
+          Voting rights within MakerDAO are granted to holders of its governance token, MKR. MKR token holders can propose changes, vote on various
+          governance proposals, and have a say in the direction and management of the protocol. MKR voting weight is proportional to the amount of
+          MKR a voter stakes in the voting contract, DSChief.
+      - title: Token Governance
+        value: |
+          Token governance in MakerDAO revolves around the MKR token. MKR holders are responsible for governing the Maker Protocol, including
+          risk management, collateral decisions, and the stability fee adjustments for DAI.
+      - title: Proposal Submission Process
+        value: |
+          Proposals can be submitted by any MKR token holder. These proposals might range from changes to the system, updates to the protocol,
+          or modifications to governance itself. There's usually a formal process for submission, including a discussion phase before a proposal
+          goes to vote. https://vote.makerdao.com
+      - title: Voting Mechanism
+        value: |
+          MakerDAO utilizes an on-chain voting mechanism, allowing MKR holders to vote directly on proposals. Votes are typically weighted by the
+          amount of MKR a voter holds, ensuring that those with a larger stake in the protocol have a proportionally larger say.
+      - title: Token Distribution
+        value: |
+          **DAI** <br />
+          DAI does not have an initial allocation. <br />
+          DAI is an algorithmic stablecoin that is collateralized by other cryptocurrencies. It maintains its peg to the US dollar through a system
+          of smart contracts which automatically adjust the total supply of DAI to keep its price stable. When the price of DAI is above $1, the system
+          encourages the creation of more DAI to bring the price down, which is done by decreasing the stability fee (interest rate) for creating DAI.
+          Conversely, when the price of DAI is below $1, the system discourages the creation of more DAI to push the price up, which is done by increasing
+          the stability fee. Therefore, the supply of DAI is not predetermined but is constantly changing in response to market conditions. You can find
+          the latest amount on https://makerburn.com/#/charts
+
+          **MKR** <br />
+          The Initial token distribution of MKR is as follows:
+          * 69.50% is allocated to Founders & Project
+          * 15.00% is allocated to Team
+          * 4.00% is allocated to Seed Round 1
+          * 6.00% is allocated to Seed Round 2
+          * 5.50% is allocated to Seed Round 3
+          MakerDAO launched with 1,000,000 MKR tokens during inception. The total number of MKR in existence can fluctuate based on how the system runs.
+          When the Maker vault is liquidated, and the collateral auction and Maker Buffer of Dai are insufficient to repay the vault debt, the protocol will
+          mint MKR (increasing the number of MKR in circulation), which will then be sold to Dai bidders. Conversely, if Dai's auction proceeds and stability
+          fee payments exceed the Maker buffer limit (a figure set by Maker governance), they will sell excess Dai in exchange for MKR through a surplus auction.
+          The Maker Protocol automatically destroys the collected MKR, thus reducing the total supply of MKR.
+      - title: Stakeholder Diversity
+        value: |
+          MakerDAO's ecosystem includes diverse stakeholders, including MKR token holders, DAI users, developers, and integration partners.
+      - title: On-chain Governance Participation
+        value: |
+          Participation in governance is conducted on-chain, meaning that all votes and proposals are recorded on the Ethereum blockchain. This ensures transparency
+          and immutability of governance actions. Detailed analysis to be included.
+      - title: Reserve Management
+        value: |
+          The MakerDAO system manages reserves through the collateralization of assets to mint DAI. The reserves are in the form of various cryptocurrencies submitted
+          by users, managed by smart contracts to ensure solvency and stability of DAI.
+      - title: Emergency Decision Making
+        value: |
+          MakerDAO has mechanisms in place for emergency decision-making, known as Emergency Shutdown. This can be triggered if the system is under threat, safeguarding
+          users' assets and the integrity of DAI.
+      - title: Fork Management
+        value: |
+          In the event of a significant change or fork in the protocol, governance decisions would guide the process, ensuring that stakeholders have a say in the
+          direction and implementation of such changes.
+      - title: Compliance Oversight
+        value: |
+          Compliance oversight potentially comes from the decentralized governance itself or through external advisories and audits.
+      - title: Accountability Mechanisms
+        value: |
+          Accountability is built into the governance model through the visibility of all transactions and votes on the blockchain, along with community oversight and
+          the possibility for stakeholders to propose changes if the system's integrity is at risk.
