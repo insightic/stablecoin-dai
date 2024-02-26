@@ -50,8 +50,9 @@ jobs:
             export PYTHONPATH="$PYTHONPATH:$(pwd)"
             python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
             python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
+            python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
             echo "Analysis completed for $dir"
-            cat "${dir}linkedin.json"
+            cat "${dir}twitter.json"
             break
         fi
         done
@@ -67,5 +68,6 @@ jobs:
         git config --global user.name "GitHub Actions"
         git add */sosovalue.json
         git add */linkedin.json
-        git commit -m "Update sosovalue.json analysis results"
+        git add */twitter.json
+        git commit -m "Update social analysis results"
         git push
