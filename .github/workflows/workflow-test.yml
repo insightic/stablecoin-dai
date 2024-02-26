@@ -52,7 +52,6 @@ jobs:
             python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
             python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
             echo "Analysis completed for $dir"
-            cat "${dir}twitter.json"
             break
         fi
         done
@@ -66,8 +65,8 @@ jobs:
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
-        git add */results/sosovalue.json
-        git add */results/linkedin.json
-        git add */results/twitter.json
+        git add */sosovalue.json
+        git add */linkedin.json
+        git add */twitter.json
         git commit -m "Update social analysis results"
         git push
