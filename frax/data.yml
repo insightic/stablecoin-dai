@@ -1,0 +1,249 @@
+name: FRAX
+description: FRAX is a unique stablecoin ecosystem using both algorithms and collateralization to maintain a near-peg to the US dollar while offering flexible pegging options and governance through its FXS token
+logo: assets/logo.png
+rating: A-
+links:
+  - name: Website
+    url: https://frax.finance/
+  - name: Twitter
+    url: http://twitter.com/fraxfinance
+  - name: GitHub
+    url: https://github.com/fraxfinance
+  - name: Linkedin
+    url: 
+whitepaper: 
+  https://docs.frax.finance/overview
+overview: |
+  Frax attempts to be the first fractional-algorithmic stablecoin protocol to implement design principles of both collateralized and algorithmic stablecoins. The Frax protocol is a two token system - the stablecoin FRAX, and Frax Shares (FXS), which are used to stabilize the system, accrue seigniorage revenue and fees, as well as provide governance rights. The degree to which FRAX is collateralized is determined by market forces, with the collateral ratio determining the proportion of FRAX outstanding to be backed by collateral, with the remainder in FXS.
+details:
+  - title: Type of Stablecoin
+    value: |
+      Algorithmic Stablecoins: Frax is a unique and innovative stablecoin. Unlike traditional stablecoins, which are typically pegged to a single asset like the US dollar, Frax utilizes a dynamic system that combines both collateralized and algorithmic approaches. This hybrid model is designed to provide the stability of collateral-backed coins with the flexibility and scalability of algorithmic stablecoins.
+
+  - title: Stability Mechanism
+    value: |
+      Frax operates on a fractional-algorithmic basis, meaning that the amount of collateral backing each Frax coin can vary based on market conditions. When demand for Frax is high, the protocol reduces the amount of collateral needed, allowing for more coins to be minted. Conversely, when demand is low, the protocol increases the collateral ratio to maintain stablity.
+    
+  - title: Backing Assets
+    value: |
+      1.FXS
+      2.FPI
+      3.FPIS
+  - title: History
+    value: |
+      Before Frax launched in 2020, stablecoins that existed at the time were either collateral-backed or were minted and burned algorithmically. Collateralized stablecoins are not capital-efficient, while fully algorithmic stables are intrinsically fragile and are vulnerable to breakage in erratic market conditions. Frax Finance brings together the best of both worlds, eliminating their issues to produce the first fractional-algorithmic stablecoin protocol.
+
+      The project, which started in May 2019, was formerly called Decentral Bank and is founded by Sam Kazemian, Travis Moore, and Jason Huan. Since its launch, FRAX has had its supply partially backed by collateral and the rest of the supply left floating. The amount of supply that is backed is based on the collateral ratio of the protocol.
+
+      Frax Finance is a two-token protocol made up of FRAX the stablecoin and Frax Shares which is its governance token. This structure is optimised to maintain the fiat peg stability, accrue seigniorage fees, and empower community members with governance rights. The protocol also makes use of a pool contract that holds USDC collateral. Further to the two-token model, the algorithm behind the minting and redemption of FRAX relies on interacting with the FXS token. For example, a collateral ratio of 75% would mean a newly minted FRAX of $1 value will be backed by $0.75 in a stablecoin asset, and $0.25 of Frax Shares will be burnt. At all times, the amount of FRAX minted would always be equivalent to the amount of value committed to protocol, either as collateral or by interacting with FXS.
+
+      Frax v1 is the first iteration of the fractional algorithm used to create FRAX. The protocol uses fully on-chain oracles to obtain the prices of FRAX, FXS and collateral. The Uniswap oracle provides the time-weighted average prices of ETH, USDT and USDC while the Chainlink oracle provides the USD price. The v1 algorithm is essentially a banking algorithm that adjusts its collateral ratio (akin to a bank's balance sheet ratio) according to market forces, evidenced by arbitrage trades that occur on the FRAX and FXS tokens.
+
+      In March 2021, Frax v2 was launched, introducing the concept of Algorithmic Market Operations controllers (AMOs) as lego pieces to build and enact fully autonomous monetary policies on the Frax protocol. These AMOs would run on the foundation of the base stability mechanism conceptualized in Frax v1. At the time of writing, four AMOs are fully implemented and currently utilize the protocol's capital assets more efficiently, thus accruing even more value to FXS holders. Two more AMOs are currently in development and have to pass through the protocol's decentralized governance process before implementation.
+
+      Frax's founder, Sam, has announced the development of a crypto native Consumer Price Index (CPI). The proposed CPI will have its own native stablecoin (Frax Price Index) and governance token (Frax Price Index Shares). The new product will enable FRAX to break free of the USD peg and become the first truly decentralized and permissionless crypto native unit of account. Holders of the new FPI token will experience an increase in the dollar-denominated value of their holdings every month. Hence, the FPI also seeks to serve as a hedge against inflation.
+
+      
+
+team:
+  - avatar: 
+    name: Jason Huan
+    title: Co-Founder of Blockchain
+    twitter: https://twitter.com/jasonhuan_
+    linkedin: https://www.linkedin.com/in/jason-huan/
+  - avatar: 
+    name: Sam Kazemian
+    title: Founder of Frax Finance and Co-Founder of Everipedia
+    twitter: https://twitter.com/samkazemian
+  # - avatar: 
+  #   name: 
+  #   title: 
+  #   twitter: 
+  #   linkedin: 
+
+social_media:
+  # twitter: # [Last Week, 2 Weeks Ago, 3 Weeks Ago]
+  #   - title: Tweets
+  #     value: [
+  #   - title: Views
+  #     value: [41.54K/8.31K, 87.27K/9.70K, 18.03K/9.01K]
+  #   - title: Likes
+  #     value: [175/35, 401/44, 165/82]
+  #   - title: Comments
+  #     value: [22/4, 62/6, 13/6]
+  #   - title: Shares
+  #     value: [42/8, 90/10, 81/40]
+
+financial_analysis:
+  financial_audit:
+    auditors: N.A.
+    score: N.A.
+    analysis: N.A.
+    reserve_holdings_percentage:
+      - title: FPI
+        value: 93.299
+      - title: FPIS
+        value: 44.094
+      - title: FXS
+        value: 649.59
+  market_capitalization_and_liquidity:
+    - title: Dollar volume (24H)
+      value: 
+    - title: Market cap	Rank
+      value: 
+    - title: FDV
+      value: 
+    - title: Turnover rate
+      value: 
+    - title: Circulating supply
+      value: 
+    - title: Total supply
+      value: 
+    - title: Max supply
+      value: Unlimited
+    - title: All time high
+      value: 
+    - title: All time high date
+      value: 
+    - title: Down from all time high
+      value: 
+    - title: All time low
+      value: 
+    - title: All time low date
+      value: 
+    - title: Up from all time low
+      value: 
+    - title: Risks of depegging
+      value: Minimum
+  investments:
+    # - round: "-"
+    #   amount: 
+    #   valuation: "-"
+    #   date: 
+    #   investors: |
+    #     * Andreessen Horowitz
+    #     * Polychain
+    #     * FBG Capital
+  list_of_investors:
+    # - name: 1confirmation
+    #   logo: assets/1confirmation.jpg
+
+security_and_compliance:
+  - title: Security Assurance
+    value:
+      - title: Smart Contract Audits
+        value: Contracts audited once by certik .
+      - title: Security Auditors
+        value: Certik 
+      - title: Security Audit Rating
+        value: A-
+      - title: Bug Bounty Programs
+        value: 
+      - title: Insurance Coverage
+        value: No
+      - title: Security Issue History
+        value: 
+      - title: Resolution of Past Incidents
+        value: N.A.
+      - title: Multi-Signature Wallets
+        value: 
+      - title: External Security Partners
+        value: Unknown
+      - title: Decentralized Security Measures
+        value: Unknown
+      - title: Two-Factor Authentication (2FA)
+        value: Unknown
+      - title: Incident Response Plan
+        value: Unknown
+      - title: Community Security Awareness
+        value: 
+      - title: Network Security Measures
+        value: Unknown
+
+  - title: Regulatory Compliance
+    value:
+      - title: Regulatory Framework
+        value:
+      - title: Licenses Obtained
+        value:
+      - title: AML/CFT Compliance KYC Procedures
+        value:
+      - title: Data Protection
+        value:
+      - title: Consumer Protection Measures
+        value:
+      - title: Reporting and Transparency
+        value:
+      - title: Jurisdictional Operation Limits
+        value:
+      - title: Tax Compliance
+        value:
+      - title: Legal Entity Structure
+        value:
+      - title: Ongoing Compliance Monitoring
+        value:
+      - title: Regulatory Engagement
+        value:
+      - title: External Compliance Audits
+        value:
+      - title: Operational Compliance
+        value:
+                  
+  - title: Technological Details
+    value:
+      - title: Technical Documents
+        value: https://docs.frax.finance
+      - title: Smart Contract
+        value: https://etherscan.io/address/0x853d955acef822db058eb8505911ed77f175b99e#code#F17#L5
+      - title: Token launch
+        value: |
+          * Ethereum: 0x853d955acef822db058eb8505911ed77f175b99e
+          * Solana: FR87nWEUxVgerFGhZM8Y4AggKGLnaXswr1Pd8wZ4kZcp
+          * BNB Smart Chain: 0x90C97F71E18723b0Cf0dfa30ee176Ab653E89F40
+          * Polygon: 0x45c32fA6DF82ead1e2EF74d17b76547EDdFaFF89
+          * Arbitrum: 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F
+
+      - title: Detailed Description of Technology
+        value: |
+          * The Frax Protocol issues innovative, decentralized stablecoins and contains subprotocols to support them. The Frax Protocol currently issues 3 stablecoins: FRAX, FPI, and frxETH. The Frax Protocol also has 3 subprotocols within it that integrate its stablecoins: Fraxlend, Fraxswap, and Fraxferry.
+          * The Frax Protocol currently issues 3 stablecoins. FRAX, a USD pegged asset. The Frax Price Index (FPI) stablecoin, the first stablecoin pegged to a basket of consumer goods creating its own unit of account separate from any nation state denominated money. FraxEther (frxETH), pegged to ETH for use as a replacement for WETH in smart contracts.
+  - title: Governance and Decentralization
+    value:
+      - title: Governance Structure
+        value: |
+          Governed by the Frax Finance protocol, incorporating decentralized mechanisms. Frax Share (FXS) acts as the governance token for the ecosystem.
+      - title: Voting Rights
+        value: |
+          FXS holders have governance rights within the Frax ecosystem, influencing decisions through community proposals and voting mechanisms.
+      - title: Token Governance
+        value: |
+          FRAX combines collateralized and algorithmic approaches for stability. Governance includes decisions on protocol adjustments, collateral ratios, and integrations.
+      - title: Proposal Submission Process
+        value: |
+          Proposals are submitted and voted on by FXS holders through the governance platform, allowing community-driven changes and protocol upgrades.
+      - title: Voting Mechanism
+        value: |
+          Utilizes a decentralized voting system through which FXS holders participate in governance decisions, leveraging platforms like Snapshot for transparent and accessible voting.
+      - title: Token Distribution
+        value: |
+          FRAX's supply adjusts algorithmically, backed by a mix of collateral and algorithmic mechanisms. FXS serves as the governance token, capturing value and enabling protocol governance.
+      - title: Stakeholder Diversity
+        value: |
+          Involves FRAX users, FXS holders, developers, and external DeFi projects. The ecosystem encourages broad participation and collaboration across its stablecoin and lending platforms.
+      - title: On-chain Governance Participation
+        value: |
+          Enabled through the FRAX governance system, allowing FXS holders to propose, discuss, and vote on changes directly affecting the protocol and its stablecoins.
+      - title: Reserve Management
+        value: |
+          Managed dynamically, with reserves consisting of cryptocurrencies and potentially other assets, adjusted according to the protocol's needs and governance decisions.  
+      - title: Emergency Decision Making
+        value: |
+          The governance framework likely includes mechanisms for rapid response to critical protocol issues, though specific emergency processes are not detailed.
+      - title: Fork Management
+        value: |
+          Not explicitly covered, but the decentralized nature of governance suggests community-driven decisions on major protocol changes or forks.
+      - title: Compliance Oversight
+        value: |
+          Frax Finance emphasizes regulatory compliance and transparency, with mechanisms in place for auditability and adherence to financial regulations.
+      - title: Accountability Mechanisms
+        value: 
