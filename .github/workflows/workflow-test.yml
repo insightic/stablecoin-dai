@@ -1,0 +1,43 @@
+name: Workflow test
+
+on:
+    push:
+      branches:
+        - 'main'
+        - 'dev'
+
+jobs:
+  run_analysis:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # Fetches all history for all tags and branches
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install from private repository
+      run: |
+        pip install git+https://$GITHUB_TOKEN:x-oauth-basic@github.com/insightic/pyinsightic.git#egg=pyinsightic
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Run pyinsightic SosoValue analysis for the first project directory
+      run: |
+        for dir in */ ; do
+        if [ -f "${dir}data.yml" ]; then
+            echo "Processing folder: $dir"
+            project_dir=$(pwd)/$dir
+            python -c "import os; os.chdir('${dir}'); from pyinsightic.sosovalue import SosoValue; analysis = SosoValue(project_dir='${project_dir}'); analysis.run_analysis();"
+            echo "Analysis completed for $dir"
+            cat "${dir}sosovalue.json"
+            break
+        fi
+        done
