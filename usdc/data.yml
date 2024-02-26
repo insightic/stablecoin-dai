@@ -257,73 +257,42 @@ security_and_compliance:
     value:
       - title: Governance Structure
         value: |
-          MakerDAO's governance structure is decentralized, meaning it operates based on the collective decision-making of its token holders. The
-          organization uses a DAO model, where decisions are made through proposals and voting to ensure democratic governance over its protocols
-          and operations.
+          Managed by the CENTRE organization, aiming for independent operation separate from Circle, with a focus on R&D, compliance, certification,
+          and support for underlying blockchain infrastructure.
       - title: Voting Rights
         value: |
-          Voting rights within MakerDAO are granted to holders of its governance token, MKR. MKR token holders can propose changes, vote on various
-          governance proposals, and have a say in the direction and management of the protocol. MKR voting weight is proportional to the amount of
-          MKR a voter stakes in the voting contract, DSChief.
+          Not explicitly covered; however, network governance includes distributed consensus and voting mechanisms leveraging a CENTRE-specific token.
       - title: Token Governance
         value: |
-          Token governance in MakerDAO revolves around the MKR token. MKR holders are responsible for governing the Maker Protocol, including
-          risk management, collateral decisions, and the stability fee adjustments for DAI.
+          CENTRE focuses on stablecoin management, with Circle contributing core technology and IP. The governance model seems centralized with an
+          organizational approach.
       - title: Proposal Submission Process
         value: |
-          Proposals can be submitted by any MKR token holder. These proposals might range from changes to the system, updates to the protocol,
-          or modifications to governance itself. There's usually a formal process for submission, including a discussion phase before a proposal
-          goes to vote. https://vote.makerdao.com
+          Not specifically mentioned; governance expected to include consensus mechanisms and possibly a role for the CENTRE-specific token in decision-making.
       - title: Voting Mechanism
         value: |
-          MakerDAO utilizes an on-chain voting mechanism, allowing MKR holders to vote directly on proposals. Votes are typically weighted by the
-          amount of MKR a voter holds, ensuring that those with a larger stake in the protocol have a proportionally larger say.
+          Implied to involve a CENTRE-specific token for network decision-making, though details are sparse.
       - title: Token Distribution
         value: |
-          **DAI** <br />
-          DAI does not have an initial allocation. <br />
-          DAI is an algorithmic stablecoin that is collateralized by other cryptocurrencies. It maintains its peg to the US dollar through a system
-          of smart contracts which automatically adjust the total supply of DAI to keep its price stable. When the price of DAI is above $1, the system
-          encourages the creation of more DAI to bring the price down, which is done by decreasing the stability fee (interest rate) for creating DAI.
-          Conversely, when the price of DAI is below $1, the system discourages the creation of more DAI to push the price up, which is done by increasing
-          the stability fee. Therefore, the supply of DAI is not predetermined but is constantly changing in response to market conditions. You can find
-          the latest amount on https://makerburn.com/#/charts
-
-          **MKR** <br />
-          The Initial token distribution of MKR is as follows:
-          * 69.50% is allocated to Founders & Project
-          * 15.00% is allocated to Team
-          * 4.00% is allocated to Seed Round 1
-          * 6.00% is allocated to Seed Round 2
-          * 5.50% is allocated to Seed Round 3
-          MakerDAO launched with 1,000,000 MKR tokens during inception. The total number of MKR in existence can fluctuate based on how the system runs.
-          When the Maker vault is liquidated, and the collateral auction and Maker Buffer of Dai are insufficient to repay the vault debt, the protocol will
-          mint MKR (increasing the number of MKR in circulation), which will then be sold to Dai bidders. Conversely, if Dai's auction proceeds and stability
-          fee payments exceed the Maker buffer limit (a figure set by Maker governance), they will sell excess Dai in exchange for MKR through a surplus auction.
-          The Maker Protocol automatically destroys the collected MKR, thus reducing the total supply of MKR.
+          CENTRE stablecoins are minted and burned by licensed network members, with Circle as a founding member.
       - title: Stakeholder Diversity
         value: |
-          MakerDAO's ecosystem includes diverse stakeholders, including MKR token holders, DAI users, developers, and integration partners.
+          Circle and other potential network members; specific diversity aspects are not detailed.
       - title: On-chain Governance Participation
         value: |
-          Participation in governance is conducted on-chain, meaning that all votes and proposals are recorded on the Ethereum blockchain. This ensures transparency
-          and immutability of governance actions. Detailed analysis to be included.
+          Governance mechanisms mentioned but not detailed; involvement likely through CENTRE tokens for decision-making.
       - title: Reserve Management
         value: |
-          The MakerDAO system manages reserves through the collateralization of assets to mint DAI. The reserves are in the form of various cryptocurrencies submitted
-          by users, managed by smart contracts to ensure solvency and stability of DAI.
+          CENTRE does not directly manage reserves; this is done by network members with CENTRE enforcing compliance and solvency.
       - title: Emergency Decision Making
         value: |
-          MakerDAO has mechanisms in place for emergency decision-making, known as Emergency Shutdown. This can be triggered if the system is under threat, safeguarding
-          users' assets and the integrity of DAI.
+          Not specifically covered; the document focuses more on the operational and technological framework.
       - title: Fork Management
         value: |
-          In the event of a significant change or fork in the protocol, governance decisions would guide the process, ensuring that stakeholders have a say in the
-          direction and implementation of such changes.
+          Not applicable or not mentioned; CENTRE operates on existing blockchains like Ethereum with smart contracts for stablecoin management.
       - title: Compliance Oversight
         value: |
-          Compliance oversight potentially comes from the decentralized governance itself or through external advisories and audits.
+          CENTRE aims for a global compliance function, working with wallets globally, contributing to underlying blockchain infrastructure.
       - title: Accountability Mechanisms
         value: |
-          Accountability is built into the governance model through the visibility of all transactions and votes on the blockchain, along with community oversight and
-          the possibility for stakeholders to propose changes if the system's integrity is at risk.
+          Focus on optional certification, compliance reviews, and due diligence programs for network participants to maintain trust and legal compliance.
