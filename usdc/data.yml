@@ -118,115 +118,59 @@ social_media:
 
 financial_analysis:
   financial_audit:
-    auditors: N.A.
+    auditors: Deloitte & Touche LLP
     score: N.A.
-    analysis: N.A.
+    analysis: |
+      Management's assertion that the Fair Value of Assets Held in USDC Reserve is equal to or greater than USDC in
+      Circulation as of the Report Dates in accordance with the criteria defined in the accompanying USDC Reserve
+      Report is fairly stated, in all material respects. 
     reserve_holdings_percentage:
-      - title: RWA
-        value: 0.56
-      - title: ETH
-        value: 0.36
-      - title: Stablecoins
+      - title: U.S. Treasury Repurchase Agreements
+        value: 0.60
+      - title: U.S. TREASURY SECURITIES
+        value: 0.29
+      - title: Cash held at regulated financial institutions
+        value: 0.07
+      - title: Cash held in Circle Reserve Fund
         value: 0.04
-      - title: BTC
-        value: 0.03
-      - title: Others
-        value: 0.01
   market_capitalization_and_liquidity:
     - title: Dollar volume (24H)
-      value: $238,544,833.18
+      value: $4,645,474,613.82
     - title: Market cap	Rank
-      value: 23 ($4,888,486,141.03)
+      value: 7 ($28,084,007,788.86)
     - title: FDV
-      value: $4,888,486,141.03
+      value: $28,084,324,873.43
     - title: Turnover rate
-      value: 4.88%
+      value: 16.54%
     - title: Circulating supply
-      value: 4,892,546,955.00
+      value: $28,089,625,714.00
     - title: Total supply
-      value: 4,892,546,955.00
+      value: $28,089,942,862.00
     - title: Max supply
       value: Unlimited
     - title: All time high
-      value: $1.059
+      value: $1.043
     - title: All time high date
-      value: 2020.03.15
+      value: 2018.11.15
     - title: Down from all time high
-      value: -5.65%
+      value: -4.13%
     - title: All time low
-      value: $0.96699
+      value: $0.96558
     - title: All time low date
       value: 2023.03.15
     - title: Up from all time low
-      value: +3.33%
+      value: +3.55%
     - title: Risks of depegging
       value: Minimum
   investments:
-    - round: "-"
-      amount: $12,000,000
-      valuation: "-"
-      date: 2017/12
-      investors: |
-        * Andreessen Horowitz
-        * Polychain
-        * FBG Capital
-        * 1confirmation
-        * Distributed Capital Partners
-        * Walden Bridge Capital
-        * Wyre Capital
-        * Scanate
-    - round: "-"
-      amount: $15,000,000
-      valuation: "-"
-      date: 2018/09
-      investors: |
-        * Andreessen Horowitz
-    - round: "-"
-      amount: $27,500,000
-      valuation: "-"
-      date: 2019/12
-      investors: |
-        * Dragonfly
-        * Paradigm
+    # - round: "-"
+    #   amount: "-"
+    #   valuation: "-"
+    #   date: "-"
+    #   investors: "-"
   list_of_investors:
-    - name: 1confirmation
-      logo: assets/1confirmation.jpg
-    - name: A.Capital
-      logo: assets/A.Capital.png
-    - name: Andreessen Horowitz
-      logo: assets/Andreessen Horowitz.png
-    - name: Bain Capital Ventures
-      logo: assets/Bain Capital Ventures.png
-    - name: Distributed Capital Partners
-      logo: assets/Distributed Capital Partners.jpg
-    - name: Dragonfly
-      logo: assets/Dragonfly.jpg
-    - name: FBG Capital
-      logo: assets/FBG Capital.jpg
-    - name: FinTech Collective
-      logo: assets/FinTech Collective.jpg
-    - name: Hack VC
-      logo: assets/Hack VC.jpg
-    - name: IDEO CoLab Ventures
-      logo: assets/IDEO CoLab Ventures.png
-    - name: IOSG
-      logo: assets/IOSG.jpg
-    - name: Inflection
-      logo: assets/Inflection.jpg
-    - name: ParaFi Capital
-      logo: assets/ParaFi Capital.jpg
-    - name: Paradigm
-      logo: assets/Paradigm.jpg
-    - name: Placeholder VC
-      logo: assets/Placeholder VC.jpg
-    - name: Polychain
-      logo: assets/Polychain.png
-    - name: Standard Crypto
-      logo: assets/Standard Crypto.jpg
-    - name: Uncorrelated
-      logo: assets/Uncorrelated.png
-    - name: Walden Bridge Capital
-      logo: assets/Walden Bridge Capital.jpg
+    # - name: "-"
+    #   logo: "-"
 
 security_and_compliance:
   - title: Security Assurance
