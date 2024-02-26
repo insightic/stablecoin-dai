@@ -27,8 +27,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y chromium-browser
         sudo apt-get install -y chromium-chromedriver
-        # Optionally, symlink chromedriver to be discoverable in PATH
-        sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
 
     - name: Install from private repository
       run: |
