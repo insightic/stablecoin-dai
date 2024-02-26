@@ -176,27 +176,21 @@ security_and_compliance:
   - title: Security Assurance
     value:
       - title: Smart Contract Audits
-        value: Contracts audited by two reputable firms; all findings addressed before implementation.
+        value: Contracts audited once by Callisto Network.
       - title: Security Auditors
-        value: |
-          * Trail of Bits (Tier 1)
-          * PeckShield (Tier 1)
-          * Runtime Verification
+        value: Callisto Network
       - title: Security Audit Rating
-        value: A-
+        value:
       - title: Bug Bounty Programs
-        value: |
-          Active bug bounty program with rewards up to $100,000 for critical vulnerabilities.
-          Since the launch of the program, three high-severity bugs and one critical-severity bug have been discovered,
-          resulting in bounty reward payments totaling $90,000. https://security.makerdao.com/bug-bounty-program
+        value:
       - title: Insurance Coverage
         value: No
       - title: Security Issue History
-        value: No security breaches. No fund losses. Critical vulnerability was found and fixed in 2019.
+        value: No
       - title: Resolution of Past Incidents
         value: N.A.
       - title: Multi-Signature Wallets
-        value: Use of multi-signature wallets for treasury and operational funds to prevent unauthorized access.
+        value:
       - title: External Security Partners
         value: Unknown
       - title: Decentralized Security Measures
@@ -206,104 +200,58 @@ security_and_compliance:
       - title: Incident Response Plan
         value: Unknown
       - title: Community Security Awareness
-        value: Programs to educate the user community on security best practices and personal account safety.
+        value:
       - title: Network Security Measures
         value: Unknown
 
   - title: Regulatory Compliance
     value:
       - title: Regulatory Framework
-        value: |
-          MakerDAO operates in a decentralized manner, making it challenging to classify within traditional
-          financial services regulatory frameworks in the UK and Europe. Its structure as a DAO and the way
-          it facilitates transactions without acting as a lender in a traditional sense place it outside of
-          many existing regulations that would apply to consumer credit providers or P2P lending platforms.
+        value:
       - title: Licenses Obtained
-        value: N.A.
+        value:
       - title: AML/CFT Compliance KYC Procedures
-        value: |
-          The decentralized nature of MakerDAO complicates the application of typical Anti-Money Laundering
-          (AML) and Counter-Financing of Terrorism (CFT) regulations, as well as Know Your Customer (KYC) procedures.
-          Traditional compliance mechanisms, like customer information collection, are not straightforwardly
-          applicable to a system where lending and borrowing are mediated by smart contracts without a central authority.
+        value:
       - title: Data Protection
-        value: |
-          * Blockchain Transparency: Transactions on the Ethereum blockchain are transparent and immutable.
-            This means once a transaction is recorded, it cannot be altered or deleted, providing a clear audit trail.
-          * Anonymity and Pseudonymity: Users interact with the blockchain using addresses that do not directly
-            reveal their real-world identities. However, this does not mean activities are entirely anonymous but pseudonymous, offering a level of privacy.
-          * Smart Contract Security: MakerDAO's operations are managed by smart contracts, which are self-executing
-            contracts with the terms of the agreement directly written into code. While smart contracts are secure
-            by design, their security heavily depends on the quality of the code. Vulnerabilities in smart contracts
-            can potentially be exploited, highlighting the importance of rigorous code audits and security practices.
+        value:
       - title: Consumer Protection Measures
-        value: |
-          * Decentralization and Governance: MakerDAO is governed by a decentralized community of MKR token holders who
-            vote on changes to the protocol. This governance model allows for a democratic decision-making process, where
-            changes aimed at protecting consumers or adjusting the system for better stability can be proposed and voted upon.
-          * Collateralization and Liquidation Mechanisms: To mint DAI, users must over-collateralize, meaning they must
-            deposit more value in Ethereum or other accepted assets than the amount of DAI they wish to generate. This mechanism
-            protects against volatility. If the collateral's value falls below a certain threshold, it can be liquidated to
-            ensure the system remains solvent, protecting the value of DAI.
-          * Integration with External Platforms: Consumer protection on the user interface level, such as data privacy and
-            transaction security, also depends on how third-party platforms integrating MakerDAO's protocols handle user data
-            and security.
+        value:
       - title: Reporting and Transparency
-        value: |
-          The open nature of blockchain technology ensures that all transactions and the status of collateralized positions within
-          MakerDAO and decision-making processes are publicly visible and verifiable on the Ethereum blockchain. This provides
-          a form of transparency and allows for independent audits, although the DAO itself does not follow traditional
-          reporting mechanisms.
+        value:
       - title: Jurisdictional Operation Limits
-        value: N.A.
+        value:
       - title: Tax Compliance
-        value: |
-          MakerDAO is paying taxes on its US ETF trades in Switzerland. The investments are part of MakerDAO's growing real-world asset
-          exposure. https://www.dlnews.com/articles/defi/makerdao-pays-over-a-million-in-stamp-duty-tax-to-switzerland
+        value:
       - title: Legal Entity Structure
-        value: |
-          Maker Ecosystem Growth Holdings, Inc <br />
-          MakerDAO, which is not a traditional legal entity structure
+        value:
       - title: Ongoing Compliance Monitoring
-        value: Unknown
+        value:
       - title: Regulatory Engagement
-        value: |
-          MakerDAO has approved the creation of a new 5m fund dedicated to expenses related to legal defense.
-          https://cointelegraph.com/news/maker-dao-launches-5m-legal-defense-fund
+        value:
       - title: External Compliance Audits
-        value: No
+        value:
       - title: Operational Compliance
-        value: |
-          The operation of MakerDAO relies on the principles of decentralization, with mechanisms such as automated trading bots (Keepers)
-          to maintain DAI's peg to the dollar and manage the liquidation of collateral in a decentralized manner. These operational aspects
-          are designed to ensure the protocol's stability and compliance with its internal rules without central oversight.
+        value:
 
   - title: Technological Details
     value:
       - title: Technical Documents
-        value: https://docs.makerdao.com
+        value: https://developers.circle.com/stablecoins/docs/what-is-usdc
       - title: Smart Contract
-        value: https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f#code
+        value: https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code#L1
       - title: Token launch
         value: |
-          * Ethereum: 0x6b175474e89094c44da98b954eedeac495271d0f
-          * Solana: EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o
-          * BNB Smart Chain: 0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3
-          * Polygon: 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
-          * Optimism: 0xda10009cbd5d07dd0cecc66161fc93d7c9000da1
-          * Arbitrum: 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1
+          * Ethereum: 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+          * Solana: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+          * BNB Smart Chain: 0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d
+          * Polygon: 0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359
+          * Optimism: 0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85
+          * Arbitrum: 0xaf88d065e77c8cC2239327C5EDb3A432268e5831
       - title: Detailed Description of Technology
         value: |
-          * DAI is created and managed by the MakerDAO protocol, which is a decentralized autonomous organization (DAO) running on the Ethereum
-            blockchain. This protocol includes a series of smart contracts that manage the issuance and stability of DAI.
-          * To mint DAI, users lock collateral, such as ETH or other supported assets, into a smart contract called a Vault (previously known as
-            a Collateralized Debt Position or CDP). The user can then generate DAI against this collateral. The amount of DAI that can be minted
-            is determined by the collateralization ratio, which ensures that there is always more value locked up than the amount of DAI in circulation.
-          * DAI maintains its peg to the USD through external market mechanisms and internal economic incentives. For example, when the price of
-            DAI is above $1, users are incentivized to pay back their DAI (which burns the token) and unlock their collateral, increasing the supply
-            of DAI and pushing the price down. Conversely, when the price is below $1, users are encouraged to mint more DAI by opening new Vaults.
-          * DAI represents a significant technological advancement in creating a decentralized, stable, and scalable currency. Its success has not only
-            proven the concept of a stablecoin but also paved the way for more complex financial systems to be built on blockchain technology.
+          * USDC Token: USD Coin (USDC) is a type of cryptocurrency known as a stablecoin. Stablecoins are designed to maintain a stable value
+            as opposed to the high volatility observed in other cryptocurrencies like Bitcoin or Ethereum. USDC, in particular, aims to maintain
+            a 1:1 peg to the US dollar.
 
   - title: Governance and Decentralization
     value:
