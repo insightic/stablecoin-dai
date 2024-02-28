@@ -7,7 +7,24 @@ on:
         - 'dev'
 
 jobs:
+  yaml-format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install yamllint
+        run: pip install yamllint
+
+      - name: Run yamllint
+        run: yamllint .
+
   run_analysis:
+    needs: yaml-format-check
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -51,6 +68,7 @@ jobs:
             python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
             python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
             python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
+            python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
             echo "Analysis completed for $dir"
             
         fi
@@ -68,5 +86,6 @@ jobs:
         git add */sosovalue.json
         git add */linkedin.json
         git add */twitter.json
+        git add */scv_results.json
         git commit -m "Update social analysis results"
         git push
