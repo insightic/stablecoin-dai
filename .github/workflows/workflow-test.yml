@@ -51,6 +51,7 @@ jobs:
             python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
             python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
             python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
+            python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
             echo "Analysis completed for $dir"
             break
         fi
@@ -68,5 +69,6 @@ jobs:
         git add */sosovalue.json
         git add */linkedin.json
         git add */twitter.json
+        git add */scv_results.json
         git commit -m "Update social analysis results"
         git push
