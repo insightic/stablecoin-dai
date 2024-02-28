@@ -1,10 +1,11 @@
+---
 name: Workflow test
 
-on:
-    push:
-      branches:
-        - 'main'
-        - 'dev'
+"on":
+  push:
+    branches:
+      - "main"
+      - "dev"
 
 jobs:
   yaml-format-check:
@@ -15,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install yamllint
         run: pip install yamllint
@@ -28,64 +29,64 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      packages: write      
+      packages: write
 
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0 # Fetches all history for all tags and branches
+      - uses: actions/checkout@v3
+        with:
+          # Fetches all history for all tags and branches
+          fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    - name: Install Chromium and ChromeDriver
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y chromium-browser
-        sudo apt-get install -y chromium-chromedriver
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install Chromium and ChromeDriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+          sudo apt-get install -y chromium-chromedriver
 
-    - name: Check Chromium installation
-      run: |
-        which chromium-browser
-        dpkg -L chromium-browser
+      - name: Check Chromium installation
+        run: |
+          which chromium-browser
+          dpkg -L chromium-browser
 
-    - name: Install from private repository
-      run: |
-        pip install git+https://$GITHUB_TOKEN:x-oauth-basic@github.com/insightic/pyinsightic.git#egg=pyinsightic
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
+      - name: Install from private repository
+        run: |
+          pip install git+https://$GITHUB_TOKEN:x-oauth-basic@github.com/insightic/pyinsightic.git#egg=pyinsightic
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
 
-    - name: Check pyinsightic availability
-      run: python -c "import pyinsightic; print('pyinsightic is available')"
-      
-    - name: Run pyinsightic SosoValue analysis for the first project directory
-      run: |
-        for dir in */ ; do
-        if [ -f "${dir}data.yml" ]; then
-            echo "Processing folder: $dir"
-            export PYTHONPATH="$PYTHONPATH:$(pwd)"
-            python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
-            python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
-            python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
-            python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
-            echo "Analysis completed for $dir"
-            
-        fi
-        done
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+      - name: Check pyinsightic availability
+        run: python -c "import pyinsightic; print('pyinsightic is available')"
 
-    - name: Commit and Push results
-      run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "GitHub Actions"
-        git add */sosovalue.json
-        git add */linkedin.json
-        git add */twitter.json
-        git add */scv_results.json
-        git commit -m "Update social analysis results"
-        git push
+      - name: Run pyinsightic SosoValue analysis for the first project directory
+        run: |
+          for dir in */ ; do
+          if [ -f "${dir}data.yml" ]; then
+              echo "Processing folder: $dir"
+              export PYTHONPATH="$PYTHONPATH:$(pwd)"
+              python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
+              python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
+              python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
+              python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
+              echo "Analysis completed for $dir"
+          fi
+          done
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+
+      - name: Commit and Push results
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git add */sosovalue.json
+          git add */linkedin.json
+          git add */twitter.json
+          git add */scv_results.json
+          git commit -m "Update social analysis results"
+          git push
