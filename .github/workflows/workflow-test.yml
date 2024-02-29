@@ -74,6 +74,7 @@ jobs:
                 python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
                 echo "Analysis completed for $dir"
             fi
+          fi
           done
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
