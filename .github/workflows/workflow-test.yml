@@ -4,7 +4,6 @@ name: Workflow test
 "on":
   push:
     branches:
-      - "main"
       - "dev"
 
 jobs:
@@ -64,15 +63,15 @@ jobs:
       - name: Run pyinsightic SosoValue analysis for the first project directory
         run: |
           for dir in */ ; do
-          if [ -f "${dir}data.yml" ]; then
-              echo "Processing folder: $dir"
-              export PYTHONPATH="$PYTHONPATH:$(pwd)"
-              python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
-              echo "Analysis completed for $dir"
-          fi
+            if [ -f "${dir}data.yml" ]; then
+                echo "Processing folder: $dir"
+                export PYTHONPATH="$PYTHONPATH:$(pwd)"
+                python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
+                python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
+                python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
+                python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run()"
+                echo "Analysis completed for $dir"
+            fi
           done
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
