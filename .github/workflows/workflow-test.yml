@@ -60,7 +60,7 @@ jobs:
       - name: Check pyinsightic availability
         run: python -c "import pyinsightic; print('pyinsightic is available')"
 
-      - name: Run pyinsightic SosoValue analysis for the first project directory
+      - name: Run pyinsightic SosoValue analysis
         run: |
           for dir in */ ; do
           if [ -f "${dir}data.yml" ]; then
