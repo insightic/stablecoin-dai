@@ -2,9 +2,8 @@
 name: Workflow test
 
 on:
-  push:
   workflow_run:
-    workflows: ["YAML Lint Check"]
+    workflows: [YAML Lint Check]
     branches: [dev]
     types:
       - completed
