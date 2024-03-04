@@ -51,6 +51,9 @@ jobs:
           which chromium-browser
           dpkg -L chromium-browser
 
+      - name: Install Poppler
+        run: sudo apt-get install -y poppler-utils
+
       - name: Install from private repository
         run: |
           pip install git+https://$GITHUB_TOKEN:x-oauth-basic@github.com/insightic/pyinsightic.git#egg=pyinsightic
