@@ -1,0 +1,236 @@
+{
+    "report_name": "PeckShield-207912a52540a.pdf",
+    "biz_content": "Stablecoin is the token issued by FD121 LIMITED. It is upgradeable ERC20 token which the owner can\nmint and burn tokens, pause the contract and freeze the speci c user action.\nThe basic information of the audited Stablecoin token is as follows:\nTable 1.1: Basic Information Of Stablecoin Contract\n|Item|Description|\n|Name|FD121 LIMITED|\n|Type|ERC20 Token Contract|\n|Platform|Solidity|\n|Audit Method|Whitebox|\n|Audit Completion Date|May 10, 2023|In the following, we show the Git repository of reviewed  les and the commit hash value used in\nthis audit.\n  https://github.com/FD-121/fd-stablecoin/blob/main/src/Stablecoin.sol (ec35f7c) 4/16\n\nIn the Stablecoin token contract, there is a privileged account, i.e., owner, which plays a critical\nIn particular, it has the privilege to\nrole in governing and regulating the token-related operations.\nmint additional tokens into circulation, burn the tokens, blacklist a speci c address and pause the\ntoken transfers and other operations. Our analysis shows that the privileged account needs to be\nscrutinized. In the following, we examine the privileged owner account and its related privileged access\nin current contract.\n|function mint(uint256 amount) external onlyOwner returns (bool) {|\n|_mint(_msgSender(), amount);|\n|emit Mint(_msgSender(), _msgSender(), amount);|\n|return true;|\n|}|\n\n|/**|\n|* @dev See {ERC20-_burn}.|\n|* @param amount Burn amount|\n|* @return True if successful|\n|* Can only be called by the current owner.|\n|*/|\n|function burn(uint256 amount) external onlyOwner returns (bool) {|\n|_burn(_msgSender(), amount);|\n|emit Burn(_msgSender(), _msgSender(), amount);|\n|return true;|\n|}|\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n13/16\n\n|/**|\n|* @dev Adds account to frozen state.|\n|* Can only be called by the current owner.|\n|*/|\n|function freeze(address account) external onlyOwner {|\n|frozen[account] = true;|\n|emit Freeze(_msgSender(), account);|\n|}|\n\n|/**|\n|* @dev Removes account from frozen state.|\n|* Can only be called by the current owner.|\n|*/|\n|function unfreeze(address account) external onlyOwner {|\n|delete frozen[account];|\n|emit Unfreeze(_msgSender(), account);|\n|}|\n\n|/**|\n|* @dev Triggers stopped state.|\n|* Can only be called by the current owner.|\n|*/|\n|function pause() external onlyOwner {|\n|_pause();|\n|}|58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\nListing 4.1: stablecoin: :Multiple Functions\n\nIn this security audit, we have examined the design and implementation of the Stablecoin token\ncontract. During our audit, we  rst checked all respects related to the compatibility of the ERC20\nspeci cation and other known ERC20 pitfalls/vulnerabilities. We then proceeded to examine other\nareas such as coding practices and business logics. Overall, although no critical or high level vulnera-\nbilities were discovered, we identi ed one issue of medium severity. In the meantime, as disclaimed in\nSection 1.4, we appreciate any constructive feedbacks or suggestions ab\u3010\u3011\n\n",
+    "biz_content_percentage": 0.14558902243199845,
+    "details": [
+        {
+            "prompt": "Please check if the report covers the content related to overall security results? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report covers the content related to specific vulnerabilities? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report covers the content related to risk mitigation strategies? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report covers the content related to protocol functionality? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check how easily understandable is the report in explaining the scope? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0.5"
+        },
+        {
+            "prompt": "Please check how easily understandable is the report in explaining the methodology? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check how easily understandable is the report in explaining the findings? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0.5"
+        },
+        {
+            "prompt": "Please check if the report provide recommendations for each identified risks? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please assess the actionability and tailored nature of the recommendations provided for addressing identified risks. If very actionable, answer number \"1\"; If not actionable at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the Static Analysis method was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the Dynamic Analysis method (e.g.: Fuzz Testing, Runtime Security Analysis) was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the Cryptographic Analysis method was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Does the report identify any positive practices in the project's execution? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Smart Contract Bugs were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Decentralized Application Security were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the potential operational risks/security vulnerabilities in terms of Dependence on Third-party Services were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the potential operational risks/security vulnerabilities in terms of Data Privacy and Confidentiality were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Does the vulnerabilities categorized based on severity or potential impact? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Does the vulnerabilities prioritized based on severity or potential impact? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Does the report assess/identify any potential security issues? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "If answer \"0\" for preivous question, just ignore this question and answer number \"0\", do not explain anything.If answer \"1\" for preivous question, evaluate whether the report assess/identifies potential security issues before they can be exploited by attackers. If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "For each vulnerability, please check if there is any risk assessment conducted to evaluate its potential impact? If yes for all vulnerabilities, answer number \"1\"; If yes for some of the vulnerabilities, answer 0.5; If no for all vulnerabilities, answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Rate the comprehensiveness of the risk assessment conducted to evaluate the potential impact of each vulnerability. If very comprehensiveness, answer number \"1\"; If not comprehensiveness at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Evaluate how effectively the report identifies the security risks. If very effective, answer number \"1\"; If not effective at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Evaluate how effectively the report analyzes the security risks. If very effective, answer number \"1\"; If not effective at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0.5"
+        },
+        {
+            "prompt": "Evaluate how effectively the report prioritizes the security risks. If very effective, answer number \"1\"; If not effective at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Does the report assess the residual risk remaining after implementing proposed mitigation strategies?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Does the report provide clear and actionable recommendations for remediating the identified vulnerabilities? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Assess the clarity of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Assess the actionability of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0.5"
+        },
+        {
+            "prompt": "Does the project implement the recommendations and integrate ongoing security monitoring? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Does the report discusses potential future threats or areas for improvement? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Has the audit report resulted in improved security practices and reduced the likelihood of security breaches?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Is the report well-structured with clear headings, sections, visualisations(such as diagrams, flowcharts, tables), and appendices? If all have, answer number \"1\"; If missing either one, answer number \"0.5\"; else answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "0.5"
+        },
+        {
+            "prompt": "Does report consistency in style, formatting, and terminology?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Does the report written in clear, understandable language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Does the report have any grammatical errors? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the auditing approach been described? If no, answer number \"0\"; If yes, please check how clear the auditing approach been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the methodologies used for auditing been described? If no, answer number \"0\"; If yes, please check how clear the methodologies used for auditing been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report contains any disclaimers regarding independence and neutrality of the audit team? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Does the report address industry-specific security standards and best practices? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report contains any disclaimers/content regarding communication between auditors and project teams for effective implementation of remediation plans? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the report begins with an executive summary to provides a high-level overview of the findings, implications, and recommendations in non-technical language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the report include key takeaways and actionable insights that are easily digestible for non-technical stakeholders? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Please check if the report have definitions or explanations of technical terms to help non-technical stakeholders understand the content? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report is structured with segmented sections catered to different audiences (e.g.: Technical Findings for developers and security professionals; Risk Impact for non-technical stakeholders; Recommendations for all audiences)? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        }
+    ],
+    "prompt_scores_breakdown": {
+        "content": [
+            10.0,
+            7.0,
+            0.0,
+            3.5,
+            0.0
+        ],
+        "vulnerability_risk": [
+            5.0,
+            10.0,
+            10.0,
+            9.25,
+            0.0,
+            0
+        ],
+        "mitigation_impact": [
+            1.5,
+            0.0,
+            10.0,
+            0.0
+        ],
+        "presentation_methodology": [
+            7.5,
+            10.0,
+            10.0,
+            10.0
+        ],
+        "relevance_accessibility": [
+            10.0,
+            0.0,
+            5.5
+        ]
+    },
+    "report_summary": "the audit report comprehensively covers the overall security findings of smart contracts, specific vulnerabilities, using a detailed methodology including the owasp risk rating, static code analysis, and also notes the smart contracts' well-executed design. it systematically identifies and prioritizes vulnerabilities based on severity and impact, assesses risks, and outlines clear, actionable mitigation strategies, prioritizing risks effectively while recommending further independent audits and a public bug bounty program. however, it lacks transparency in vulnerability specifics and clarity in scope and methodology, contains grammatical errors, and may underrepresent the full depth and thoroughness of the audit process due to incomplete context. overall, the report delivers actionable insights but could benefit from greater specificity and clarity in its content and findings.",
+    "final_score_by_category": {
+        "content": 4.1,
+        "vulnerability_risk": 5.708333333333333,
+        "mitigation_impact": 2.875,
+        "presentation_methodology": 9.375,
+        "relevance_accessibility": 5.166666666666667,
+        "biz_content": 5
+    },
+    "final_score": 49.9875,
+    "assessed_time": "20240304_08-31-18"
+}
