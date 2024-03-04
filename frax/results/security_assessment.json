@@ -1,5 +1,5 @@
 {
-    "report_name": "TOB_MakerDAO_Final_Report.pdf",
+    "report_name": "2023-05-fraxgov-securityreview.pdf",
     "biz_content": "\n\n\n\n",
     "biz_content_percentage": 0.0,
     "details": [
@@ -13,7 +13,7 @@
         },
         {
             "prompt": "Please check if the report covers the content related to risk mitigation strategies? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the report covers the content related to protocol functionality? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -29,15 +29,15 @@
         },
         {
             "prompt": "Please check how easily understandable is the report in explaining the findings? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "0.5"
+            "answer": "1"
         },
         {
             "prompt": "Please check if the report provide recommendations for each identified risks? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please assess the actionability and tailored nature of the recommendations provided for addressing identified risks. If very actionable, answer number \"1\"; If not actionable at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "1"
+            "answer": "0.5"
         },
         {
             "prompt": "Please check if the Static Analysis method was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -57,7 +57,7 @@
         },
         {
             "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Smart Contract Bugs were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "0"
+            "answer": "1"
         },
         {
             "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Decentralized Application Security were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -117,7 +117,7 @@
         },
         {
             "prompt": "Assess the clarity of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "0.5"
+            "answer": "0"
         },
         {
             "prompt": "Assess the actionability of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
@@ -129,7 +129,7 @@
         },
         {
             "prompt": "Does the report discusses potential future threats or areas for improvement? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "0"
+            "answer": "1"
         },
         {
             "prompt": "Has the audit report resulted in improved security practices and reduced the likelihood of security breaches?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -137,7 +137,7 @@
         },
         {
             "prompt": "Is the report well-structured with clear headings, sections, visualisations(such as diagrams, flowcharts, tables), and appendices? If all have, answer number \"1\"; If missing either one, answer number \"0.5\"; else answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "1"
+            "answer": "0.5"
         },
         {
             "prompt": "Does report consistency in style, formatting, and terminology?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -165,7 +165,7 @@
         },
         {
             "prompt": "Does the report address industry-specific security standards and best practices? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "0"
+            "answer": "1"
         },
         {
             "prompt": "Please check if the report contains any disclaimers/content regarding communication between auditors and project teams for effective implementation of remediation plans? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -177,27 +177,27 @@
         },
         {
             "prompt": "Please check if the report include key takeaways and actionable insights that are easily digestible for non-technical stakeholders? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
-        },
-        {
-            "prompt": "Please check if the report have definitions or explanations of technical terms to help non-technical stakeholders understand the content? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
             "answer": "0"
         },
         {
-            "prompt": "Please check if the report is structured with segmented sections catered to different audiences (e.g.: Technical Findings for developers and security professionals; Risk Impact for non-technical stakeholders; Recommendations for all audiences)? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "prompt": "Please check if the report have definitions or explanations of technical terms to help non-technical stakeholders understand the content? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
             "answer": "1"
+        },
+        {
+            "prompt": "Please check if the report is structured with segmented sections catered to different audiences (e.g.: Technical Findings for developers and security professionals; Risk Impact for non-technical stakeholders; Recommendations for all audiences)? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
         }
     ],
     "prompt_scores_breakdown": {
         "content": [
-            8.0,
-            5.0,
-            10.0,
+            5.5,
+            6.5,
+            2.5,
             0.0,
             0.0
         ],
         "vulnerability_risk": [
-            5.0,
+            7.5,
             10.0,
             10.0,
             5.0,
@@ -205,32 +205,32 @@
             0
         ],
         "mitigation_impact": [
-            3.0,
+            1.5,
             0.0,
-            0.0,
+            10.0,
             0.0
         ],
         "presentation_methodology": [
-            10.0,
+            7.5,
             5.0,
             2.5,
             0.0
         ],
         "relevance_accessibility": [
+            10.0,
             0.0,
-            0.0,
-            7.5
+            4.5
         ]
     },
-    "report_summary": "the report is comprehensive and methodologically sound, detailing overall security results, specific vulnerabilities, and mitigation strategies, while categorizing issues by severity and offering tailored recommendations. it excels in vulnerability identification and prioritization, risk assessment, and provides actionable insights, yet falls short on complete risk determination for some findings and lacks detail in methodological description. overall, the report effectively outlines security risks and offers clear recommendations for risk mitigation, but could improve on risk assessment and methodology clarity.",
+    "report_summary": "the security report is thorough, covering content quality, scope, and a methodical approach; it encompasses overall security results with an exposure analysis, category breakdown, and rating criteria. the vulnerabilities are identified and prioritized based on severity, followed by risk assessment, and the report offers actionable mitigation strategies with clear recommendations for improving security, which makes the report impactful. a significant shortcoming, however, is the report's moderate clarity in describing the auditing approach and methodologies, lacking specific guidance for implementing recommendations. in summary, the report is comprehensive and systematic in addressing security, but requires clearer auditing methodologies and implementation instructions for its recommendations to be fully effective.",
     "final_score_by_category": {
-        "content": 4.6,
-        "vulnerability_risk": 5.0,
-        "mitigation_impact": 0.75,
-        "presentation_methodology": 4.375,
-        "relevance_accessibility": 2.5,
+        "content": 2.9,
+        "vulnerability_risk": 5.416666666666667,
+        "mitigation_impact": 2.875,
+        "presentation_methodology": 3.75,
+        "relevance_accessibility": 4.833333333333333,
         "biz_content": 0
     },
-    "final_score": 30.55,
-    "assessed_time": "20240304_08-27-49"
+    "final_score": 30.012500000000003,
+    "assessed_time": "20240304_08-35-02"
 }

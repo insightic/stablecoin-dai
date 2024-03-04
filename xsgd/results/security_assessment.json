@@ -1,15 +1,15 @@
 {
-    "report_name": "TOB_MakerDAO_Final_Report.pdf",
-    "biz_content": "\n\n\n\n",
+    "report_name": "Bluechip_Assessment_-_XSGD.docx.pdf",
+    "biz_content": "\n",
     "biz_content_percentage": 0.0,
     "details": [
         {
             "prompt": "Please check if the report covers the content related to overall security results? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the report covers the content related to specific vulnerabilities? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the report covers the content related to risk mitigation strategies? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -33,11 +33,11 @@
         },
         {
             "prompt": "Please check if the report provide recommendations for each identified risks? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please assess the actionability and tailored nature of the recommendations provided for addressing identified risks. If very actionable, answer number \"1\"; If not actionable at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "1"
+            "answer": "0.5"
         },
         {
             "prompt": "Please check if the Static Analysis method was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -53,7 +53,7 @@
         },
         {
             "prompt": "Does the report identify any positive practices in the project's execution? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "0"
+            "answer": "1"
         },
         {
             "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Smart Contract Bugs were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -61,7 +61,7 @@
         },
         {
             "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Decentralized Application Security were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the potential operational risks/security vulnerabilities in terms of Dependence on Third-party Services were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -69,23 +69,23 @@
         },
         {
             "prompt": "Please check if the potential operational risks/security vulnerabilities in terms of Data Privacy and Confidentiality were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Does the vulnerabilities categorized based on severity or potential impact? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Does the vulnerabilities prioritized based on severity or potential impact? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Does the report assess/identify any potential security issues? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "If answer \"0\" for preivous question, just ignore this question and answer number \"0\", do not explain anything.If answer \"1\" for preivous question, evaluate whether the report assess/identifies potential security issues before they can be exploited by attackers. If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "For each vulnerability, please check if there is any risk assessment conducted to evaluate its potential impact? If yes for all vulnerabilities, answer number \"1\"; If yes for some of the vulnerabilities, answer 0.5; If no for all vulnerabilities, answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
@@ -117,11 +117,11 @@
         },
         {
             "prompt": "Assess the clarity of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "0.5"
+            "answer": "0"
         },
         {
             "prompt": "Assess the actionability of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "0.5"
+            "answer": "0"
         },
         {
             "prompt": "Does the project implement the recommendations and integrate ongoing security monitoring? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -137,23 +137,23 @@
         },
         {
             "prompt": "Is the report well-structured with clear headings, sections, visualisations(such as diagrams, flowcharts, tables), and appendices? If all have, answer number \"1\"; If missing either one, answer number \"0.5\"; else answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "1"
-        },
-        {
-            "prompt": "Does report consistency in style, formatting, and terminology?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
-        },
-        {
-            "prompt": "Does the report written in clear, understandable language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
-        },
-        {
-            "prompt": "Does the report have any grammatical errors? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
             "answer": "0"
         },
         {
+            "prompt": "Does report consistency in style, formatting, and terminology?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Does the report written in clear, understandable language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "0"
+        },
+        {
+            "prompt": "Does the report have any grammatical errors? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+            "answer": "1"
+        },
+        {
             "prompt": "Please check if the auditing approach been described? If no, answer number \"0\"; If yes, please check how clear the auditing approach been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "0.5"
+            "answer": "1"
         },
         {
             "prompt": "Please check if the methodologies used for auditing been described? If no, answer number \"0\"; If yes, please check how clear the methodologies used for auditing been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
@@ -173,11 +173,11 @@
         },
         {
             "prompt": "Please check if the report begins with an executive summary to provides a high-level overview of the findings, implications, and recommendations in non-technical language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the report include key takeaways and actionable insights that are easily digestible for non-technical stakeholders? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the report have definitions or explanations of technical terms to help non-technical stakeholders understand the content? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -185,52 +185,52 @@
         },
         {
             "prompt": "Please check if the report is structured with segmented sections catered to different audiences (e.g.: Technical Findings for developers and security professionals; Risk Impact for non-technical stakeholders; Recommendations for all audiences)? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         }
     ],
     "prompt_scores_breakdown": {
         "content": [
-            8.0,
+            2.5,
             5.0,
-            10.0,
+            2.5,
             0.0,
-            0.0
+            10.0
         ],
         "vulnerability_risk": [
-            5.0,
-            10.0,
-            10.0,
+            0.0,
+            0.0,
+            0.0,
             5.0,
             0.0,
             0
         ],
         "mitigation_impact": [
-            3.0,
+            0.0,
             0.0,
             0.0,
             0.0
         ],
         "presentation_methodology": [
-            10.0,
+            0.0,
             5.0,
-            2.5,
+            5.0,
             0.0
         ],
         "relevance_accessibility": [
             0.0,
             0.0,
-            7.5
+            0.0
         ]
     },
-    "report_summary": "the report is comprehensive and methodologically sound, detailing overall security results, specific vulnerabilities, and mitigation strategies, while categorizing issues by severity and offering tailored recommendations. it excels in vulnerability identification and prioritization, risk assessment, and provides actionable insights, yet falls short on complete risk determination for some findings and lacks detail in methodological description. overall, the report effectively outlines security risks and offers clear recommendations for risk mitigation, but could improve on risk assessment and methodology clarity.",
+    "report_summary": "the report demonstrates high content quality, outlining comprehensive risk mitigation strategies such as segregated reserves, periodic attestations, regulatory oversight, and custodian risk assessments while maintaining clarity through thorough methodology. it identifies robust practices like reserve segregation and audited financial statements, yet lacks detailed risk assessments for certain vulnerabilities like custodian risks, which could affect the stability of stablecoin. notably, shortcomings include vague details on the potential impact of key vulnerabilities and the absence of explicit risk assessments for custodian risks. in summary, despite a generally positive evaluation of stability and transparency measures, the report's inability to fully assess and communicate the impact of critical vulnerabilities moderately undermines its effectiveness.",
     "final_score_by_category": {
-        "content": 4.6,
-        "vulnerability_risk": 5.0,
-        "mitigation_impact": 0.75,
-        "presentation_methodology": 4.375,
-        "relevance_accessibility": 2.5,
+        "content": 4.0,
+        "vulnerability_risk": 0.8333333333333334,
+        "mitigation_impact": 0.0,
+        "presentation_methodology": 2.5,
+        "relevance_accessibility": 0.0,
         "biz_content": 0
     },
-    "final_score": 30.55,
-    "assessed_time": "20240304_08-27-49"
+    "final_score": 16.166666666666668,
+    "assessed_time": "20240304_08-48-02"
 }
