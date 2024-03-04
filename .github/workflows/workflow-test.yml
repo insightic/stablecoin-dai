@@ -66,12 +66,14 @@ jobs:
           if [ -f "${dir}data.yml" ]; then
               echo "Processing folder: $dir"
               export PYTHONPATH="$PYTHONPATH:$(pwd)"
-              python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.Stablecoin(project_dir='$dir');analysis.run_analysis()"
+              # python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
+              # python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
+              # python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
+              # python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run_analysis()"
+              # python -c "import pyinsightic; analysis=pyinsightic.Stablecoin(project_dir='$dir');analysis.run_analysis()"
+              python -c "import pyinsightic; analysis=pyinsightic.SecurityAssessment(project_dir='$dir');analysis.run_analysis()"
               echo "Analysis completed for $dir"
+              break
           fi
           done
         env:
@@ -97,4 +99,6 @@ jobs:
           git diff --cached --exit-code || git commit -m "Update scv analysis results"
           git add */stablecoin_results.json
           git diff --cached --exit-code || git commit -m "Update stablecoin analysis results"
+          git add */security_assessment.json
+          git diff --cached --exit-code || git commit -m "Update security assessment analysis results"
           git push
