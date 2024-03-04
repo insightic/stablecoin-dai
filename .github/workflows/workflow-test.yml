@@ -1,30 +1,15 @@
 ---
 name: Workflow test
 
-"on":
-  push:
-    branches:
-      - "dev"
+on:
+  workflow_run:
+    workflows: ["YAML Lint Check"]
+    branches: [dev]
+    types:
+      - completed
 
 jobs:
-  yaml-format-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Install yamllint
-        run: pip install yamllint
-
-      - name: Run yamllint
-        run: yamllint .
-
   run_analysis:
-    needs: yaml-format-check
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -63,17 +48,18 @@ jobs:
       - name: Run pyinsightic SosoValue analysis
         run: |
           for dir in */ ; do
-          if [ -f "${dir}data.yml" ]; then
-              echo "Processing folder: $dir"
-              export PYTHONPATH="$PYTHONPATH:$(pwd)"
-              # python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
-              # python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
-              # python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
-              # python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run_analysis()"
-              # python -c "import pyinsightic; analysis=pyinsightic.Stablecoin(project_dir='$dir');analysis.run_analysis()"
-              python -c "import pyinsightic; analysis=pyinsightic.SecurityAssessment(project_dir='$dir');analysis.run_analysis()"
-              echo "Analysis completed for $dir"
-              break
+          if [[ "$dir" == "tusd/" || "$dir" == "usde/" ]]; then
+            if [ -f "${dir}data.yml" ]; then
+                echo "Processing folder: $dir"
+                export PYTHONPATH="$PYTHONPATH:$(pwd)"
+                # python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
+                # python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
+                # python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
+                # python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run_analysis()"
+                # python -c "import pyinsightic; analysis=pyinsightic.Stablecoin(project_dir='$dir');analysis.run_analysis()"
+                python -c "import pyinsightic; analysis=pyinsightic.SecurityAssessment(project_dir='$dir');analysis.run_analysis()"
+                echo "Analysis completed for $dir"
+            fi
           fi
           done
         env:
