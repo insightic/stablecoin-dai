@@ -83,8 +83,10 @@ analyses = [
 ]
 
 
-def main():
+def main(test_folders=None):
     for dir in os.listdir("."):
+        if test_folders and dir not in ["dai", "usdt"]:
+            continue
         dir_path = os.path.join(".", dir)
         if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
             logger.info(f"Processing folder: {dir}")
@@ -98,9 +100,8 @@ def main():
             except ScannerError:
                 logger.error("Invalid yaml format")
                 return
-            if dir in ["dai/", "fdusd/"]:
-                for analysis in analyses:
-                    analysis(dir_path, data)
+            for analysis in analyses:
+                analysis(dir_path, data)
 
 
 if __name__ == "__main__":
