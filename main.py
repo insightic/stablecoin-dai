@@ -85,7 +85,7 @@ analyses = [
 
 def main(test_folders=None):
     for dir in os.listdir("."):
-        if test_folders and dir not in ["dai", "usdt"]:
+        if test_folders and dir not in test_folders:
             continue
         dir_path = os.path.join(".", dir)
         if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
@@ -106,3 +106,4 @@ def main(test_folders=None):
 
 if __name__ == "__main__":
     main()
+    # main(test_folders=["dai", "usdt"])
