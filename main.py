@@ -21,12 +21,11 @@ class AnalysisRunner:
                 f"Required conditions not met for {self.analysis_function.__name__} in {project_dir}. Skipping analysis."
             )
             return
-        if project_dir in ["dai/", "fdusd/"]:
-            logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
-            timestamp = datetime.now().strftime("%Y%m%d")
-            file_name = f"{self.analysis_function.__name__}.json"
-            analysis = self.analysis_function(project_dir=project_dir)
-            analysis.run_analysis(timestamp, file_name=file_name)
+        logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
+        timestamp = datetime.now().strftime("%Y%m%d")
+        file_name = f"{self.analysis_function.__name__}.json"
+        analysis = self.analysis_function(project_dir=project_dir)
+        analysis.run_analysis(timestamp, file_name=file_name)
 
 
 # Condition check functions
@@ -99,9 +98,9 @@ def main():
             except ScannerError:
                 logger.error("Invalid yaml format")
                 return
-
-            for analysis in analyses:
-                analysis(dir_path, data)
+            if dir in ["dai/", "fdusd/"]:
+                for analysis in analyses:
+                    analysis(dir_path, data)
 
 
 if __name__ == "__main__":

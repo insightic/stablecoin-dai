@@ -69,21 +69,6 @@ jobs:
 
       - name: Run pyinsightic analysis
         run: |
-          # for dir in */ ; do
-          # # if [[ "$dir" == "tusd/" || "$dir" == "usde/" ]]; then
-          # if [ -f "${dir}data.yml" ]; then
-          #     echo "Processing folder: $dir"
-          #     export PYTHONPATH="$PYTHONPATH:$(pwd)"
-          #     python -c "import pyinsightic; analysis=pyinsightic.SosoValue(project_dir='$dir');analysis.run_analysis()"
-          #     python -c "import pyinsightic; analysis=pyinsightic.Linkedin(project_dir='$dir');analysis.run_analysis()"
-          #     python -c "import pyinsightic; analysis=pyinsightic.Twitter(project_dir='$dir');analysis.run_analysis()"
-          #     python -c "import pyinsightic; analysis=pyinsightic.SmartContractValidator(project_dir='$dir');analysis.run_analysis()"
-          #     python -c "import pyinsightic; analysis=pyinsightic.Stablecoin(project_dir='$dir');analysis.run_analysis()"
-          #     python -c "import pyinsightic; analysis=pyinsightic.SecurityAssessment(project_dir='$dir');analysis.run_analysis()"
-          #     echo "Analysis completed for $dir"
-          # fi
-          # # fi
-          # done
           python main.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
