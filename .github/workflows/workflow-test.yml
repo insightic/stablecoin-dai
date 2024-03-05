@@ -1,13 +1,11 @@
 ---
 name: Workflow test
 
-on:
-  workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch name to run the workflow on'
-        required: true
-        default: 'dev'
+"on":
+  push:
+    branches:
+      - "dev"
+
 jobs:
   yaml-format-check:
     runs-on: ubuntu-latest
