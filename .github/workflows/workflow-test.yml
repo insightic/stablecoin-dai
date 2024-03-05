@@ -89,10 +89,10 @@ jobs:
           git diff --cached --exit-code || git commit -m "Update linkedin analysis results"
           git add */twitter.json
           git diff --cached --exit-code || git commit -m "Update twitter analysis results"
-          git add */scv.json
-          git diff --cached --exit-code || git commit -m "Update scv analysis results"
+          git add */smartcontractvalidator.json
+          git diff --cached --exit-code || git commit -m "Update smart contract validator analysis results"
           git add */stablecoin.json
           git diff --cached --exit-code || git commit -m "Update stablecoin analysis results"
-          git add */security_assessment.json
+          git add */securityassessment.json
           git diff --cached --exit-code || git commit -m "Update security assessment analysis results"
           git push
