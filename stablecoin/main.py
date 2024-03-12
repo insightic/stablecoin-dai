@@ -105,5 +105,6 @@ def main(test_folders=None):
 
 
 if __name__ == "__main__":
-    main()
-    # main(test_folders=["dai", "usdt"])
+    # main()
+    os.chdir("stablecoin")
+    main(test_folders=["dai", "usdt"])
