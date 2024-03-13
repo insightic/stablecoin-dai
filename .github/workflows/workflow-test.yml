@@ -5,6 +5,7 @@ name: Workflow test
   push:
     branches:
       - "dev"
+  workflow_dispatch:
 
 jobs:
   yaml-format-check:
@@ -82,17 +83,19 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          # Add the results and check if there are changes; if so, commit them.
-          git add */sosovalue.json
-          git diff --cached --exit-code || git commit -m "Update sosovalue analysis results"
-          git add */linkedin.json
-          git diff --cached --exit-code || git commit -m "Update linkedin analysis results"
-          git add */twitter.json
-          git diff --cached --exit-code || git commit -m "Update twitter analysis results"
-          git add */smartcontractvalidator.json
-          git diff --cached --exit-code || git commit -m "Update smart contract validator analysis results"
-          git add */stablecoin.json
-          git diff --cached --exit-code || git commit -m "Update stablecoin analysis results"
-          git add */securityassessment.json
-          git diff --cached --exit-code || git commit -m "Update security assessment analysis results"
-          git push
+          FILES_CHANGED=0
+          # Check and add each file pattern, commit if changes exist
+          for FILE_PATTERN in */sosovalue.json */linkedin.json */twitter.json */smartcontractvalidator.json */stablecoin.json */securityassessment.json; do
+            if git ls-files | grep -q "$FILE_PATTERN"; then
+              git add $FILE_PATTERN
+              FILES_CHANGED=1
+            else
+              echo "No files matching $FILE_PATTERN to commit."
+            fi
+          done
+          if [ "$FILES_CHANGED" -eq 1 ]; then
+            git commit -m "Update analysis results"
+            git push
+          else
+            echo "No changes to commit."
+          fi
