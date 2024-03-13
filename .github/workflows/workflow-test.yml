@@ -84,8 +84,16 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
-          # Checkout the gh-pages branch or create it if it doesn't exist
+          # Stash changes before checking out
+          git stash push -m "Stashing changes before switching branches"
+
+          # Checkout the gh-pages branch
+          git fetch origin gh-pages
           git checkout gh-pages || git checkout -b gh-pages
+          git pull origin gh-pages --rebase
+
+          # Apply stashed changes (if any) to gh-pages branch
+          git stash pop || true
 
           shopt -s globstar
           FILES_TO_COMMIT=""
