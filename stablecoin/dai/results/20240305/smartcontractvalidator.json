@@ -3,17 +3,22 @@
         "id": "0",
         "title": "Smart contract standard",
         "description": "Check what the ERC Standard is used by the project",
+<<<<<<< Updated upstream
         "whitepaper": "ERC20",
         "code": "The provided text does not specify an ERC (Ethereum Request for Comment) standard used by the code. ERC standards are technical documents that define rules and standards for Ethereum smart contracts. Common examples include ERC-20 for fungible tokens and ERC-721 for non-fungible tokens (NFTs). Without explicit mention or a snippet of the smart contract code that references a specific ERC standard, I cannot determine which ERC standard is being used.",
+=======
+        "whitepaper": "I don't know.",
+        "code": "Based on the provided context, there is no explicit mention of the ERC (Ethereum Request for Comment) standard used by the code. ERC standards are a set of application-level conventions in the Ethereum ecosystem, such as ERC-20 for fungible tokens or ERC-721 for non-fungible tokens (NFTs), among others.\n\nTo determine the ERC standard used by a specific piece of code, one would typically look for specific function signatures or interfaces that match those defined in an ERC standard. Since the provided context does not include such details, I cannot ascertain which ERC standard is being used by the code in question. If you have access to the full code or specific details about its functions and interfaces, that information would be necessary to identify the ERC standard.",
+>>>>>>> Stashed changes
         "pass": "NO"
     },
     {
         "id": "1",
         "title": "Smart contract standard",
         "description": "Validate if the code fully comply the corresponding ERC Standard",
-        "whitepaper": "Yes",
+        "whitepaper": "Not sure",
         "code": "Yes",
-        "pass": "YES"
+        "pass": "NOT SURE"
     },
     {
         "id": "2",
@@ -35,16 +40,27 @@
         "id": "4",
         "title": "Owner initialization",
         "description": "Determine the initialization process of the smart contract owner.",
+<<<<<<< Updated upstream
         "whitepaper": "The owner of a smart contract on the Ethereum network is not explicitly mentioned in the provided document. However, it generally indicates that smart contracts are deployed by an Ethereum address and are controlled by their embedded code, responding to interactions from externally owned accounts or other contracts.",
         "code": "The owner of a smart contract is not explicitly mentioned in the provided context. Smart contracts on the Ethereum blockchain are typically initialized and deployed by an externally owned account, which may be considered the owner, but the specific mechanism of owner initialization would be defined in the contract's code, which is not provided here.",
         "pass": "YES"
+=======
+        "whitepaper": "The owner of a smart contract is not explicitly mentioned in the provided context. However, it explains that an Ethereum Contract Account, which can contain smart contracts, is controlled by its contract code and interacts with the network when it receives a message from an externally owned account or another contract account.",
+        "code": "I'm sorry, but I don't have access to the actual code of the smart contracts from the provided context. Therefore, I cannot provide details on how the owner of a smart contract is initialized. Smart contract code would need to be reviewed to answer that question accurately.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "5",
         "title": "Minter initialization",
         "description": "Determine the initialization process of the token Minter.",
+<<<<<<< Updated upstream
         "whitepaper": "I'm sorry, but the provided context does not contain specific information about how the Minter of the token is initialized. If you can provide the relevant section of the document or more details, I would be happy to help with your query.",
         "code": "I'm sorry, but the provided context does not include specific code details or the initialization process for the minter of the token. It only discusses the governance role of MKR tokens within the Maker Protocol and their function in recapitalization.",
+=======
+        "whitepaper": "I'm sorry, but the provided text does not contain information about how the minter of the token is initialized. If you have more specific sections of the document that detail the initialization process, please share them, and I would be happy to help.",
+        "code": "I'm sorry, but the provided context does not include specific code details or the initialization process for the minter of the token. It only outlines the governance role of MKR tokens within the Maker Protocol and their use in recapitalization.",
+>>>>>>> Stashed changes
         "pass": "NO"
     },
     {
@@ -59,8 +75,8 @@
         "id": "7",
         "title": "Owner modification",
         "description": "Verify if the _owner address can be changed.",
-        "whitepaper": "No",
-        "code": "No",
+        "whitepaper": "Yes",
+        "code": "Yes",
         "pass": "YES"
     },
     {
@@ -75,9 +91,15 @@
         "id": "9",
         "title": "Blacklist Check for Mint",
         "description": "Examine if the mint function restricts only non-blacklisted minters.",
+<<<<<<< Updated upstream
         "whitepaper": "Not sure.",
         "code": "I'm sorry, but I don't have access to the specific code for the Maker Protocol's mint function, so I cannot provide a definitive answer. Therefore, my response is \"not sure.\"",
         "pass": "IGNORED"
+=======
+        "whitepaper": "No",
+        "code": "I'm sorry, but I don't have access to the specific code for the Maker Protocol's mint function, so I cannot provide a definitive answer. Therefore, my response is \"not sure.\"",
+        "pass": "NOT SURE"
+>>>>>>> Stashed changes
     },
     {
         "id": "10",
@@ -99,23 +121,32 @@
         "id": "12",
         "title": "Pause feature",
         "description": "Verify if transfers are restricted when the contract is paused.",
-        "whitepaper": "No",
+        "whitepaper": "Yes",
         "code": "Yes",
-        "pass": "NO"
+        "pass": "YES"
     },
     {
         "id": "13",
         "title": "Transfer check",
         "description": "Confirm if the function checks blacklisted or null.",
+<<<<<<< Updated upstream
         "whitepaper": "Not sure.",
         "code": "Not sure.",
+=======
+        "whitepaper": "No",
+        "code": "No",
+>>>>>>> Stashed changes
         "pass": "YES"
     },
     {
         "id": "14",
         "title": "Blacklist Check for Burn",
         "description": "Examine if the burn function restricts only non-blacklisted holders to burn.",
+<<<<<<< Updated upstream
         "whitepaper": "No",
+=======
+        "whitepaper": "Yes",
+>>>>>>> Stashed changes
         "code": "Not sure.",
         "pass": "NOT SURE"
     },
@@ -148,23 +179,29 @@
         "title": "Token Purchase Limit",
         "description": "Examine if there's a purchase limit for ICO.",
         "whitepaper": "not sure",
-        "code": "not sure",
-        "pass": "YES"
+        "code": "no",
+        "pass": "NOT SURE"
     },
     {
         "id": "19",
         "title": "Token Purchase Limit",
         "description": "Determine the maximum number of tokens allowable for purchase.",
+<<<<<<< Updated upstream
         "whitepaper": "I don't know.",
         "code": "You haven't provided information about a specific token sale and its maximum number of tokens available for purchase. Therefore, I cannot provide a number. If you have more context or details about the token sale in question, please provide them so I can attempt to give you an accurate answer.",
         "pass": "NO"
+=======
+        "whitepaper": "The provided context does not specify a maximum number of tokens that can be purchased in the token sale, so I don't have that information.",
+        "code": "The provided context does not specify a maximum number of tokens that can be purchased in the token sale, so I don't have that information.",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "20",
         "title": "Whitelist",
         "description": "Determine if there are restrictions such as a whitelist or blacklist.",
         "whitepaper": "no",
-        "code": "no",
+        "code": "No",
         "pass": "YES"
     },
     {
@@ -179,72 +216,110 @@
         "id": "22",
         "title": "Total Supply",
         "description": "Check if the token supply is adjustable.",
+<<<<<<< Updated upstream
         "whitepaper": "Yes",
         "code": "yes",
+=======
+        "whitepaper": "No",
+        "code": "no",
+>>>>>>> Stashed changes
         "pass": "YES"
     },
     {
         "id": "23",
         "title": "Token Supply",
         "description": "Identify the number of reserved or locked tokens and their respective owners.",
+<<<<<<< Updated upstream
         "whitepaper": "The provided context does not contain information about any reserved or locked tokens. Therefore, based on the given context, the answer is:\n\n0",
         "code": "The provided context does not contain information about any reserved or locked tokens. Therefore, based on the given context, the answer is \"0\".",
         "pass": "YES"
+=======
+        "whitepaper": "0",
+        "code": "I don't know.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "24",
         "title": "Key Controllers",
         "description": "Identify the main controllers of the contract.",
+<<<<<<< Updated upstream
         "whitepaper": "The key controllers of the Maker Protocol's smart contracts are MKR voters, who assign special permissions to external actors such as Oracles and Global Settlers (Emergency Oracles), and Keepers who interact with the system for economic incentives.",
         "code": "I don't have the ability to read through actual smart contract code or access any external databases or systems to check for such details. My responses are based on the information provided to me and general knowledge up to my last update. Therefore, I cannot provide the specific statements you're asking for or analyze the smart contract code directly.\n\nHowever, based on the context provided, the key controllers of the Maker Protocol's smart contracts are likely to be the MKR token holders, who have the power to vote on proposals that can modify the governance variables of the Maker Protocol.",
+=======
+        "whitepaper": "The key controllers of the contract are MKR token holders who vote on proposals.",
+        "code": "I don't have access to external databases or the ability to read through smart contract code. Therefore, I cannot provide the specific details or statements related to the control of the smart contracts you're asking about.",
+>>>>>>> Stashed changes
         "pass": "NO"
     },
     {
         "id": "25",
         "title": "Token Distribution",
         "description": "Check the token distribution mechanisms.",
+<<<<<<< Updated upstream
         "whitepaper": "The MKR token is used as a recapitalization resource of the Maker Protocol, where new MKR tokens may be minted and sold in a Debt Auction to recapitalize the system if the system debt exceeds the surplus. This mechanism incentivizes MKR holders to govern the system responsibly. The conclusion is that the MKR token distribution mechanism includes minting new tokens for recapitalization through Debt Auctions.",
         "code": "The MKR token is primarily distributed through a Debt Auction mechanism to recapitalize the Maker system when necessary. MKR holders are responsible for governing the Maker ecosystem, which includes voting on risk parameters and system upgrades to maintain the system's stability and avoid excessive risk-taking. The token does not have a traditional reward or staking system but is used as a governance token and a recapitalization resource. The conclusion is that the MKR token distribution is tightly linked to its governance and system sustainability functions, with Debt Auctions being a key distribution mechanism in times of system debt exceeding the surplus.",
         "pass": "NO"
+=======
+        "whitepaper": "The provided context does not contain specific information about the distribution mechanism for the tokens in question. It mentions the role of MKR tokens in governance and as a recapitalization resource, as well as the auction mechanisms of the Maker Protocol, but does not detail the distribution methods such as minting, sales, airdrops, rewards, etc. Therefore, I cannot provide a conclusion on the token distribution findings based on the given information.",
+        "code": "The provided context does not contain specific information regarding the distribution mechanisms for the tokens. Therefore, I cannot provide a conclusion on the token distribution findings.",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "26",
         "title": "Staking",
         "description": "Ascertain if there are staking mechanisms present.",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "No",
         "pass": "YES"
+=======
+        "whitepaper": "Not sure.",
+        "code": "no",
+        "pass": "NOT SURE"
+>>>>>>> Stashed changes
     },
     {
         "id": "27",
         "title": "Staking",
         "description": "Summarize the NFT staking mechanisms.",
+<<<<<<< Updated upstream
         "whitepaper": "The provided context does not mention any NFT staking mechanisms.",
         "code": "I don't have the information required to provide the details on the NFT staking mechanisms you're asking about. The context provided does not include information on NFT staking mechanisms.",
+=======
+        "whitepaper": "The provided context does not mention any specific NFT staking mechanisms such as Simple NFT Staking, NFT DeFi Staking, NFT Farming/Liquidity Mining, Fractional NFT Staking, NFT Staking with Utility, NFT-to-NFT Staking, NFT Staking with Lock-up Periods, NFT Staking Pools, Cross-Chain NFT Staking, or Curated NFT Staking. Therefore, I cannot provide a conclusion on NFT staking findings based on the given information.",
+        "code": "I don't have the specific information on the NFT staking mechanisms in the smart contract you're referring to. The context provided does not include details about NFT staking mechanisms. If you have a document or source that outlines these mechanisms, please provide it, and I can help you interpret the information. Otherwise, I'm unable to provide a conclusion on the NFT staking findings.",
+>>>>>>> Stashed changes
         "pass": "YES"
     },
     {
         "id": "28",
         "title": "Contract upgradability",
         "description": "Confirm if the smart contract is upgradable.",
-        "whitepaper": "yes",
+        "whitepaper": "not sure",
         "code": "yes",
-        "pass": "YES"
+        "pass": "NOT SURE"
     },
     {
         "id": "29",
         "title": "Code applicability",
         "description": "Determine if there are references compatibility with Automatic Market Makers.",
-        "whitepaper": "No",
+        "whitepaper": "not sure",
         "code": "no",
-        "pass": "YES"
+        "pass": "NOT SURE"
     },
     {
         "id": "30",
         "title": "Governance mechanism",
         "description": "Examine the decentralized governance mechanisms.",
+<<<<<<< Updated upstream
         "whitepaper": "yes",
         "code": "yes",
+=======
+        "whitepaper": "Yes",
+        "code": "Yes",
+>>>>>>> Stashed changes
         "pass": "YES"
     },
     {
@@ -275,9 +350,9 @@
         "id": "34",
         "title": "Token transfer restriction",
         "description": "Confirm if there are any restrictions on token transfers by owners.",
-        "whitepaper": "No",
+        "whitepaper": "Yes",
         "code": "no",
-        "pass": "YES"
+        "pass": "NO"
     },
     {
         "id": "35",
@@ -292,8 +367,8 @@
         "title": "vulnerability to DOS attack",
         "description": "Determine if the vulnerabilities to DOS attacks.",
         "whitepaper": "No",
-        "code": "not sure",
-        "pass": "NOT SURE"
+        "code": "no",
+        "pass": "YES"
     },
     {
         "id": "37",
@@ -331,25 +406,42 @@
         "id": "41",
         "title": "low-level call()",
         "description": "Determine the use of low-level calls in the application.",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "not sure",
         "pass": "NOT SURE"
+=======
+        "whitepaper": "no",
+        "code": "yes",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "42",
         "title": "Redundant SafeMath Utilization",
         "description": "Verify if there are redundant uses of SafeMath.",
         "whitepaper": "No",
+<<<<<<< Updated upstream
         "code": "I don't know.",
         "pass": "NO"
+=======
+        "code": "no",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "43",
         "title": "Rounding result issue",
         "description": "Is there a chance for rounding to result in users receiving more or less money than they should?",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "Not sure.",
         "pass": "NOT SURE"
+=======
+        "whitepaper": "no",
+        "code": "Yes",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "44",
@@ -371,24 +463,40 @@
         "id": "46",
         "title": "Incentives mechanism to token holders",
         "description": "Does the blockchain application have an incentive mechanism for token holders?",
+<<<<<<< Updated upstream
         "whitepaper": "Yes",
         "code": "Yes.",
         "pass": "YES"
+=======
+        "whitepaper": "No",
+        "code": "Yes.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "47",
         "title": "incentives mechanism ",
         "description": " the question is about token holder incentive mechanisms to encourage participation or usage",
+<<<<<<< Updated upstream
         "whitepaper": "Yes",
         "code": "no",
         "pass": "NO"
+=======
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "48",
         "title": "insufficient input sanitization ",
         "description": " This question is to check whether the system robustly system validates or sanitize inputs to avoid possible attacks",
         "whitepaper": "no",
+<<<<<<< Updated upstream
         "code": "not sure",
+=======
+        "code": "Not sure.",
+>>>>>>> Stashed changes
         "pass": "NOT SURE"
     },
     {
@@ -403,7 +511,7 @@
         "id": "50",
         "title": "super account control",
         "description": "This question is trying to find out if there's any super account, such as an owner or an administrator account, that has control over main features or functions.",
-        "whitepaper": "No",
+        "whitepaper": "no",
         "code": "no",
         "pass": "YES"
     },
@@ -412,8 +520,13 @@
         "title": "potential zero-value transfer",
         "description": "This question is asking about the possibility of a transfer operation that carries a value of zero in either the smart contract or procedure described in the white paper.",
         "whitepaper": "no",
+<<<<<<< Updated upstream
         "code": "no",
         "pass": "YES"
+=======
+        "code": "Yes.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "52",
@@ -427,24 +540,34 @@
         "id": "53",
         "title": "zero-value transfer",
         "description": " Are there any instances of potential zero-value transfers taking place in the system",
-        "whitepaper": "No",
-        "code": "No",
+        "whitepaper": "no",
+        "code": "no",
         "pass": "YES"
     },
     {
         "id": "54",
         "title": " KYC for token holders",
         "description": " This question is asking about whether there is a Know Your Customer (KYC) process for individuals or entities that hold the tokens",
+<<<<<<< Updated upstream
         "whitepaper": "no",
         "code": "no",
         "pass": "YES"
+=======
+        "whitepaper": "not sure",
+        "code": "no",
+        "pass": "NOT SURE"
+>>>>>>> Stashed changes
     },
     {
         "id": "55",
         "title": "Slippage for AMMs",
         "description": " Does this platform have slippage for Automated Market Makers (AMMs)? ",
         "whitepaper": "No",
+<<<<<<< Updated upstream
         "code": "not sure",
+=======
+        "code": "Not sure.",
+>>>>>>> Stashed changes
         "pass": "NOT SURE"
     },
     {
@@ -459,23 +582,38 @@
         "id": "57",
         "title": "low-level call() ",
         "description": " This question is checking for any direct usage of low-level call() methods in the smart contract. Direct usage of low-level calls can potentially lead to reentrancy attacks ",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "no",
         "pass": "YES"
+=======
+        "whitepaper": "Yes",
+        "code": "No",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "58",
         "title": "timestamp variable type ",
         "description": " This question is about the presence of timestamp variables being used as uint32, or a smaller integer type. Such usage can potentially introduce issues related to contract timing ",
         "whitepaper": "No",
+<<<<<<< Updated upstream
         "code": "not sure",
         "pass": "NOT SURE"
+=======
+        "code": "no",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "59",
         "title": "function comment inconsistency ",
         "description": " This question is checking for any inconsistency between the function comment and the code implementation. An inconsistency can lead to misinterpretation or misleading information ",
+<<<<<<< Updated upstream
         "whitepaper": "No",
+=======
+        "whitepaper": "no",
+>>>>>>> Stashed changes
         "code": "I don't know.",
         "pass": "NO"
     },
@@ -483,7 +621,7 @@
         "id": "60",
         "title": "NFTs URI source",
         "description": " Is the URI source of NFTs inscribed directly in the smart contract or are they using IPFS/Web2 links instead?",
-        "whitepaper": "no",
+        "whitepaper": "No",
         "code": "no",
         "pass": "YES"
     },
@@ -499,9 +637,15 @@
         "id": "62",
         "title": "Fixed Variables Could Be Declared Constant",
         "description": " Are there any fixed variables that, to increase efficiency, could be declared as constant",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "I don't know.",
         "pass": "NO"
+=======
+        "whitepaper": "I don't know.",
+        "code": "I don't know.",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "63",
@@ -516,14 +660,18 @@
         "title": "lack of input validation",
         "description": " Are there any necessary validations of inputs missing",
         "whitepaper": "No",
-        "code": "no",
-        "pass": "YES"
+        "code": "not sure",
+        "pass": "NOT SURE"
     },
     {
         "id": "65",
         "title": "out of gas exception",
         "description": " Could there be any situation whereby the contract risks running out of gas",
+<<<<<<< Updated upstream
         "whitepaper": "No.",
+=======
+        "whitepaper": "No",
+>>>>>>> Stashed changes
         "code": "I don't know.",
         "pass": "NO"
     },
@@ -531,15 +679,19 @@
         "id": "66",
         "title": "token price determination",
         "description": " The question aims to understand the mechanism used for determining the token's price on a secondary market as described in the white paper and implemented in the smart contract",
-        "whitepaper": "No",
-        "code": "No.",
-        "pass": "YES"
+        "whitepaper": "I'm sorry, but I don't have the information required to answer your question with \"yes\", \"no\", or \"not sure\". If you provide the relevant excerpt from the FDUSD Stablecoin White Paper, I could assist you further.",
+        "code": "No",
+        "pass": "NOT SURE"
     },
     {
         "id": "67",
         "title": "Whitelist mechanism using merkle tree",
         "description": " This question asks if the whitelist mechanism of the platform uses a merkle tree",
+<<<<<<< Updated upstream
         "whitepaper": "No",
+=======
+        "whitepaper": "no",
+>>>>>>> Stashed changes
         "code": "No.",
         "pass": "YES"
     },
@@ -555,15 +707,24 @@
         "id": "69",
         "title": "Stackability of NFT",
         "description": " The question inquires about whether the NFT (Non-Fungible Token) presented by the platform is stackable or not",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "not sure",
+=======
+        "whitepaper": "not sure",
+        "code": "no",
+>>>>>>> Stashed changes
         "pass": "NOT SURE"
     },
     {
         "id": "70",
         "title": "public functions could be declared external",
         "description": " Are there any public functions that could be declared as external to save gas",
+<<<<<<< Updated upstream
         "whitepaper": "No",
+=======
+        "whitepaper": "no",
+>>>>>>> Stashed changes
         "code": "no",
         "pass": "YES"
     },
@@ -579,9 +740,15 @@
         "id": "72",
         "title": "fixed variable could be declared constant",
         "description": " Are there fixed variables that could be declared constant",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "no",
         "pass": "YES"
+=======
+        "whitepaper": "no",
+        "code": "I don't know.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "73",
@@ -595,7 +762,7 @@
         "id": "74",
         "title": "Whitelist mechanism",
         "description": " Does the whitelist mechanism use a merkle tree to ensure privacy and efficiency?",
-        "whitepaper": "No",
+        "whitepaper": "no",
         "code": "No.",
         "pass": "YES"
     },
@@ -611,23 +778,33 @@
         "id": "76",
         "title": "Redundant SafeMath Utilization ",
         "description": " This question is asking if SafeMath library is being redundantly used for basic arithmetic operations. Redundant usage of SafeMath library may lead to unwanted gas costs ",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "no",
         "pass": "YES"
+=======
+        "whitepaper": "No.",
+        "code": "I don't know.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "77",
         "title": "Public Functions Declared External to Save Gas",
         "description": " Can any public functions be declared as external to save on gas usage",
-        "whitepaper": "No",
-        "code": "not sure",
-        "pass": "NOT SURE"
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
     },
     {
         "id": "78",
         "title": "adjustable token supply",
         "description": " The question aims to know whether the total supply of tokens can be increased or decreased, and if so, how it is described in the white paper as well as in the smart contract",
+<<<<<<< Updated upstream
         "whitepaper": "No",
+=======
+        "whitepaper": "no",
+>>>>>>> Stashed changes
         "code": "yes",
         "pass": "NO"
     },
@@ -635,9 +812,9 @@
         "id": "79",
         "title": "KYC for token holders",
         "description": " Does the platform exercise a Know Your Customer (KYC) process for its token holders?",
-        "whitepaper": "No",
+        "whitepaper": "not sure",
         "code": "no",
-        "pass": "YES"
+        "pass": "NOT SURE"
     },
     {
         "id": "80",
@@ -659,33 +836,45 @@
         "id": "82",
         "title": "NFT stackability",
         "description": " Is it possible to stack or bundle multiple Non-Fungible Tokens (NFTs) together in this blockchain application?",
-        "whitepaper": "No",
-        "code": "no",
-        "pass": "YES"
+        "whitepaper": "no",
+        "code": "Not sure.",
+        "pass": "NOT SURE"
     },
     {
         "id": "83",
         "title": "Contract upgradeability",
         "description": " Can the smart contract in use be upgraded or modified after it has been deployed?",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "Yes",
         "pass": "NO"
+=======
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0, so I cannot determine whether the contract is upgradeable. Therefore, my answer is \"not sure\".",
+        "code": "yes",
+        "pass": "NOT SURE"
+>>>>>>> Stashed changes
     },
     {
         "id": "84",
         "title": "token burn limit",
         "description": " The query is about any limitations in place on the total number of tokens that can be destroyed, as described in the white paper and implemented in the contract code",
         "whitepaper": "No",
-        "code": "No",
+        "code": "no",
         "pass": "YES"
     },
     {
         "id": "85",
         "title": "Timelock protection for the contract",
         "description": " Does the smart contract have a time delay mechanism that allows changes to take effect only after certain time has passed?",
+<<<<<<< Updated upstream
         "whitepaper": "yes",
         "code": "Yes",
         "pass": "YES"
+=======
+        "whitepaper": "I'm sorry, but I don't have the information required to answer your question about the FDUSD Stablecoin White Paper.",
+        "code": "Yes",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "86",
@@ -699,39 +888,48 @@
         "id": "87",
         "title": "Risk isolation in lending pools",
         "description": " Does the protocol isolate risks between different pairs in its lending pools?",
-        "whitepaper": "no",
-        "code": "Yes.",
-        "pass": "NO"
+        "whitepaper": "I'm not sure.",
+        "code": "No.",
+        "pass": "NOT SURE"
     },
     {
         "id": "88",
         "title": "Emit Event Missing",
         "description": " Does the smart contract or blockchain application exclude emit events that are necessary for the transaction flow",
-        "whitepaper": "No",
+        "whitepaper": "I don't know.",
         "code": "I don't know.",
-        "pass": "NO"
+        "pass": "YES"
     },
     {
         "id": "89",
         "title": "Unnecessary Initialization of Variable",
         "description": " Does the smart contract or blockchain application include unnecessary instances of variable initialization",
         "whitepaper": "no",
-        "code": "I don't know.",
-        "pass": "NO"
+        "code": "no",
+        "pass": "YES"
     },
     {
         "id": "90",
         "title": "Regulatory requirements or compliance measures",
         "description": " Does the blockchain app have any regulatory requirements or compliance measures in place for the smart contract",
+<<<<<<< Updated upstream
         "whitepaper": "not sure",
         "code": "No",
+=======
+        "whitepaper": "yes",
+        "code": "Not sure.",
+>>>>>>> Stashed changes
         "pass": "NOT SURE"
     },
     {
         "id": "91",
         "title": "unnecessary function modifier",
         "description": " Is there any unnecessary function modifier",
+<<<<<<< Updated upstream
         "whitepaper": "No",
+=======
+        "whitepaper": "no",
+>>>>>>> Stashed changes
         "code": "I don't know.",
         "pass": "NO"
     },
@@ -747,39 +945,60 @@
         "id": "93",
         "title": "lack of input validation",
         "description": " It is about whether any necessary validation of inputs is lacking in the code or in the behavior described in the white paper.",
+<<<<<<< Updated upstream
         "whitepaper": "No",
         "code": "I don't know.",
         "pass": "NO"
+=======
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "94",
         "title": "unnecessary function modifier",
         "description": " It's about whether there are function modifiers that are not needed in the contract code or in the white paper description.",
         "whitepaper": "No",
+<<<<<<< Updated upstream
         "code": "not sure",
         "pass": "NOT SURE"
+=======
+        "code": "I don't know.",
+        "pass": "NO"
+>>>>>>> Stashed changes
     },
     {
         "id": "95",
         "title": "unnecessary initialization of variable",
         "description": " Are instances of unnecessary initialization of variable taking place",
         "whitepaper": "No",
+<<<<<<< Updated upstream
         "code": "I don't know.",
         "pass": "NO"
+=======
+        "code": "no",
+        "pass": "YES"
+>>>>>>> Stashed changes
     },
     {
         "id": "96",
         "title": "unnecessary delete call to an array",
         "description": " Are there unnecessary delete calls to an array",
         "whitepaper": "No",
+<<<<<<< Updated upstream
         "code": "I don't know.",
         "pass": "NO"
+=======
+        "code": "not sure",
+        "pass": "NOT SURE"
+>>>>>>> Stashed changes
     },
     {
         "id": "97",
         "title": "emit event missing",
         "description": " It refers to whether a smart contract is missing an 'emit' event following a state-changing operation or as stated in the White Paper.",
-        "whitepaper": "No",
+        "whitepaper": "no",
         "code": "No",
         "pass": "YES"
     },
@@ -787,16 +1006,22 @@
         "id": "98",
         "title": "repeated condition check",
         "description": " Is there any repeated condition check",
+<<<<<<< Updated upstream
         "whitepaper": "no",
         "code": "no",
         "pass": "YES"
+=======
+        "whitepaper": "No",
+        "code": "Not sure.",
+        "pass": "NOT SURE"
+>>>>>>> Stashed changes
     },
     {
         "id": "99",
         "title": "multiple initializations",
         "description": " The question asks about the occurrence of multiple initializations of a function or a variable within the code or as described in the white paper.",
-        "whitepaper": "No",
-        "code": "no",
-        "pass": "YES"
+        "whitepaper": "no",
+        "code": "yes",
+        "pass": "NO"
     }
 ]
