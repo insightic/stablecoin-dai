@@ -83,19 +83,21 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          FILES_CHANGED=0
-          # Check and add each file pattern, commit if changes exist
+          shopt -s globstar
+          FILES_TO_COMMIT=""
           for FILE_PATTERN in **/sosovalue.json **/linkedin.json **/twitter.json **/smartcontractvalidator.json **/stablecoin.json **/securityassessment.json; do
-            if git ls-files | grep -q "$FILE_PATTERN"; then
-              git add $FILE_PATTERN
-              FILES_CHANGED=1
+            if compgen -G "$FILE_PATTERN" > /dev/null; then
+              FILES_TO_COMMIT="$FILES_TO_COMMIT $(echo $FILE_PATTERN)"
             else
               echo "No files matching $FILE_PATTERN to commit."
             fi
           done
-          if [ "$FILES_CHANGED" -eq 1 ]; then
+          if [ -n "$FILES_TO_COMMIT" ]; then
+            echo "Adding files to commit: $FILES_TO_COMMIT"
+            git add $FILES_TO_COMMIT
             git commit -m "Update analysis results"
             git push
           else
             echo "No changes to commit."
           fi
+        shell: bash
