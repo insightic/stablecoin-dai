@@ -1,800 +1,802 @@
 [
-        {
-                "id": "0",
-                "title": "Smart contract standard",
-                "description": "Check what the ERC Standard is used by the project",
-                "whitepaper": "I don't know.",
-                "code": "Based on the provided context, there is no explicit mention of the ERC (Ethereum Request for Comment) standard used by the code. ERC standards are a set of application-level conventions in the Ethereum ecosystem, such as ERC-20 for fungible tokens or ERC-721 for non-fungible tokens (NFTs), among others.\n\nTo determine the ERC standard used by a specific piece of code, one would typically look for specific function signatures or interfaces that match those defined in an ERC standard. Since the provided context does not include such details, I cannot ascertain which ERC standard is being used by the code in question. If you have access to the full code or specific details about its functions and interfaces, that information would be necessary to identify the ERC standard.",
-                "pass": "NO"
-        },
-        {
-                "id": "1",
-                "title": "Smart contract standard",
-                "description": "Validate if the code fully comply the corresponding ERC Standard",
-                "whitepaper": "Not sure",
-                "code": "Yes",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "2",
-                "title": "Permission management",
-                "description": "Verify if only assigned roles have the ability to mint or burn tokens.",
-                "whitepaper": "No",
-                "code": "Yes",
-                "pass": "NO"
-        },
-        {
-                "id": "3",
-                "title": "Smart contract upgrade",
-                "description": "Check if the contract is upgradable.",
-                "whitepaper": "Yes",
-                "code": "Yes",
-                "pass": "YES"
-        },
-        {
-                "id": "4",
-                "title": "Owner initialization",
-                "description": "Determine the initialization process of the smart contract owner.",
-                "whitepaper": "The owner of a smart contract is not explicitly mentioned in the provided context. However, it explains that an Ethereum Contract Account, which can contain smart contracts, is controlled by its contract code and interacts with the network when it receives a message from an externally owned account or another contract account.",
-                "code": "I'm sorry, but I don't have access to the actual code of the smart contracts from the provided context. Therefore, I cannot provide details on how the owner of a smart contract is initialized. Smart contract code would need to be reviewed to answer that question accurately.",
-                "pass": "NO"
-        },
-        {
-                "id": "5",
-                "title": "Minter initialization",
-                "description": "Determine the initialization process of the token Minter.",
-                "whitepaper": "I'm sorry, but the provided text does not contain information about how the minter of the token is initialized. If you have more specific sections of the document that detail the initialization process, please share them, and I would be happy to help.",
-                "code": "I'm sorry, but the provided context does not include specific code details or the initialization process for the minter of the token. It only outlines the governance role of MKR tokens within the Maker Protocol and their use in recapitalization.",
-                "pass": "NO"
-        },
-        {
-                "id": "6",
-                "title": "Token name modification",
-                "description": "Check if the name of the token can be modified post-deployment.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "7",
-                "title": "Owner modification",
-                "description": "Verify if the _owner address can be changed.",
-                "whitepaper": "Yes",
-                "code": "Yes",
-                "pass": "YES"
-        },
-        {
-                "id": "8",
-                "title": "Blacklist Support",
-                "description": "Ascertain if the project has a \"blacklist\" feature.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "9",
-                "title": "Blacklist Check for Mint",
-                "description": "Examine if the mint function restricts only non-blacklisted minters.",
-                "whitepaper": "No",
-                "code": "I'm sorry, but I don't have access to the specific code for the Maker Protocol's mint function, so I cannot provide a definitive answer. Therefore, my response is \"not sure.\"",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "10",
-                "title": "Pause feature",
-                "description": "Verify if minting is restricted when the contract is paused.",
-                "whitepaper": "Yes",
-                "code": "Yes",
-                "pass": "YES"
-        },
-        {
-                "id": "11",
-                "title": "Pause feature",
-                "description": "Verify if burning is restricted when the contract is paused.",
-                "whitepaper": "Yes",
-                "code": "Yes",
-                "pass": "YES"
-        },
-        {
-                "id": "12",
-                "title": "Pause feature",
-                "description": "Verify if transfers are restricted when the contract is paused.",
-                "whitepaper": "Yes",
-                "code": "Yes",
-                "pass": "YES"
-        },
-        {
-                "id": "13",
-                "title": "Transfer check",
-                "description": "Confirm if the function checks blacklisted or null.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "14",
-                "title": "Blacklist Check for Burn",
-                "description": "Examine if the burn function restricts only non-blacklisted holders to burn.",
-                "whitepaper": "Yes",
-                "code": "Not sure.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "15",
-                "title": "Increase allowance check",
-                "description": "Confirm the blacklist functionalities.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "16",
-                "title": "Transfer check",
-                "description": "Confirm if the transfer function checks both msg.sender and to for blacklist status.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "17",
-                "title": "Change owner",
-                "description": "Determine if the owner can be changed.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "18",
-                "title": "Token Purchase Limit",
-                "description": "Examine if there's a purchase limit for ICO.",
-                "whitepaper": "not sure",
-                "code": "no",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "19",
-                "title": "Token Purchase Limit",
-                "description": "Determine the maximum number of tokens allowable for purchase.",
-                "whitepaper": "The provided context does not specify a maximum number of tokens that can be purchased in the token sale, so I don't have that information.",
-                "code": "The provided context does not specify a maximum number of tokens that can be purchased in the token sale, so I don't have that information.",
-                "pass": "YES"
-        },
-        {
-                "id": "20",
-                "title": "Whitelist",
-                "description": "Determine if there are restrictions such as a whitelist or blacklist.",
-                "whitepaper": "no",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "21",
-                "title": "Total Supply",
-                "description": "Identify the total token supply.",
-                "whitepaper": "I don't know.",
-                "code": "I don't know.",
-                "pass": "YES"
-        },
-        {
-                "id": "22",
-                "title": "Total Supply",
-                "description": "Check if the token supply is adjustable.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "23",
-                "title": "Token Supply",
-                "description": "Identify the number of reserved or locked tokens and their respective owners.",
-                "whitepaper": "0",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "24",
-                "title": "Key Controllers",
-                "description": "Identify the main controllers of the contract.",
-                "whitepaper": "The key controllers of the contract are MKR token holders who vote on proposals.",
-                "code": "I don't have access to external databases or the ability to read through smart contract code. Therefore, I cannot provide the specific details or statements related to the control of the smart contracts you're asking about.",
-                "pass": "NO"
-        },
-        {
-                "id": "25",
-                "title": "Token Distribution",
-                "description": "Check the token distribution mechanisms.",
-                "whitepaper": "The provided context does not contain specific information about the distribution mechanism for the tokens in question. It mentions the role of MKR tokens in governance and as a recapitalization resource, as well as the auction mechanisms of the Maker Protocol, but does not detail the distribution methods such as minting, sales, airdrops, rewards, etc. Therefore, I cannot provide a conclusion on the token distribution findings based on the given information.",
-                "code": "The provided context does not contain specific information regarding the distribution mechanisms for the tokens. Therefore, I cannot provide a conclusion on the token distribution findings.",
-                "pass": "YES"
-        },
-        {
-                "id": "26",
-                "title": "Staking",
-                "description": "Ascertain if there are staking mechanisms present.",
-                "whitepaper": "Not sure."
-        },
-        {
-                "id": "27",
-                "title": "Staking",
-                "description": "Summarize the NFT staking mechanisms.",
-                "whitepaper": "The provided context does not mention any specific NFT staking mechanisms such as Simple NFT Staking, NFT DeFi Staking, NFT Farming/Liquidity Mining, Fractional NFT Staking, NFT Staking with Utility, NFT-to-NFT Staking, NFT Staking with Lock-up Periods, NFT Staking Pools, Cross-Chain NFT Staking, or Curated NFT Staking. Therefore, I cannot provide a conclusion on NFT staking findings based on the given information.",
-                "code": "I don't have the specific information on the NFT staking mechanisms in the smart contract you're referring to. The context provided does not include details about NFT staking mechanisms. If you have a document or source that outlines these mechanisms, please provide it, and I can help you interpret the information. Otherwise, I'm unable to provide a conclusion on the NFT staking findings.",
-                "pass": "YES"
-        },
-        {
-                "id": "28",
-                "title": "Contract upgradability",
-                "description": "Confirm if the smart contract is upgradable.",
-                "whitepaper": "not sure",
-                "code": "yes",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "29",
-                "title": "Code applicability",
-                "description": "Determine if there are references compatibility with Automatic Market Makers.",
-                "whitepaper": "not sure",
-                "code": "no",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "30",
-                "title": "Governance mechanism",
-                "description": "Examine the decentralized governance mechanisms.",
-                "whitepaper": "Yes",
-                "code": "Yes",
-                "pass": "YES"
-        },
-        {
-                "id": "31",
-                "title": "token transfer ",
-                "description": "Check the rules for token transfer by owners.",
-                "whitepaper": "No",
-                "code": "yes",
-                "pass": "NO"
-        },
-        {
-                "id": "32",
-                "title": "Swap during contract pause",
-                "description": "Verify if the whitepaper addresses the possibility of swaps during contract pause mode.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "33",
-                "title": "Penalties for early withdrawal of staked tokens",
-                "description": "Determine if the penalties for early withdrawal of staked tokens.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "34",
-                "title": "Token transfer restriction",
-                "description": "Confirm if there are any restrictions on token transfers by owners.",
-                "whitepaper": "Yes",
-                "code": "no",
-                "pass": "NO"
-        },
-        {
-                "id": "35",
-                "title": "potential out of gas exception",
-                "description": "Check if there are potential \"out of gas\" exceptions.",
-                "whitepaper": "No.",
-                "code": "yes",
-                "pass": "NO"
-        },
-        {
-                "id": "36",
-                "title": "vulnerability to DOS attack",
-                "description": "Determine if the vulnerabilities to DOS attacks.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "37",
-                "title": "swap during pause ",
-                "description": "Ascertain the possibility of swaps during a pause.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "38",
-                "title": "Insufficient input sanitization",
-                "description": "Verify if there are measures for input sanitization.",
-                "whitepaper": "No",
-                "code": "not sure",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "39",
-                "title": "penalties for early withdrawal ",
-                "description": "Confirm if the penalties for early withdrawal of staked tokens.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "40",
-                "title": "Token limit per address",
-                "description": "Check if there is a cap on tokens held by a single address.",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "41",
-                "title": "low-level call()",
-                "description": "Determine the use of low-level calls in the application.",
-                "whitepaper": "no",
-                "code": "yes",
-                "pass": "NO"
-        },
-        {
-                "id": "42",
-                "title": "Redundant SafeMath Utilization",
-                "description": "Verify if there are redundant uses of SafeMath.",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "43",
-                "title": "Rounding result issue",
-                "description": "Is there a chance for rounding to result in users receiving more or less money than they should?",
-                "whitepaper": "no",
-                "code": "Yes",
-                "pass": "NO"
-        },
-        {
-                "id": "44",
-                "title": "timestamp variable used as uint32",
-                "description": "This question is asking if there's any timestamp variable that is being used as an integer of uint32 or a smaller integer type s which could potentially cause overflow or underflow errors.",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "45",
-                "title": "Process for handling token swaps",
-                "description": "What is the step by step process for handling token swaps between different blockchain networks?",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "46",
-                "title": "Incentives mechanism to token holders",
-                "description": "Does the blockchain application have an incentive mechanism for token holders?",
-                "whitepaper": "No",
-                "code": "Yes.",
-                "pass": "NO"
-        },
-        {
-                "id": "47",
-                "title": "incentives mechanism ",
-                "description": " the question is about token holder incentive mechanisms to encourage participation or usage",
-                "whitepaper": "no",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "48",
-                "title": "insufficient input sanitization ",
-                "description": " This question is to check whether the system robustly system validates or sanitize inputs to avoid possible attacks",
-                "whitepaper": "no",
-                "code": "Not sure.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "49",
-                "title": "token burn limit",
-                "description": " Are there any limits to the number of tokens that can be burned",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "50",
-                "title": "super account control",
-                "description": "This question is trying to find out if there's any super account, such as an owner or an administrator account, that has control over main features or functions.",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "51",
-                "title": "potential zero-value transfer",
-                "description": "This question is asking about the possibility of a transfer operation that carries a value of zero in either the smart contract or procedure described in the white paper.",
-                "whitepaper": "no",
-                "code": "Yes.",
-                "pass": "NO"
-        },
-        {
-                "id": "52",
-                "title": "unlocked compiler version ",
-                "description": " This question check if any compiler version verification mechanism isn't properly applied",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "53",
-                "title": "zero-value transfer",
-                "description": " Are there any instances of potential zero-value transfers taking place in the system",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "54",
-                "title": " KYC for token holders",
-                "description": " This question is asking about whether there is a Know Your Customer (KYC) process for individuals or entities that hold the tokens",
-                "whitepaper": "not sure",
-                "code": "no",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "55",
-                "title": "Slippage for AMMs",
-                "description": " Does this platform have slippage for Automated Market Makers (AMMs)? ",
-                "whitepaper": "No",
-                "code": "Not sure.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "56",
-                "title": "super account control ",
-                "description": " This question is asking about the presence of a super account that possesses control over main functions. Presence of such an account can lead to potential abuse and centralization ",
-                "whitepaper": "No.",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "57",
-                "title": "low-level call() ",
-                "description": " This question is checking for any direct usage of low-level call() methods in the smart contract. Direct usage of low-level calls can potentially lead to reentrancy attacks ",
-                "whitepaper": "Yes",
-                "code": "No",
-                "pass": "NO"
-        },
-        {
-                "id": "58",
-                "title": "timestamp variable type ",
-                "description": " This question is about the presence of timestamp variables being used as uint32, or a smaller integer type. Such usage can potentially introduce issues related to contract timing ",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "59",
-                "title": "function comment inconsistency ",
-                "description": " This question is checking for any inconsistency between the function comment and the code implementation. An inconsistency can lead to misinterpretation or misleading information ",
-                "whitepaper": "no",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "60",
-                "title": "NFTs URI source",
-                "description": " Is the URI source of NFTs inscribed directly in the smart contract or are they using IPFS/Web2 links instead?",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "61",
-                "title": "NFTs URI inscription method",
-                "description": " The question wants to know whether the URI of NFTs is inscribed directly in the smart contract or an IPFS/Web2 link is used instead, as documented in the white paper and implemented in the contract code",
-                "whitepaper": "no",
-                "code": "not sure",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "62",
-                "title": "Fixed Variables Could Be Declared Constant",
-                "description": " Are there any fixed variables that, to increase efficiency, could be declared as constant",
-                "whitepaper": "I don't know.",
-                "code": "I don't know.",
-                "pass": "YES"
-        },
-        {
-                "id": "63",
-                "title": "Multiple Initializations",
-                "description": " Are variables unnecessarily initialized more than once",
-                "whitepaper": "no",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "64",
-                "title": "lack of input validation",
-                "description": " Are there any necessary validations of inputs missing",
-                "whitepaper": "No",
-                "code": "not sure",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "65",
-                "title": "out of gas exception",
-                "description": " Could there be any situation whereby the contract risks running out of gas",
-                "whitepaper": "No",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "66",
-                "title": "token price determination",
-                "description": " The question aims to understand the mechanism used for determining the token's price on a secondary market as described in the white paper and implemented in the smart contract",
-                "whitepaper": "I'm sorry, but I don't have the information required to answer your question with \"yes\", \"no\", or \"not sure\". If you provide the relevant excerpt from the FDUSD Stablecoin White Paper, I could assist you further.",
-                "code": "No",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "67",
-                "title": "Whitelist mechanism using merkle tree",
-                "description": " This question asks if the whitelist mechanism of the platform uses a merkle tree",
-                "whitepaper": "no",
-                "code": "No.",
-                "pass": "YES"
-        },
-        {
-                "id": "68",
-                "title": "Token ownership limit for single address",
-                "description": " The question requests information about whether there is a maximum limit on the number of tokens that can be owned by a single wallet address",
-                "whitepaper": "No",
-                "code": "No.",
-                "pass": "YES"
-        },
-        {
-                "id": "69",
-                "title": "Stackability of NFT",
-                "description": " The question inquires about whether the NFT (Non-Fungible Token) presented by the platform is stackable or not",
-                "whitepaper": "not sure",
-                "code": "no",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "70",
-                "title": "public functions could be declared external",
-                "description": " Are there any public functions that could be declared as external to save gas",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "71",
-                "title": "possible vulnerability to DOS attack ",
-                "description": " The question addresses if the smart contract can be potentially vulnerable to DOS attacks. DOS attacks can interrupt the normal functioning of the smart contract ",
-                "whitepaper": "No",
-                "code": "Yes",
-                "pass": "NO"
-        },
-        {
-                "id": "72",
-                "title": "fixed variable could be declared constant",
-                "description": " Are there fixed variables that could be declared constant",
-                "whitepaper": "no",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "73",
-                "title": "Block transfer ability",
-                "description": " Does the contract have the capability to block a user\u2019s transfer abilities?",
-                "whitepaper": "No",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "74",
-                "title": "Whitelist mechanism",
-                "description": " Does the whitelist mechanism use a merkle tree to ensure privacy and efficiency?",
-                "whitepaper": "no",
-                "code": "No.",
-                "pass": "YES"
-        },
-        {
-                "id": "75",
-                "title": "Protocol bridge usage",
-                "description": " Is the protocol making use of a bridge to connect to other networks or systems?",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "76",
-                "title": "Redundant SafeMath Utilization ",
-                "description": " This question is asking if SafeMath library is being redundantly used for basic arithmetic operations. Redundant usage of SafeMath library may lead to unwanted gas costs ",
-                "whitepaper": "No.",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "77",
-                "title": "Public Functions Declared External to Save Gas",
-                "description": " Can any public functions be declared as external to save on gas usage",
-                "whitepaper": "no",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "78",
-                "title": "adjustable token supply",
-                "description": " The question aims to know whether the total supply of tokens can be increased or decreased, and if so, how it is described in the white paper as well as in the smart contract",
-                "whitepaper": "no",
-                "code": "yes",
-                "pass": "NO"
-        },
-        {
-                "id": "79",
-                "title": "KYC for token holders",
-                "description": " Does the platform exercise a Know Your Customer (KYC) process for its token holders?",
-                "whitepaper": "not sure",
-                "code": "no",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "80",
-                "title": "User interface mechanism",
-                "description": " How does the contract interface with users, for example through front-running prevention techniques like MEV-safe RPCs?",
-                "whitepaper": "no",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "81",
-                "title": "restrictions on token transfer",
-                "description": " The question investigates the presence of any restrictions that might be placed on transferring tokens between addresses in both the white paper and the contract code",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "82",
-                "title": "NFT stackability",
-                "description": " Is it possible to stack or bundle multiple Non-Fungible Tokens (NFTs) together in this blockchain application?",
-                "whitepaper": "no",
-                "code": "Not sure.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "83",
-                "title": "Contract upgradeability",
-                "description": " Can the smart contract in use be upgraded or modified after it has been deployed?",
-                "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0, so I cannot determine whether the contract is upgradeable. Therefore, my answer is \"not sure\".",
-                "code": "yes",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "84",
-                "title": "token burn limit",
-                "description": " The query is about any limitations in place on the total number of tokens that can be destroyed, as described in the white paper and implemented in the contract code",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "85",
-                "title": "Timelock protection for the contract",
-                "description": " Does the smart contract have a time delay mechanism that allows changes to take effect only after certain time has passed?",
-                "whitepaper": "I'm sorry, but I don't have the information required to answer your question about the FDUSD Stablecoin White Paper.",
-                "code": "Yes",
-                "pass": "NO"
-        },
-        {
-                "id": "86",
-                "title": "AMM liquidity concentration",
-                "description": " Does the automated market maker (AMM) have concentrated liquidity?",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "87",
-                "title": "Risk isolation in lending pools",
-                "description": " Does the protocol isolate risks between different pairs in its lending pools?",
-                "whitepaper": "I'm not sure.",
-                "code": "No.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "88",
-                "title": "Emit Event Missing",
-                "description": " Does the smart contract or blockchain application exclude emit events that are necessary for the transaction flow",
-                "whitepaper": "I don't know.",
-                "code": "I don't know.",
-                "pass": "YES"
-        },
-        {
-                "id": "89",
-                "title": "Unnecessary Initialization of Variable",
-                "description": " Does the smart contract or blockchain application include unnecessary instances of variable initialization",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "90",
-                "title": "Regulatory requirements or compliance measures",
-                "description": " Does the blockchain app have any regulatory requirements or compliance measures in place for the smart contract",
-                "whitepaper": "yes",
-                "code": "Not sure.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "91",
-                "title": "unnecessary function modifier",
-                "description": " Is there any unnecessary function modifier",
-                "whitepaper": "no",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "92",
-                "title": "handling reentrancy attacks",
-                "description": " The question is about whether the blockchain app has measures integrated in the white paper design or actual contract code to prevent reentrancy attacks",
-                "whitepaper": "no",
-                "code": "Yes",
-                "pass": "NO"
-        },
-        {
-                "id": "93",
-                "title": "lack of input validation",
-                "description": " It is about whether any necessary validation of inputs is lacking in the code or in the behavior described in the white paper.",
-                "whitepaper": "no",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "94",
-                "title": "unnecessary function modifier",
-                "description": " It's about whether there are function modifiers that are not needed in the contract code or in the white paper description.",
-                "whitepaper": "No",
-                "code": "I don't know.",
-                "pass": "NO"
-        },
-        {
-                "id": "95",
-                "title": "unnecessary initialization of variable",
-                "description": " Are instances of unnecessary initialization of variable taking place",
-                "whitepaper": "No",
-                "code": "no",
-                "pass": "YES"
-        },
-        {
-                "id": "96",
-                "title": "unnecessary delete call to an array",
-                "description": " Are there unnecessary delete calls to an array",
-                "whitepaper": "No",
-                "code": "not sure",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "97",
-                "title": "emit event missing",
-                "description": " It refers to whether a smart contract is missing an 'emit' event following a state-changing operation or as stated in the White Paper.",
-                "whitepaper": "no",
-                "code": "No",
-                "pass": "YES"
-        },
-        {
-                "id": "98",
-                "title": "repeated condition check",
-                "description": " Is there any repeated condition check",
-                "whitepaper": "No",
-                "code": "Not sure.",
-                "pass": "NOT SURE"
-        },
-        {
-                "id": "99",
-                "title": "multiple initializations",
-                "description": " The question asks about the occurrence of multiple initializations of a function or a variable within the code or as described in the white paper.",
-                "whitepaper": "no",
-                "code": "yes",
-                "pass": "NO"
-        }
+    {
+        "id": "0",
+        "title": "Smart contract standard",
+        "description": "Check what the ERC Standard is used by the project",
+        "whitepaper": "I don't know.",
+        "code": "Based on the provided context, there is no clear mention of an ERC (Ethereum Request for Comments) standard or any specific details that would indicate a particular ERC standard like ERC-20, ERC-721, or ERC-1155, which are commonly used in the Ethereum blockchain ecosystem.\n\nThe text provided seems to be related to software licensing or distribution terms, possibly from an open-source license, rather than blockchain or Ethereum standards. Therefore, I cannot determine the ERC standard used by the code from the given context. If you have more specific information or code excerpts that mention Ethereum or ERC standards, please provide them, and I would be happy to help.",
+        "pass": "NO"
+    },
+    {
+        "id": "1",
+        "title": "Smart contract standard",
+        "description": "Validate if the code fully comply the corresponding ERC Standard",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "2",
+        "title": "Permission management",
+        "description": "Verify if only assigned roles have the ability to mint or burn tokens.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "3",
+        "title": "Smart contract upgrade",
+        "description": "Check if the contract is upgradable.",
+        "whitepaper": "Not sure.",
+        "code": "Not sure",
+        "pass": "IGNORED"
+    },
+    {
+        "id": "4",
+        "title": "Owner initialization",
+        "description": "Determine the initialization process of the smart contract owner.",
+        "whitepaper": "The owner of a smart contract is not explicitly mentioned in the provided context. However, smart contracts on the Ethereum blockchain are typically deployed by an externally owned account, which may retain certain control functions depending on how the contract is coded.",
+        "code": "The owner of the smart contract is initialized in the constructor of the Owned contract, where the `_owner` parameter is set as the contract's owner. The constructor requires that the `_owner` address is not the zero address and emits an `OwnerChanged` event with the new owner's address.",
+        "pass": "NO"
+    },
+    {
+        "id": "5",
+        "title": "Minter initialization",
+        "description": "Determine the initialization process of the token Minter.",
+        "whitepaper": "I'm sorry, but the provided text does not contain information about how the Minter of the token is initialized. If you can provide the relevant section of the document, I would be happy to help you with a summary.",
+        "code": "The provided code snippet does not explicitly show the initialization of a minter for the token. It references balance checks and a potential fee mechanism, but the initialization process for a minter is not included in the given context.",
+        "pass": "NO"
+    },
+    {
+        "id": "6",
+        "title": "Token name modification",
+        "description": "Check if the name of the token can be modified post-deployment.",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "7",
+        "title": "Owner modification",
+        "description": "Verify if the _owner address can be changed.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "8",
+        "title": "Blacklist Support",
+        "description": "Ascertain if the project has a \"blacklist\" feature.",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "9",
+        "title": "Blacklist Check for Mint",
+        "description": "Examine if the mint function restricts only non-blacklisted minters.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "10",
+        "title": "Pause feature",
+        "description": "Verify if minting is restricted when the contract is paused.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "11",
+        "title": "Pause feature",
+        "description": "Verify if burning is restricted when the contract is paused.",
+        "whitepaper": "No",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "12",
+        "title": "Pause feature",
+        "description": "Verify if transfers are restricted when the contract is paused.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "13",
+        "title": "Transfer check",
+        "description": "Confirm if the function checks blacklisted or null.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "14",
+        "title": "Blacklist Check for Burn",
+        "description": "Examine if the burn function restricts only non-blacklisted holders to burn.",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "15",
+        "title": "Increase allowance check",
+        "description": "Confirm the blacklist functionalities.",
+        "whitepaper": "Yes",
+        "code": "Yes",
+        "pass": "YES"
+    },
+    {
+        "id": "16",
+        "title": "Transfer check",
+        "description": "Confirm if the transfer function checks both msg.sender and to for blacklist status.",
+        "whitepaper": "No",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "17",
+        "title": "Change owner",
+        "description": "Determine if the owner can be changed.",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "18",
+        "title": "Token Purchase Limit",
+        "description": "Examine if there's a purchase limit for ICO.",
+        "whitepaper": "not sure",
+        "code": "not sure",
+        "pass": "YES"
+    },
+    {
+        "id": "19",
+        "title": "Token Purchase Limit",
+        "description": "Determine the maximum number of tokens allowable for purchase.",
+        "whitepaper": "The provided context does not include information about a token sale or a maximum number of tokens that can be purchased. Therefore, I don't know the answer.",
+        "code": "The provided context does not specify a maximum number of tokens that can be purchased in the token sale, so I cannot provide that number.",
+        "pass": "YES"
+    },
+    {
+        "id": "20",
+        "title": "Whitelist",
+        "description": "Determine if there are restrictions such as a whitelist or blacklist.",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "21",
+        "title": "Total Supply",
+        "description": "Identify the total token supply.",
+        "whitepaper": "I don't know.",
+        "code": "I don't know.",
+        "pass": "YES"
+    },
+    {
+        "id": "22",
+        "title": "Total Supply",
+        "description": "Check if the token supply is adjustable.",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "23",
+        "title": "Token Supply",
+        "description": "Identify the number of reserved or locked tokens and their respective owners.",
+        "whitepaper": "0",
+        "code": "0",
+        "pass": "YES"
+    },
+    {
+        "id": "24",
+        "title": "Key Controllers",
+        "description": "Identify the main controllers of the contract.",
+        "whitepaper": "The key controllers of the contract are governed by Maker Governance.",
+        "code": "The key controllers of the contract are the owner_address and the timelock_address.",
+        "pass": "NO"
+    },
+    {
+        "id": "25",
+        "title": "Token Distribution",
+        "description": "Check the token distribution mechanisms.",
+        "whitepaper": "Based on the provided context, there is no direct information about the specific distribution mechanisms for the tokens. The context does mention a Debt Auction as a means to increase the MKR token supply for recapitalization, which could be considered under the \"Mint\" mechanism. However, without additional information on the other distribution methods like Initial Allocation, Sale, Airdrop, etc., a comprehensive conclusion on the token distribution mechanisms cannot be drawn. Therefore, I don't have enough information to provide a conclusion on the token distribution findings.",
+        "code": "The provided context does not contain specific information about the distribution mechanism for the tokens in terms of minting, sales, airdrops, rewards, staking, claims, dividends, faucets, bounties, vesting, liquidity mining, farming/yield farming, burn mechanisms, treasury/fund allocations, payments for services/work, lotteries/raffles, or referral programs. It only mentions that the MKR token supply may increase through a Debt Auction to recapitalize the system if the system debt exceeds the surplus. Therefore, based on the given context, I cannot provide a conclusion about the token distribution mechanisms.",
+        "pass": "YES"
+    },
+    {
+        "id": "26",
+        "title": "Staking",
+        "description": "Ascertain if there are staking mechanisms present.",
+        "whitepaper": "not sure",
+        "code": "no",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "27",
+        "title": "Staking",
+        "description": "Summarize the NFT staking mechanisms.",
+        "whitepaper": "Based on the context provided, there is no specific mention of NFT staking mechanisms. Therefore, I cannot provide a conclusion on NFT staking findings from the documents given.",
+        "code": "I don't have the specific details on the NFT staking mechanisms in the smart contract as the provided context does not include information about NFT staking. Therefore, I cannot provide a conclusion on the NFT staking findings.",
+        "pass": "YES"
+    },
+    {
+        "id": "28",
+        "title": "Contract upgradability",
+        "description": "Confirm if the smart contract is upgradable.",
+        "whitepaper": "not sure",
+        "code": "yes",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "29",
+        "title": "Code applicability",
+        "description": "Determine if there are references compatibility with Automatic Market Makers.",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "30",
+        "title": "Governance mechanism",
+        "description": "Examine the decentralized governance mechanisms.",
+        "whitepaper": "Yes",
+        "code": "yes",
+        "pass": "YES"
+    },
+    {
+        "id": "31",
+        "title": "token transfer ",
+        "description": "Check the rules for token transfer by owners.",
+        "whitepaper": "Yes",
+        "code": "yes",
+        "pass": "YES"
+    },
+    {
+        "id": "32",
+        "title": "Swap during contract pause",
+        "description": "Verify if the whitepaper addresses the possibility of swaps during contract pause mode.",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "33",
+        "title": "Penalties for early withdrawal of staked tokens",
+        "description": "Determine if the penalties for early withdrawal of staked tokens.",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "34",
+        "title": "Token transfer restriction",
+        "description": "Confirm if there are any restrictions on token transfers by owners.",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "35",
+        "title": "potential out of gas exception",
+        "description": "Check if there are potential \"out of gas\" exceptions.",
+        "whitepaper": "No",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "36",
+        "title": "vulnerability to DOS attack",
+        "description": "Determine if the vulnerabilities to DOS attacks.",
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "37",
+        "title": "swap during pause ",
+        "description": "Ascertain the possibility of swaps during a pause.",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "38",
+        "title": "Insufficient input sanitization",
+        "description": "Verify if there are measures for input sanitization.",
+        "whitepaper": "No",
+        "code": "Not sure.",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "39",
+        "title": "penalties for early withdrawal ",
+        "description": "Confirm if the penalties for early withdrawal of staked tokens.",
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "40",
+        "title": "Token limit per address",
+        "description": "Check if there is a cap on tokens held by a single address.",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "41",
+        "title": "low-level call()",
+        "description": "Determine the use of low-level calls in the application.",
+        "whitepaper": "No.",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "42",
+        "title": "Redundant SafeMath Utilization",
+        "description": "Verify if there are redundant uses of SafeMath.",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "43",
+        "title": "Rounding result issue",
+        "description": "Is there a chance for rounding to result in users receiving more or less money than they should?",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "44",
+        "title": "timestamp variable used as uint32",
+        "description": "This question is asking if there's any timestamp variable that is being used as an integer of uint32 or a smaller integer type s which could potentially cause overflow or underflow errors.",
+        "whitepaper": "no",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "45",
+        "title": "Process for handling token swaps",
+        "description": "What is the step by step process for handling token swaps between different blockchain networks?",
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "46",
+        "title": "Incentives mechanism to token holders",
+        "description": "Does the blockchain application have an incentive mechanism for token holders?",
+        "whitepaper": "No",
+        "code": "Yes.",
+        "pass": "NO"
+    },
+    {
+        "id": "47",
+        "title": "incentives mechanism ",
+        "description": " the question is about token holder incentive mechanisms to encourage participation or usage",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "48",
+        "title": "insufficient input sanitization ",
+        "description": " This question is to check whether the system robustly system validates or sanitize inputs to avoid possible attacks",
+        "whitepaper": "No",
+        "code": "Not sure.",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "49",
+        "title": "token burn limit",
+        "description": " Are there any limits to the number of tokens that can be burned",
+        "whitepaper": "No",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "50",
+        "title": "super account control",
+        "description": "This question is trying to find out if there's any super account, such as an owner or an administrator account, that has control over main features or functions.",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "51",
+        "title": "potential zero-value transfer",
+        "description": "This question is asking about the possibility of a transfer operation that carries a value of zero in either the smart contract or procedure described in the white paper.",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0, so I cannot provide an answer to whether it mentions any potential zero-value transfer.",
+        "code": "Yes.",
+        "pass": "NO"
+    },
+    {
+        "id": "52",
+        "title": "unlocked compiler version ",
+        "description": " This question check if any compiler version verification mechanism isn't properly applied",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0, so I cannot confirm whether there is any mention of an unlocked compiler version in the proposed system. Therefore, my answer is \"not sure\".",
+        "code": "yes",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "53",
+        "title": "zero-value transfer",
+        "description": " Are there any instances of potential zero-value transfers taking place in the system",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "54",
+        "title": " KYC for token holders",
+        "description": " This question is asking about whether there is a Know Your Customer (KYC) process for individuals or entities that hold the tokens",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "55",
+        "title": "Slippage for AMMs",
+        "description": " Does this platform have slippage for Automated Market Makers (AMMs)? ",
+        "whitepaper": "Yes",
+        "code": "no",
+        "pass": "NO"
+    },
+    {
+        "id": "56",
+        "title": "super account control ",
+        "description": " This question is asking about the presence of a super account that possesses control over main functions. Presence of such an account can lead to potential abuse and centralization ",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "57",
+        "title": "low-level call() ",
+        "description": " This question is checking for any direct usage of low-level call() methods in the smart contract. Direct usage of low-level calls can potentially lead to reentrancy attacks ",
+        "whitepaper": "Yes",
+        "code": "no",
+        "pass": "NO"
+    },
+    {
+        "id": "58",
+        "title": "timestamp variable type ",
+        "description": " This question is about the presence of timestamp variables being used as uint32, or a smaller integer type. Such usage can potentially introduce issues related to contract timing ",
+        "whitepaper": "No",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "59",
+        "title": "function comment inconsistency ",
+        "description": " This question is checking for any inconsistency between the function comment and the code implementation. An inconsistency can lead to misinterpretation or misleading information ",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "60",
+        "title": "NFTs URI source",
+        "description": " Is the URI source of NFTs inscribed directly in the smart contract or are they using IPFS/Web2 links instead?",
+        "whitepaper": "no",
+        "code": "not sure",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "61",
+        "title": "NFTs URI inscription method",
+        "description": " The question wants to know whether the URI of NFTs is inscribed directly in the smart contract or an IPFS/Web2 link is used instead, as documented in the white paper and implemented in the contract code",
+        "whitepaper": "no",
+        "code": "not sure",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "62",
+        "title": "Fixed Variables Could Be Declared Constant",
+        "description": " Are there any fixed variables that, to increase efficiency, could be declared as constant",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0 or any other documents, so I cannot provide an answer to your question. My capabilities are limited to the information that has been shared with me up to my knowledge cutoff date, and I cannot access or retrieve external documents or content that has not been provided to me within this interaction.",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "63",
+        "title": "Multiple Initializations",
+        "description": " Are variables unnecessarily initialized more than once",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper or any other documents, so I cannot provide an answer to your question.",
+        "code": "no",
+        "pass": "NO"
+    },
+    {
+        "id": "64",
+        "title": "lack of input validation",
+        "description": " Are there any necessary validations of inputs missing",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper or any other documents, so I cannot provide an answer to your question.",
+        "code": "no",
+        "pass": "NO"
+    },
+    {
+        "id": "65",
+        "title": "out of gas exception",
+        "description": " Could there be any situation whereby the contract risks running out of gas",
+        "whitepaper": "No",
+        "code": "I don't know.",
+        "pass": "NO"
+    },
+    {
+        "id": "66",
+        "title": "token price determination",
+        "description": " The question aims to understand the mechanism used for determining the token's price on a secondary market as described in the white paper and implemented in the smart contract",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0 or any other documents, so I cannot provide an answer to your question. My responses are generated based on general knowledge up to my last update in 2023, and I do not have the ability to access or retrieve specific documents or their contents. If you have access to the white paper, I would recommend reviewing the sections that typically discuss market mechanisms, such as sections on price stability, market operations, or token economics.",
+        "code": "no",
+        "pass": "NO"
+    },
+    {
+        "id": "67",
+        "title": "Whitelist mechanism using merkle tree",
+        "description": " This question asks if the whitelist mechanism of the platform uses a merkle tree",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "68",
+        "title": "Token ownership limit for single address",
+        "description": " The question requests information about whether there is a maximum limit on the number of tokens that can be owned by a single wallet address",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "69",
+        "title": "Stackability of NFT",
+        "description": " The question inquires about whether the NFT (Non-Fungible Token) presented by the platform is stackable or not",
+        "whitepaper": "not sure",
+        "code": "no",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "70",
+        "title": "public functions could be declared external",
+        "description": " Are there any public functions that could be declared as external to save gas",
+        "whitepaper": "Yes",
+        "code": "yes",
+        "pass": "YES"
+    },
+    {
+        "id": "71",
+        "title": "possible vulnerability to DOS attack ",
+        "description": " The question addresses if the smart contract can be potentially vulnerable to DOS attacks. DOS attacks can interrupt the normal functioning of the smart contract ",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "72",
+        "title": "fixed variable could be declared constant",
+        "description": " Are there fixed variables that could be declared constant",
+        "whitepaper": "no",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "73",
+        "title": "Block transfer ability",
+        "description": " Does the contract have the capability to block a user\u2019s transfer abilities?",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "74",
+        "title": "Whitelist mechanism",
+        "description": " Does the whitelist mechanism use a merkle tree to ensure privacy and efficiency?",
+        "whitepaper": "no",
+        "code": "No.",
+        "pass": "YES"
+    },
+    {
+        "id": "75",
+        "title": "Protocol bridge usage",
+        "description": " Is the protocol making use of a bridge to connect to other networks or systems?",
+        "whitepaper": "No",
+        "code": "No.",
+        "pass": "YES"
+    },
+    {
+        "id": "76",
+        "title": "Redundant SafeMath Utilization ",
+        "description": " This question is asking if SafeMath library is being redundantly used for basic arithmetic operations. Redundant usage of SafeMath library may lead to unwanted gas costs ",
+        "whitepaper": "No",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "77",
+        "title": "Public Functions Declared External to Save Gas",
+        "description": " Can any public functions be declared as external to save on gas usage",
+        "whitepaper": "Yes",
+        "code": "Yes.",
+        "pass": "YES"
+    },
+    {
+        "id": "78",
+        "title": "adjustable token supply",
+        "description": " The question aims to know whether the total supply of tokens can be increased or decreased, and if so, how it is described in the white paper as well as in the smart contract",
+        "whitepaper": "no",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "79",
+        "title": "KYC for token holders",
+        "description": " Does the platform exercise a Know Your Customer (KYC) process for its token holders?",
+        "whitepaper": "not sure",
+        "code": "no",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "80",
+        "title": "User interface mechanism",
+        "description": " How does the contract interface with users, for example through front-running prevention techniques like MEV-safe RPCs?",
+        "whitepaper": "No",
+        "code": "No.",
+        "pass": "YES"
+    },
+    {
+        "id": "81",
+        "title": "restrictions on token transfer",
+        "description": " The question investigates the presence of any restrictions that might be placed on transferring tokens between addresses in both the white paper and the contract code",
+        "whitepaper": "No",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "82",
+        "title": "NFT stackability",
+        "description": " Is it possible to stack or bundle multiple Non-Fungible Tokens (NFTs) together in this blockchain application?",
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "83",
+        "title": "Contract upgradeability",
+        "description": " Can the smart contract in use be upgraded or modified after it has been deployed?",
+        "whitepaper": "not sure",
+        "code": "yes",
+        "pass": "NOT SURE"
+    },
+    {
+        "id": "84",
+        "title": "token burn limit",
+        "description": " The query is about any limitations in place on the total number of tokens that can be destroyed, as described in the white paper and implemented in the contract code",
+        "whitepaper": "No",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "85",
+        "title": "Timelock protection for the contract",
+        "description": " Does the smart contract have a time delay mechanism that allows changes to take effect only after certain time has passed?",
+        "whitepaper": "no",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "86",
+        "title": "AMM liquidity concentration",
+        "description": " Does the automated market maker (AMM) have concentrated liquidity?",
+        "whitepaper": "no",
+        "code": "No.",
+        "pass": "YES"
+    },
+    {
+        "id": "87",
+        "title": "Risk isolation in lending pools",
+        "description": " Does the protocol isolate risks between different pairs in its lending pools?",
+        "whitepaper": "No",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "88",
+        "title": "Emit Event Missing",
+        "description": " Does the smart contract or blockchain application exclude emit events that are necessary for the transaction flow",
+        "whitepaper": "I don't know.",
+        "code": "no",
+        "pass": "NO"
+    },
+    {
+        "id": "89",
+        "title": "Unnecessary Initialization of Variable",
+        "description": " Does the smart contract or blockchain application include unnecessary instances of variable initialization",
+        "whitepaper": "no",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "90",
+        "title": "Regulatory requirements or compliance measures",
+        "description": " Does the blockchain app have any regulatory requirements or compliance measures in place for the smart contract",
+        "whitepaper": "no",
+        "code": "No",
+        "pass": "YES"
+    },
+    {
+        "id": "91",
+        "title": "unnecessary function modifier",
+        "description": " Is there any unnecessary function modifier",
+        "whitepaper": "No",
+        "code": "yes",
+        "pass": "NO"
+    },
+    {
+        "id": "92",
+        "title": "handling reentrancy attacks",
+        "description": " The question is about whether the blockchain app has measures integrated in the white paper design or actual contract code to prevent reentrancy attacks",
+        "whitepaper": "No",
+        "code": "Yes",
+        "pass": "NO"
+    },
+    {
+        "id": "93",
+        "title": "lack of input validation",
+        "description": " It is about whether any necessary validation of inputs is lacking in the code or in the behavior described in the white paper.",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0, so I cannot provide an answer to whether it indicates any instances where necessary input validation is absent.",
+        "code": "I don't know.",
+        "pass": "NO"
+    },
+    {
+        "id": "94",
+        "title": "unnecessary function modifier",
+        "description": " It's about whether there are function modifiers that are not needed in the contract code or in the white paper description.",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "95",
+        "title": "unnecessary initialization of variable",
+        "description": " Are instances of unnecessary initialization of variable taking place",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "96",
+        "title": "unnecessary delete call to an array",
+        "description": " Are there unnecessary delete calls to an array",
+        "whitepaper": "No",
+        "code": "no",
+        "pass": "YES"
+    },
+    {
+        "id": "97",
+        "title": "emit event missing",
+        "description": " It refers to whether a smart contract is missing an 'emit' event following a state-changing operation or as stated in the White Paper.",
+        "whitepaper": "no",
+        "code": "No.",
+        "pass": "YES"
+    },
+    {
+        "id": "98",
+        "title": "repeated condition check",
+        "description": " Is there any repeated condition check",
+        "whitepaper": "No",
+        "code": "No.",
+        "pass": "YES"
+    },
+    {
+        "id": "99",
+        "title": "multiple initializations",
+        "description": " The question asks about the occurrence of multiple initializations of a function or a variable within the code or as described in the white paper.",
+        "whitepaper": "I'm sorry, but I don't have access to the content of the FDUSD Stablecoin White Paper v.1.0, so I cannot determine whether there are instances of multiple initializations of functions or variables. Therefore, my answer is \"not sure\".",
+        "code": "No",
+        "pass": "NOT SURE"
+    }
 ]
