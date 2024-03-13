@@ -85,7 +85,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           FILES_CHANGED=0
           # Check and add each file pattern, commit if changes exist
-          for FILE_PATTERN in */sosovalue.json */linkedin.json */twitter.json */smartcontractvalidator.json */stablecoin.json */securityassessment.json; do
+          for FILE_PATTERN in **/sosovalue.json **/linkedin.json **/twitter.json **/smartcontractvalidator.json **/stablecoin.json **/securityassessment.json; do
             if git ls-files | grep -q "$FILE_PATTERN"; then
               git add $FILE_PATTERN
               FILES_CHANGED=1
