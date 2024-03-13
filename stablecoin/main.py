@@ -22,7 +22,8 @@ class AnalysisRunner:
             )
             return
         logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
-        timestamp = datetime.now().strftime("%Y%m%d")
+        timestamp = "20240305"
+        # timestamp = datetime.now().strftime("%Y%m%d")
         file_name = f"{self.analysis_function.__name__}.json"
         analysis = self.analysis_function(project_dir=project_dir)
         analysis.run_analysis(timestamp, file_name=file_name)
@@ -74,12 +75,12 @@ def check_sosovalue(data):
 
 # AnalysisRunner instances for each analysis
 analyses = [
-    AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
-    AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
-    AnalysisRunner(pyinsightic.Twitter, check_twitter),
-    AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
+    # AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
+    # AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
+    # AnalysisRunner(pyinsightic.Twitter, check_twitter),
+    # AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
     AnalysisRunner(pyinsightic.SmartContractValidator, check_smart_contract_validator),
-    AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment),
+    # AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment),
 ]
 
 
@@ -106,5 +107,5 @@ def main(test_folders=None):
 
 if __name__ == "__main__":
     # main()
-    os.chdir("stablecoin")
-    main(test_folders=["dai", "usdt"])
+    # os.chdir("stablecoin")
+    main(test_folders=["dai"])
