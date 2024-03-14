@@ -1,7 +1,7 @@
 {
-    "report_name": "TOB_MakerDAO_Final_Report.pdf",
-    "biz_content": "\n\n\n\n",
-    "biz_content_percentage": 0.0,
+    "report_name": "TerraCore-Audit-Report-010922.pdf",
+    "biz_content": "The Terra system is mainly composed of a Terra protocol, and two tokesn including Terra and \nLuna.\n\n- The Terra protocol\n\nThe Terra protocol is the leading decentralized and open-source public blockchain protocol for \nalgorithmic stablecoins. Using a combination of open market arbitrage incentives and \ndecentralized oracle voting, the Terra protocol creates stablecoins that consistently track the price \nof any fiat currency. Users can spend, save, trade, or exchange Terra stablecoins instantly, all on \nthe Terra blockchain. Luna provides its holders with staking rewards and governance power. The \nTerra ecosystem is a quickly expanding network of decentralized applications, creating a stable \ndemand for Terra and increasing the price of Luna.\n\n- Terra and Luna\n\nThe protocol consists of two main tokens, Terra and Luna.\nTerra is a stablecoin that tracks the price of fiat currencies. Users mint new Terra by burning Luna. \nStablecoins are named for their fiat counterparts. For example, the base Terra stablecoin tracks \nthe price of the IMF s SDR, named TerraSDR, or SDT. Other stablecoin denominations include \nTerraUSD or UST, and TerraKRW or KRT. All Terra denominations exist in the same pool.\nLuna is the Terra protocol s native staking token that absorbs the price volatility of Terra. Luna is \nused for governance and in mining. Users stake Luna to validators who record and verify \ntransactions on the blockchain in exchange for rewards from transaction fees. The more Terra is \nused, the more Luna is worth. \n\nThe audited code mainly contains three core modules:\n\nMarket: The Market module enables atomic swaps between different Terra stablecoin \ndenominations, and between Terra and Luna. This module ensures an available, liquid market, \nstable prices, and fair exchange rates between the protocol's assets.\n\nOracle: The Oracle module provides the Terra blockchain with an up-to-date and accurate price \nfeed of exchange rates of Luna against various Terra pegs so that the Market may provide fair \nexchanges between Terra<>Terra currency pairs, as well as Terra<>Luna.\n\nTreasury: The Treasury module acts as the \"central bank\" of the Terra economy, measuring \nmacroeconomic activity by observing indicators and adjusting monetary policy levers to modulate \nminer incentives toward stable, long-term growth.\n\nThe issues that the Fairyproof team covered when conducting the audit include but are not \nlimited to the following ones:\n\n- General Code Issues\n\nCorrectness of the implementation;\nAdversarial actions and other attacks on Modules;\nPotential misuse and gaming of the all Modules;\nAttacks that impacts funds, such as the draining or the manipulation of funds;\nMismanagement of funds via transactions;\nModules s intended use or disrupt the execution;\nVulnerabilities in Modules code, particularly for swapping, earning, and creating pools;\nVulnerabilities in the interaction between Modules and other existing Cosmos-SDK modules;\nProtection against malicious attacks and other ways to exploit the Modules;\nInappropriate permissions and excess authority;\nData privacy, data leaking, and information integrity;\nSecure interfaces to the application (API and CLI);\nImplementation Vulnerability\nCode Improvement\nMisc\n\n- Network Interactions\n\nAttacks on all Modules through the network and secure communication between Modules \nand network components;\nSpam attacks that bottleneck the functionality and the entire network by exhausting \ncomputation power or traffic bandwidth, leading to a monopoly of submitting transactions \nto the network (minimal competition among participants can lead to extreme inefficiency of\nprice discovery);\n- Economics\n\nReview of the economic incentives, including the intended functions and potential impact;\nWeaknesses in the economic model resulting in user attacks again the Modules;\nAttack vectors that can game the trading environment and cause unnecessary costs to \nordinary users; \n\n- Compliance with Cosmos\n\n06. Severity level reference\n\nEvery issue in this report was assigned a severity level from the following:\n\nCritical severity issues need to be fixed as soon as possible.\n\nHigh severity issues will probably bring problems and should be fixed.\n\nMedium severity issues could potentially bring problems and should eventually be fixed.\n\nLow severity issues are minor details and warnings that can remain unfixed but would be better \nfixed at some point in the future.\n\nNeutral is not an issue or risk but a suggestion for code improvement.\n\n07. List of issues by severity\n\nIndex Title Issue/Risk Severity Status\n\nInappropriate\n\nFP-1 a Misc Neutral\nDescriptions\n_ . Implementation\nFP-2 Incorrect Algorithm _ Low\nVulnerability\nInappropriate\nFP-3 ppr P Misc Neutral\nDescriptions\nInappropriate\nFP-4 PPr P Misc Neutral\nDescriptions\nInappropriate\nFP-5 ppr P Misc Neutral\nDescriptions\nInappropriate\nFP-6 ppr' PI Misc Neutral\nDescriptions\nFP-7 Redundant Code Code Improvement Neutral\nFP-8 Redundant Code Code Improvement Neutral\nFP-9 Redundant Code Code Improvement Neutral\nFP-10 Redundant Code Code Improvement Neutral\n\n08. Issue descriptions\n\n[FP-1] [Inappropriate Descriptions] [Neutral]\n\nRisk Severity: Neutral\nIssue/Risk: Misc\nDescription:\n\nInthe core/x/market/spec/01_concepts.md file, the Swap Procedure section didn't describe\nthe code's behavior.\n\nComments:\n\nConsider changing the descriptions for Swap Procedure and removing the section for\n\nSeigniorage.\n\n[FP-2] [Incorrect Algorithm] [Low]\n\nRisk Severity: Low\n\nIssue/Risk: Implementation Vulnerability\nDescription:\n\nIn line 81 of the x/market/keeper/msg_server.go file when TerraPoolDelta was updated\nspread fee was deducted. This is incorrect.\n\nRecommendation:\n\nConsider keeping this fee.\n\n[FP-3] [Inappropriate Descriptions] [Neutral]\n\nRisk Severity: Neutral\nIssue/Risk: Misc\nDescription:\n\nThe descriptions in the Prevote and vote section in the core/x/oracle/spec/01_concepts.md\nfile didn't describe correctly the voting mechanism which was implemented in the code.\n\nRecommendation:\n\nConsider changing the descriptions for the voting mechanism.\n\n[FP-4] [Inappropriate Descriptions] [Neutral]\n\nRisk Severity: Neutral\nIssue/Risk: Misc\nDescription:\n\nThe Abstaining from Voting section in the core/x/oracle/spec/01_concepts.md file didn't\ndescribe correctly the voting mechanism implemented in the code.\n\nRecommendation:\n\nConsider removing the Abstaining from voting section.\n\n[FP-5] [Inappropriate Descriptions] [Neutral]\n\nRisk Severity: Neutral\nIssue/Risk: Misc\nDescription:\n\nThe Observed Indicators section in the core/x/treasury/spec/01_concepts.md file didn't\ndescribe the code's behavior correctly. The seigniorage was not applied in the Columbus-5's\nimplementation but the descriptions still had it.\n\nRecommendation:\n\nConsider removing the description for SR.\n\n[FP-6] [Inappropriate Descriptions] [Neutral]\n\nRisk Severity: Neutral\nIssue/Risk: Misc\nDescription:\n\nThe Monetary Policy Levers and Updating Policies sections in the\ncore/x/treasury/spec/01_concepts.md file didn't describe the code's behavior correctly. The\nseigniorage was not applied in the Columbus-5's implementation and the Oracle voters were not\nrewarded with seigniorage.\n\nRecommendation:\n\nConsider changing the descriptions for the Oracle voter's reward.\n\n[FP-7] [Redundant Code] [Neutral]\n\nRisk Severity: Neutral\n\nIssue/Risk: Code Improvement\n\nDescription:\n\nThe EndBlocker function defined in the core/x/treasury/abci.go file had redundant code.\nRecommendation:\n\nConsider removing the following code:\n\nk.BurnCoinsFromBurnAccount (ctx), k.SettleSeigniorage(ctx) , rewardweight :=\n\nk.UpdateRewardPolicy(ctx) and defer k.RecordEpochinitialIssuance(ctx)\n\n[FP-8] [Redundant Code] [Neutral]\n\nRisk Severity: Neutral\n\nIssue/Risk: Code Improvement\n\nDescription:\n\nIt was unnecessary for UpdateIndicators to call k.SetsrR.\nRecommendation:\n\nConsider removing the following line:\n\nk.SetSR(ctx, epoch, SR)\n\n[FP-9] [Redundant Code] [Neutral]\n\nRisk Severity: Neutral\n\nIssue/Risk: Code Improvement\n\nDescription:\n\nThe UpdateRewardPolicy function defined in the core/x/treasury/keeper/policy.go file was\nredundant.\n\nRecommendation:\n\nConsider removing this function.\n\n[FP-10] [Redundant Code] [Neutral]\n\nRisk Severity: Neutral\nIssue/Risk: Code Improvement\nDescription:\n\nThe SsettleSeigniorage function defined in the core/x/treasury/keeper/seigniorage.go file\nwas redundant.\n\nRecommendation:\n\nConsider removing the function.\n",
+    "biz_content_percentage": 0.27978670221629726,
     "details": [
         {
             "prompt": "Please check if the report covers the content related to overall security results? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -9,7 +9,7 @@
         },
         {
             "prompt": "Please check if the report covers the content related to specific vulnerabilities? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Please check if the report covers the content related to risk mitigation strategies? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -121,7 +121,7 @@
         },
         {
             "prompt": "Assess the actionability of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "0.5"
+            "answer": "0"
         },
         {
             "prompt": "Does the project implement the recommendations and integrate ongoing security monitoring? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -137,11 +137,11 @@
         },
         {
             "prompt": "Is the report well-structured with clear headings, sections, visualisations(such as diagrams, flowcharts, tables), and appendices? If all have, answer number \"1\"; If missing either one, answer number \"0.5\"; else answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "1"
+            "answer": "0.5"
         },
         {
             "prompt": "Does report consistency in style, formatting, and terminology?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "0"
+            "answer": "1"
         },
         {
             "prompt": "Does the report written in clear, understandable language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -157,15 +157,15 @@
         },
         {
             "prompt": "Please check if the methodologies used for auditing been described? If no, answer number \"0\"; If yes, please check how clear the methodologies used for auditing been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
-            "answer": "1"
+            "answer": "0.5"
         },
         {
             "prompt": "Please check if the report contains any disclaimers regarding independence and neutrality of the audit team? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "1"
+            "answer": "0"
         },
         {
             "prompt": "Does the report address industry-specific security standards and best practices? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
-            "answer": "0"
+            "answer": "1"
         },
         {
             "prompt": "Please check if the report contains any disclaimers/content regarding communication between auditors and project teams for effective implementation of remediation plans? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
@@ -190,7 +190,7 @@
     ],
     "prompt_scores_breakdown": {
         "content": [
-            5.5,
+            3.0,
             7.0,
             0.0,
             3.5,
@@ -205,31 +205,31 @@
             0
         ],
         "mitigation_impact": [
-            1.5,
+            0.0,
             0.0,
             10.0,
             0.0
         ],
         "presentation_methodology": [
+            7.5,
             5.0,
-            5.0,
-            10.0,
-            10.0
+            7.5,
+            0.0
         ],
         "relevance_accessibility": [
-            0.0,
+            10.0,
             0.0,
             0.0
         ]
     },
-    "report_summary": "the report is comprehensive, conveying quality content with a robust methodology, breaking down security posture and specific vulnerabilities while providing mitigation strategies and actionable recommendations for non-technical stakeholders. it effectively categorizes and prioritizes risks based on severity and potential impact, applying structured methodologies such as the owasp risk rating and both static and dynamic analysis. however, the report's limitations lie in moderate clarity of its auditing approaches and methodologies, the absence of an incident response plan, and a lack of detail in certain descriptions. in summary, the report presents a thorough security analysis with practical mitigation strategies, but its auditing approach and some methodologies could benefit from greater transparency and detail to enhance their clarity.",
+    "report_summary": "the audit report exhibits a high content quality, comprehensive scope, and methodological diligence, detailing vulnerabilities like cryptography breaches, data exposure, and insufficient error reporting, along with thorough risk mitigation strategies like defining parties responsible for mitigations and outlining contract deployment processes. vulnerabilities are systematically identified, prioritized, assessed, and strategies for mitigation are presented, featuring actionable guidance and categorization based on severity and impact, yet the report has shortcomings such as lack of detailed static and dynamic analysis methods, moderate clarity in the auditing approach and methodologies, and does not fully assess the understandability of findings due to missing context. overall, the report is robust and systematic but would benefit from enhancing the completeness of methodologies and improving clarity in certain sections to ensure comprehensive understanding and effective remediation.",
     "final_score_by_category": {
-        "content": 4.166666666666667,
+        "content": 3.3333333333333335,
         "vulnerability_risk": 6.25,
-        "mitigation_impact": 5.75,
-        "presentation_methodology": 8.333333333333334,
-        "relevance_accessibility": 0.0
+        "mitigation_impact": 5.0,
+        "presentation_methodology": 5.0,
+        "relevance_accessibility": 5.0
     },
-    "final_score": 51.33333333333333,
-    "assessed_time": "20240314_08-06-54"
+    "final_score": 47.29166666666667,
+    "assessed_time": "20240314_08-00-48"
 }
