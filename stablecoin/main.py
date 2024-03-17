@@ -4,7 +4,10 @@ import logging
 from datetime import datetime
 import pyinsightic
 from yaml.scanner import ScannerError
+import log_config
 
+# Configure logging at the start
+log_config.setup_logging()
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
