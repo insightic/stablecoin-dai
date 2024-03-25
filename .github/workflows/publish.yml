@@ -27,7 +27,8 @@ jobs:
         run: |
           git fetch --all
           git checkout gh-pages
-          git merge main
+          git merge main --allow-unrelated-histories
           # Use the commit message from the triggering event
           COMMIT_MESSAGE=$(echo "${{ github.event.head_commit.message }}")
           git commit -a -m "publish: ${COMMIT_MESSAGE}"
+          git push origin
