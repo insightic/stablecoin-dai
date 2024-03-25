@@ -33,4 +33,4 @@ jobs:
           # Use the commit message from the triggering event
           COMMIT_MESSAGE=$(echo "${{ github.event.head_commit.message }}")
           git commit -a --allow-empty -m "publish: ${COMMIT_MESSAGE}"
-          git push origin
+          git push origin gh-pages
