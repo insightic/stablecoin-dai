@@ -1,0 +1,279 @@
+name: Rocket Pool
+description: Rocket Pool is the first truly decentralised Ethereum staking pool. 
+logo: assets/logo.png
+rating: A-
+links:
+  website: https://rocketpool.net/
+  twitter: https://twitter.com/Rocket_Pool
+  discord: https://discordapp.com/invite/tCRG54c
+  telegram: 
+  github: https://github.com/rocket-pool
+whitepaper: 
+  https://docs.rocketpool.net/
+overview: |
+  Rocket Pool is a permissionless Ethereum staking protocol whose Staking-as-a-Service (SaaS) solution caters to two groups: ETH Stakers and Node Operators. Rocket Pool enables users to stake and earn rewards on the Ethereum Beacon Chain without having to meet the 32 ETH deposit, hardware, and/or technical requirements to run a validator. Users can stake ETH using Rocket Pool with as little as 0.01 ETH to receive the protocol’s ERC-20 liquid staking derivative token, rETH, representing the value of the underlying staked ETH plus accrued ETH staking rewards
+  Node operators with Rocket Pool can operate Beacon Chain validators at a lower capital cost than independently creating an Ethereum validator themselves while also benefitting from additional incentives. Ethereum validators on the Beacon Chain must have 32 ETH staked as collateral to be included in the blockchain’s validation process. To create a Rocket Pool minipool, node operators must only stake 8 or 16 ETH. The remaining 24 or 16 ETH to reach the 32 ETH requirement is sourced from the ETH that users have deposited into Rocket Pool in exchange for rETH.
+
+history: |
+  Rocket Pool was founded in 2016 by David Rugendyke in anticipation of Ethereum’s transition from Proof-of-Work (PoW) to a Proof-of-Stake (PoS) consensus mechanism. Rugendyke sought to organically reduce entry barriers for participating in PoS consensus, including the minimum staking requirements and hardware demands. Likewise, he sought a solution to the illiquidity tradeoff of stakers waiting until withdrawals are enabled before accessing ETH staking capital and rewards. Rocket Pool allows users with as little as 0.01 ETH to maintain custody of funds and stake towards any node operator while mitigating the centralization risk of Staking-as-a-Service (SaaS). This is achieved by allowing users to possess private validator and withdrawal keys.
+
+  Rocket Pool first launched in the Beta phase across three main versions, V1 (July 2018), V2 (August 2019), and V3 (March 2021), before its eventual mainnet launch in November 2021. In the same month, Rocket Pool announced the migration of the initial RPL token contract to a new token contract. This was to incentivize protocol participation from node operators via RPL rewards derived from inflationary emissions.
+
+  In August 2022, preceding the September 2022 Ethereum Merge, the Rocket Pool mainnet undertook its first major upgrade (termed Redstone). The Redstone upgrade enabled the distribution of priority tips from node operators to stakers that began following the Merge. Redstone also improved the gas efficiency of the inflationary RPL token rewards system. Lastly, Redstone introduced an opt-in Smoothing Pool feature for Rocket Pool minipool operators. Because validators on the Ethereum Beacon Chain are randomly chosen to propose blocks and thus receive priority fees, the reward rate can vary dramatically between validators. The Smoothing Pool solves this by collectively pooling the priority fees of all validators that have opted in. Priority fees are then distributed evenly to all participating validators, which significantly improves the rate and predictability of rewards.
+
+  On April 18, 2023, following the implementation of Ethereum’s Shapella upgrade, which enabled staking withdrawals on the Beacon Chain, Rocket Pool underwent the Atlas update. Atlas lowered the requirements for running a Rocket Pool minipool from 16 ETH to 8 ETH. Users that were already running a 16 ETH minipool were able to migrate to an 8 ETH minipool and use the additional 8 ETH to create a second 8 ETH minipool.
+
+  As of Feb. 4, 2024, all Rocket Pool protocol features are available on mainnet, including (i) Staking ETH in exchange for rETH, (ii) Operating nodes, (iii) Participating in governance using RPL tokens, and (iv) Participating in the Oracle DAO by verifying minipool activity and the RPL:ETH ratio. As of the same date, users can redeem rETH for the underlying staked ETH on Ethereum directly through Rocket Pool or trade rETH for ETH and the accumulated ETH staking rewards on any exchange supporting rETH-based pairs.
+
+  As of the same date, there are 3,530 node operators running a total of 26,794 validators (~2.92% of all validators on Ethereum), according to Rocket Pool’s website and Beaconcha.in. In addition, a total of 860,544 ETH has been staked with Rocket Pool.
+
+  On Aug. 29, 2023, the project team revealed possible future protocol releases grouped under the names “Houston” and “Saturn” via Discord. On Nov. 8, 2023, the Rocket Pool team published further details regarding its intended Houston and Saturn upgrades. The releases included in each are listed below:
+
+  Houston
+
+    pDAO voting fully onchain.
+    The ability to set a separate RPL withdrawal address.
+    Allowing an address to provide ETH that a node operator stakes without taking custody of the funds.
+    Streaming pDAO treasury payments.
+    The implementation of a security council consisting of select pDAO members that “have the ability propose and execute changes quickly to pause the protocol in the event any potential issues occur.”
+    Removing Snapshot voting and introducing “a new optimistic fraud-proof system that allows any node operator to raise, vote on or challenge proposals, directly on chain without the need for any 3rd party tools.”
+  Saturn
+
+    Megapools that will act as the withdrawal credentials for one or multiple minipools and reduce the gas required when setting up more than one minipool.
+    Research and potential implementation of 4 ETH stake minipools.
+    Research and possible implementation of an ETH flex bond that would allow a flexible amount of ETH required, with a possible minimum of one ETH required for a validator in Rocket Pool.
+    Removal of scrub checks, promotion checks, and bond reduction checks from the oDAO’s responsibilities, and a reward penalty rework.
+    On Jan. 16, 2024, the project team stated, “Work continues on post-audit activities for Houston, including audit triage, fixes, & documentation, plus testing.” A commercially reasonable search found no disclosures from the project team regarding an intended launch for Houston or Saturn, though Houston is intended to be released prior to Saturn.
+
+  Notably, each feature must be approved by governance before implementation. As of Feb. 4, 2024, some of the above-mentioned intended features have been approved via Snapshot and are awaiting implementation (RPIPs 28, 29, 30, 31, 32, 33, and 35).
+
+  Of note, some information regarding the intended Houston and Saturn upgrades was only discussed in the project's Discord and not in its official documentation. To view the message link, one must have joined the Discord channel, which can be done here.
+
+  On Jan 30, 2024, the Rocket Pool Grants and Bounties Management Committee (GMC) approved a bounty for development to enable Rocket Pool node operators to join the EigenLayer network.
+team:
+  - avatar: 
+    name: David Rugendyke
+    title: Founder and CEO
+    twitter: https://twitter.com/daveruges
+    linkedin: https://www.linkedin.com/in/david-rugendyke-260a2a60/
+
+social_media:
+  twitter: # [Last Week, 2 Weeks Ago, 3 Weeks Ago]
+    - title: Tweets
+      value: [100,230,300]
+    - title: Views
+      value: [41.54K/8.31K, 87.27K/9.70K, 18.03K/9.01K]
+    - title: Likes
+      value: [175/35, 401/44, 165/82]
+    - title: Comments
+      value: [22/4, 62/6, 13/6]
+    - title: Shares
+      value: [42/8, 90/10, 81/40]
+
+onchain_analysis:
+  - title: Top Token Holders
+    value: |
+      * 0x
+
+  - title: Recent Transactions
+    value: |
+      * 0x
+    
+  - title: Transaction Volume
+    value: |
+      * 
+
+  - title: Dex Pools
+    value: |
+      * 0x
+
+  
+
+financial_analysis:
+  protocol_metrics:
+    - title: Total Value Locked
+      value: |
+        * Total: 4.408b
+        * Ethereum: 4.408b
+    # - title: Fees
+    #   value: |
+    #     * Fees (annualized): $1.208b
+    #     * Fees 30d: $98.98m
+    #     * Fees 24h: $4.02m
+    #     * Cumulative Fees: $1.274b
+    # - title: Revenue
+    #   value: |
+    #     * Revenue (annualized): $120.76m
+    #     * Revenue 30d: $9.9m
+    #     * Revenue 24h: $401,58
+    # - title: Treasury
+    #   value: |
+    #     * Treasury: $159.98m
+    #     * OwnTokens: $349.48m
+    #     * Stablecoins: $222,808
+    #     * Majors: $157.03m
+    #     * Others: $2.72m
+
+  market_capitalization_and_liquidity:
+    - title: Dollar volume (24H)
+      value: 
+    - title: Market cap	Rank
+      value: 
+    - title: FDV
+      value: 
+    - title: Turnover rate
+      value: 
+    - title: Circulating supply
+      value: 
+    - title: Total supply
+      value: 
+    - title: Max supply
+      value: Unlimited
+    - title: All time high
+      value: 
+    - title: All time high date
+      value: 
+    - title: Down from all time high
+      value: 
+    - title: All time low
+      value: 
+    - title: All time low date
+      value: 
+    - title: Up from all time low
+      value: 
+    - title: Risks of depegging
+      value: Minimum
+  investments:
+    - round: "Seed"
+      amount: 
+      valuation: 
+      date: '2018-05-14'
+      investors: |
+        *  Consensys
+    - round: "Private token sale"
+      amount: 
+      valuation: 
+      date: '2023-08-10'
+      investors: |
+        *  Coinbase Ventures
+
+  list_of_investors:
+    # - name: 1confirmation
+    #   logo: 
+
+security_and_compliance:
+  - title: Security Assurance
+    value:
+      - title: Smart Contract Audits
+        value: https://rocketpool.net/files/sigma-prime-audit.pdf , https://consensys.net/diligence/audits/2021/04/rocketpool, https://github.com/trailofbits/publications/blob/master/reviews/RocketPool.pdf
+      - title: Security Auditors
+        value: Sigma Prime,Diligence,Trail of bits
+      - title: Security Audit Rating
+        value: A-
+      - title: Bug Bounty Programs
+        value: https://immunefi.com/bounty/rocketpool/, Earn up to $500,000 
+      - title: Insurance Coverage
+        value: No
+      - title: Security Issue History
+        value: 
+      - title: Resolution of Past Incidents
+        value: N.A.
+      - title: Multi-Signature Wallets
+        value: 
+      - title: External Security Partners
+        value: Unknown
+      - title: Decentralized Security Measures
+        value: Unknown
+      - title: Two-Factor Authentication (2FA)
+        value: Unknown
+      - title: Incident Response Plan
+        value: Unknown
+      - title: Community Security Awareness
+        value: 
+      - title: Network Security Measures
+        value: Unknown
+
+  - title: Regulatory Compliance
+    value:
+      - title: Regulatory Framework
+        value:
+      - title: Licenses Obtained
+        value:
+      - title: AML/CFT Compliance KYC Procedures
+        value:
+      - title: Data Protection
+        value:
+      - title: Consumer Protection Measures
+        value:
+      - title: Reporting and Transparency
+        value:
+      - title: Jurisdictional Operation Limits
+        value:
+      - title: Tax Compliance
+        value:
+      - title: Legal Entity Structure
+        value:
+      - title: Ongoing Compliance Monitoring
+        value:
+      - title: Regulatory Engagement
+        value:
+      - title: External Compliance Audits
+        value:
+      - title: Operational Compliance
+        value:
+                  
+  - title: Technological Details
+    value:
+      - title: Technical Documents
+        value: https://docs.rocketpool.net/guides/staking/overview#how-ethereum-staking-works
+      - title: Smart Contract
+        value: https://etherscan.io/token/0xd33526068d116ce69f19a9ee46f0bd304f21a51f
+      - title: Token launch
+        value: |
+          * Ethereum: 0xd33526068d116ce69f19a9ee46f0bd304f21a51f
+      - title: Detailed Description of Technology
+        value: |
+          * Unlike solo stakers, who are required to put 32 ETH up for deposit to create a new validator, Rocket Pool nodes only need to deposit either 8 ETH or 16 ETH per validator. This will be coupled with 24 ETH or 16 ETH respectively from the staking pool (which stakers deposited in exchange for rETH) to create a new Ethereum validator. This new validator is called a minipool.
+          * To the Beacon chain, a minipool looks exactly the same as a normal validator. It has the same responsibilities, same rules it must follow, same rewards, and so on. The only difference is in how the minipool was created and how withdrawals work when the node operator decides to voluntarily exit the minipool or gets slashed. All of the creation, withdrawing, and rewards delegation is handled by Rocket Pool's smart contracts on the Execution layer. This makes it completely decentralized.
+  - title: Governance and Decentralization
+    value:
+      - title: Governance Structure
+        value: |
+          Decentralized Autonomous Organization (DAO)
+      - title: Voting Rights
+        value: |
+          Held by RPL token holders
+      - title: Token Governance
+        value: |
+          RPL tokens are used for voting on proposals
+      - title: Proposal Submission Process
+        value: |
+          Details not readily available online. Likely requires a minimum RPL token holding threshold for proposal submission.
+      - title: Voting Mechanism
+        value: |
+          Likely Snapshot voting or on-chain governance system. Specific details not currently available.
+      - title: Token Distribution
+        value: |
+          Roughly 30% of RPL tokens are allocated to the DAO treasury, with distribution details for the remaining tokens not publicly available.
+      - title: Stakeholder Diversity
+        value: |
+          RPL token holders represent the stakeholder base.
+      - title: On-chain Governance Participation
+        value: |
+          The extent of on-chain governance is not explicitly mentioned in readily available resources.
+      - title: Reserve Management
+        value: |
+          Information on reserve management by the DAO is not currently available online.
+      - title: Emergency Decision Making
+        value: |
+          Process for emergency decision making by the DAO is not publicly documented.
+      - title: Fork Management
+        value: |
+          Details on how the DAO will handle potential Ethereum forks are not available online.
+      - title: Compliance Oversight
+        value: |
+          As a decentralized protocol, Rocket Pool is not beholden to a central authority for compliance.
+      - title: Accountability Mechanisms
+        value: |
+          The DAO structure inherently provides a level of accountability through transparency on the blockchain.
+        

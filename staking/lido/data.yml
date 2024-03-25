@@ -1,0 +1,274 @@
+name: LIDO
+description: LIDO provides liquidity to staked tokens, stake any amount of ETH, get daily staking rewards and use your (w)stETH across Ethereum Ecosystem and L2.
+logo: assets/logo.png
+rating: A-
+links:
+  website: https://lido.fi
+  twitter: https://twitter.com/lidofinance
+  discord: https://discord.com/invite/lido
+  telegram: https://t.me/lidofinance
+  github: https://github.com/lidofinance
+whitepaper: https://lido.fi/static/Lido:Ethereum-Liquid-Staking.pdf
+overview: |
+  Lido is primarily a liquid staking solution for Ethereum and Polygon. Products offered include liquid staking derivative token contracts and other auxiliary smart contract infrastructure to support native token staking services. Lido’s smart contracts allow users to stake ETH on Ethereum and ERC-20 MATIC on Ethereum to receive the corresponding liquid staking derivative token (i.e., st[token]). The protocol then uses these staked tokens to operate validators on the underlying network, increasing participation in each network’s Proof-of-Stake (PoS) consensus mechanism. As such, Lido’s staking solutions are typically meant for users that are unable to run a validator themselves due to economic or technical limitations.
+history: |
+  In October 2020, Lido was introduced through a blog post outlining the flaws and inefficiencies of then-available ETH staking solutions on Ethereum’s Beacon Chain. Jordan Fish, Vasiliy Shapovalov, and Konstantin Lomashuk founded Lido and its DAO to solve the shortcomings of staking, such as illiquidity and high minimum staking requirements (e.g., Ethereum requiring at least 32 ETH to operate a validator). With the introduction of its first liquid staking derivative token, stETH, staked capital could be used in Decentralized Finance (DeFi) applications. The project’s initial team members raised $2.00 million in December 2020 to continue building the protocol.
+  On Dec. 18, 2020, the liquid staking protocol went live on Ethereum and later expanded to support Polygon, Solana, Terra, Kusama, and Polkadot. However, it is worth noting that:
+  Following the collapse of Terra in May 2022, the Lido DAO voted to discontinue Terra staking and the stLUNA token. Terra staking was officially shut down on Aug. 27, 2022.
+  On Aug. 1, 2023, support for Kusama and Polkadot was sunset. The only available function on these networks is to claim DOT and KSM tokens that were previously unstaked by the project team.
+  On Oct. 5, 2023, a Lido DAO proposal to continue funding development on Solana was rejected. As a result, Lido is in the process of sunsetting support for Solana. On Oct. 16, 2023, Lido discontinued support for new staking deposits on Solana. Voluntary node operator off-boarding began on Nov. 17, 2023, and Lido on Solana frontend support will cease on Feb. 4, 2024, with unstaking only available via Command Line Interface (CLI) thereafter.
+  On Feb. 19, 2021, Lido deployed the wstETH token (wrapped staked ETH) on Ethereum. The project then launched support for bridging the token to Arbitrum and Optimism on Oct. 6, 2022. In addition, the wstETH bridge to Cosmos via Neutron and Base (ERC-20 equivalent) was launched on Sept. 28, 2023, bridging to BNB Smart Chain (BEP-20) and Avalanche (ARC-20) was launched on Oct. 13, 2023, bridging to Mantle (ERC-20 equivalent) was launched on July 14, 2023, bridging to Linea (ERC-20 equivalent) was launched on Aug. 3, 2023, and bridging to zkSync (ERC-20 equivalent) launched on Jan. 3, 2024.
+  In April 2023, Ethereum underwent the Shapella (Shanghai + Capella) upgrade, which enabled Beacon Chain validators to withdraw staked ETH and earned ETH rewards. On May 15, 2023, the Lido V2 upgrade went live, launching a dashboard for users to exchange stETH for ETH directly through the protocol. In addition, V2 made architectural changes to Lido’s operator registry by introducing a staking router, a smart contract that distributes stake and rewards among Lido’s node operators.
+  In October 2023, Lido added seven new node operators on Ethereum, increasing its node operator set from 31 to 38. As of January 2024, Lido has 39 node operators, following an approved Snapshot proposal on Dec. 14, 2023, that reinstated “InfStones.”
+  In Q4 2023, Lido DAO passed a number of notable Snapshot proposals to make changes to the protocol and signal support for future changes.
+  On Nov. 2, 2023, a Snapshot proposal was approved, formalizing Lido DAO’s goals for 2024-2026. A full description of which can be seen here. Notably, the project team intends “to add 5000 NOs [Node Operators] total through permissionless staking modules, DVT modules, and more.”
+  On Nov. 2, 2023, a Snapshot proposal was approved, signaling support to deploy a “Simple DVT” module, continuing on Lido DAO’s previously announced developmental plans to decentralize node operations by adopting Distributed Validator Technology (DVT). DVT is intended to group validators into independent committees that can propose and attest to blocks together, reducing the risk of an individual validator underperforming or misbehaving. Technically, this is done by splitting the signing keys for a given validator across several different nodes that must reach a consensus on the validator’s operations. Simple DVT is deployed on the Obol and SSV testnets, while an “Aragon vote to officially deploy the module on mainnet is tentatively set for February 2024.”
+  On Dec. 14, 2023, a Snapshot proposal was approved, signaling support for a “Community Staking Module” that, if implemented, would “introduce permissionless entry to the Lido on Ethereum validator set with an ETH bond requirement.” According to Lido DAO’s December 2023 monthly report, the project team “will proceed with further research, development, and security audits, anticipating a mainnet release by the end of 2024.”
+  On Dec. 25, 2023, respective Snapshot proposals passed, making bridged wstETH on zkSync, Mantle, and Linea officially recognized by Lido DAO.
+
+team:
+  - avatar:
+    name: Vasiliy Shapovalov
+    title: Co-founder and CTO
+    twitter: https://twitter.com/_vshapovalov
+    linkedin: https://www.linkedin.com/in/vasiliy-shapovalov-91716491/
+
+  - avatar:
+    name: Konstantin Lomashuk
+    title: Founder of P2P Validator and an Initial Member of Lido
+    twitter: https://twitter.com/lomashuk
+    linkedin: https://www.linkedin.com/in/lomashuk/
+
+social_media:
+  twitter: # [Last Week, 2 Weeks Ago, 3 Weeks Ago]
+    - title: Tweets
+      value: [100, 230, 300]
+    - title: Views
+      value: [41.54K/8.31K, 87.27K/9.70K, 18.03K/9.01K]
+    - title: Likes
+      value: [175/35, 401/44, 165/82]
+    - title: Comments
+      value: [22/4, 62/6, 13/6]
+    - title: Shares
+      value: [42/8, 90/10, 81/40]
+
+onchain_analysis:
+  - title: Top Token Holders
+    value: |
+      * 0x
+
+  - title: Recent Transactions
+    value: |
+      * 0x
+
+  - title: Transaction Volume
+    value: |
+      *
+
+  - title: Dex Pools
+    value: |
+      * 0x
+
+financial_analysis:
+  protocol_metrics:
+    - title: Total Value Locked
+      value: |
+        * Total: 38.312b
+        * Ethereum: 38.291b
+        * Solana: 20.33m
+        * Moonbeam: 399,903
+        * Moonriver: 248,701
+        * Terra Classic: 0
+    - title: Fees
+      value: |
+        * Fees (annualized): $1.208b
+        * Fees 30d: $98.98m
+        * Fees 24h: $4.02m
+        * Cumulative Fees: $1.274b
+    - title: Revenue
+      value: |
+        * Revenue (annualized): $120.76m
+        * Revenue 30d: $9.9m
+        * Revenue 24h: $401,58
+    - title: Treasury
+      value: |
+        * Treasury: $159.98m
+        * OwnTokens: $349.48m
+        * Stablecoins: $222,808
+        * Majors: $157.03m
+        * Others: $2.72m
+
+  market_capitalization_and_liquidity:
+    - title: Dollar volume (24H)
+      value:
+    - title: Market cap Rank
+      value:
+    - title: FDV
+      value:
+    - title: Turnover rate
+      value:
+    - title: Circulating supply
+      value:
+    - title: Total supply
+      value:
+    - title: Max supply
+      value: Unlimited
+    - title: All time high
+      value:
+    - title: All time high date
+      value:
+    - title: Down from all time high
+      value:
+    - title: All time low
+      value:
+    - title: All time low date
+      value:
+    - title: Up from all time low
+      value:
+    - title: Risks of depegging
+      value: Minimum
+  investments:
+    - round: "Private token sale"
+      amount:
+      valuation: "$73m"
+      date: "2021-05-05"
+      investors: |
+        *  Paradigm
+        *  Coinbase Ventures
+        *  3AC
+        *  Jump Trading
+        *  Alameda Research
+        *  DCG
+    - round: ""
+      amount:
+      valuation: "$70m"
+      date: "2022-03-03"
+      investors: |
+        *  a16z
+
+  list_of_investors:
+    # - name: 1confirmation
+    #   logo:
+
+security_and_compliance:
+  - title: Security Assurance
+    value:
+      - title: Smart Contract Audits
+        value: Contracts audited once by certik .
+      - title: Security Auditors
+        value: MixBytes,Sigma Prime,Quantstamp,OpenZeppelin,Oxorio,Cantina,Diligence,Statemind
+      - title: Security Audit Rating
+        value: A-
+      - title: Bug Bounty Programs
+        value: https://lido.fi/bug-bounty, Earn up to $2,000,000 USD by finding protocol, client and bugs affecting the Lido and Lido on X products.
+      - title: Insurance Coverage
+        value: No
+      - title: Security Issue History
+        value:
+      - title: Resolution of Past Incidents
+        value: N.A.
+      - title: Multi-Signature Wallets
+        value:
+      - title: External Security Partners
+        value: Unknown
+      - title: Decentralized Security Measures
+        value: Unknown
+      - title: Two-Factor Authentication (2FA)
+        value: Unknown
+      - title: Incident Response Plan
+        value: Unknown
+      - title: Community Security Awareness
+        value:
+      - title: Network Security Measures
+        value: Unknown
+
+  - title: Regulatory Compliance
+    value:
+      - title: Regulatory Framework
+        value:
+      - title: Licenses Obtained
+        value:
+      - title: AML/CFT Compliance KYC Procedures
+        value:
+      - title: Data Protection
+        value:
+      - title: Consumer Protection Measures
+        value:
+      - title: Reporting and Transparency
+        value:
+      - title: Jurisdictional Operation Limits
+        value:
+      - title: Tax Compliance
+        value:
+      - title: Legal Entity Structure
+        value:
+      - title: Ongoing Compliance Monitoring
+        value:
+      - title: Regulatory Engagement
+        value:
+      - title: External Compliance Audits
+        value:
+      - title: Operational Compliance
+        value:
+
+  - title: Technological Details
+    value:
+      - title: Technical Documents
+        value: https://docs.lido.fi/guides/lido-tokens-integration-guide
+      - title: Smart Contract
+        value: https://etherscan.io/token/0x5a98fcbea516cf06857215779fd812ca3bef1b32
+      - title: Token launch
+        value: |
+          * Ethereum: 0x5a98fcbea516cf06857215779fd812ca3bef1b32
+          * Solana: HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p
+          * Polygon: 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
+
+      - title: Detailed Description of Technology
+        value: |
+          * Lido protocols batch user tokens to stake with validators and route the staking packages to network staking contracts. Users mint amounts of stTokens which correspond to the amount of tokens sent as stake and they receive staking rewards. When they unstake, they burn the stToken to initiate the network-specific withdrawal process to withdraw the balance of stake and rewards.
+          * Lido protocols give the user liquidity - the stTokens are on the execution layer, so they can be transferred. Users receive staking rewards from validation activities but can sell stTokens anytime they want to exit their staking position.
+          * Participate in DeFi - users can use stTokens as building blocks in DeFi protocols at the same time as getting staking rewards from validating activities.
+          * Lido protocols are governed by the Lido DAO - this means there is no central point for making decisions, and there is no one person who has access, control, or decision power to define what to do with users’ tokens. All decisions with respect to the protocol are voted up by the DAO, and all LDO holders may vote.
+          * Uses time-proven node operators. Lido DAO works with experienced node operators, which decreases the likelihood of technical mistakes that could lead to slashing or penalties. Users supply the stake, and the node operators supply the know-how.
+
+  - title: Governance and Decentralization
+    value:
+      - title: Governance Structure
+        value: |
+          Lido DAO is a Decentralised Autonomous Organisation that uses the Aragon framework for on-chain governance, focusing on liquid staking protocols. It includes regular processes, emergency tracks, Easy Track for routine proposals, and Lido on L2 initiatives. Committees streamline routine governance operations.
+      - title: Voting Rights
+        value: |
+          LDO token holders have voting rights, with power proportional to the amount of LDO they hold. Decisions require more than 5% of the total token supply to vote for a proposal to reach a quorum.
+      - title: Token Governance
+        value: |
+          The LDO token governs all Lido DAO governance and network decisions. Token holders can propose changes and vote on protocol parameters, upgrades, and more. The governance process includes discussions, Snapshot voting, and, if necessary, on-chain voting
+      - title: Proposal Submission Process
+        value: |
+          Proposals begin with a discussion in the Research forum, followed by Snapshot voting (requiring 1k LDO to create a proposal), and potentially on-chain voting for proposals requiring on-chain action. Emergency and Easy Track processes allow for expedited decisions
+      - title: Voting Mechanism
+        value: |
+          Voting is done via Snapshot for off-chain and Aragon for on-chain decisions. Snapshot voting requires a minimum quorum of >5% total token supply, with the winning option needing a simple majority. On-chain voting requires a quorum and a support threshold of 50%
+      - title: Token Distribution
+        value: |
+          At launch, 1 billion LDO tokens were minted. Distribution includes 36.32% to the DAO treasury, 22.18% to investors, 20% to initial developers, 15% to founders/future employees, and 6.5% to validators/signature holders. Founding members' tokens are locked for 1 year, then vested over another year
+      - title: Stakeholder Diversity
+        value: |
+          Includes various stakeholders such as token holders, node operators, and committees like the Lido Node Operator Subgovernance Group (LNOSG) and Lido Ecosystem Grants Organisation (LEGO)
+      - title: On-chain Governance Participation
+        value: |
+          Governance processes are conducted mainly on the Ethereum network using Aragon and include regular, emergency, and Easy Track motions for decision-making.
+      - title: Reserve Management
+        value: |
+          The DAO accumulates service fees for development, insurance funds, and operational duties, managed through governance decisions
+      - title: Emergency Decision Making
+        value: |
+          Emergency votes can bypass the regular process, initiating directly on-chain to address urgent matters. These require immediate forum posting for explanation
+      - title: Fork Management
+        value: |
+          Not explicitly detailed, but governance processes allow for protocol upgrades and adjustments, which could include fork management strategies
+      - title: Compliance Oversight
+        value: |
+          The governance structure includes mechanisms for managing and penalizing node operators, ensuring compliance with protocol and Ethereum rules
+      - title: Accountability Mechanisms
+        value: |
+          Committees report their activities publicly on the Research forum, enhancing transparency and accountability within the Lido DAO ecosystem
