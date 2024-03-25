@@ -1,0 +1,33 @@
+---
+name: Publish Data
+
+"on":
+  push:
+    branches:
+      - "main"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install yamllint
+        run: pip install yamllint
+
+      - name: Run yamllint
+        run: yamllint .
+
+      - name: Publish to GitHub Pages
+        run: |
+          git fetch --all
+          git checkout gh-pages
+          git merge main
+          # Use the commit message from the triggering event
+          COMMIT_MESSAGE=$(echo "${{ github.event.head_commit.message }}")
+          git commit -a -m "publish: ${COMMIT_MESSAGE}"
