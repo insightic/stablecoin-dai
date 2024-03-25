@@ -1,10 +1,7 @@
 ---
-name: Workflow test
+name: Run PyInsightic
 
 "on":
-  push:
-    branches:
-      - "dev"
   workflow_dispatch:
 
 jobs:
