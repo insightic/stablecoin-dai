@@ -36,16 +36,23 @@ def check_stablecoin(data):
     return any(
         item["title"] == "Technological Details"
         for item in data.get("security_and_compliance", [])
-        if "Token launch" in (blockchain["title"] for blockchain in item.get("value", []))
+        if "Token launch"
+        in (blockchain["title"] for blockchain in item.get("value", []))
     )
 
 
 def check_linkedin(data):
-    return "linkedin" in data.get("links", {}) and data["links"]["linkedin"] not in [None, ""]
+    return "linkedin" in data.get("links", {}) and data["links"]["linkedin"] not in [
+        None,
+        "",
+    ]
 
 
 def check_twitter(data):
-    return "twitter" in data.get("links", {}) and data["links"]["twitter"] not in [None, ""]
+    return "twitter" in data.get("links", {}) and data["links"]["twitter"] not in [
+        None,
+        "",
+    ]
 
 
 def check_security_assessment(data):
@@ -91,7 +98,9 @@ def main(test_folders=None):
         if test_folders and dir not in test_folders:
             continue
         dir_path = os.path.join(".", dir)
-        if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
+        if os.path.isdir(dir_path) and os.path.exists(
+            os.path.join(dir_path, "data.yml")
+        ):
             logger.info(f"Processing folder: {dir}")
             data_path = os.path.join(dir_path, "data.yml")
             try:
