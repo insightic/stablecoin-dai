@@ -1,5 +1,5 @@
 ---
-name: Auto Publish Data
+name: Publish YAML
 
 "on":
   push:
@@ -7,7 +7,7 @@ name: Auto Publish Data
       - "main"
 
 jobs:
-  publish:
+  publish-yaml:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
