@@ -1,20 +1,38 @@
-name: Publish to GitHub Pages
+---
+name: Publish Data
 
-on:
+"on":
   push:
     branches:
-      - main
+      - "main"
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    - name: Merge main to gh-pages
-      run: |
-        git checkout gh-pages
-        git merge main --no-edit
-        git push origin gh-pages
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install yamllint
+        run: pip install yamllint
+
+      - name: Run yamllint
+        run: yamllint .
+
+      - name: Publish to GitHub Pages
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+
+          git clone https://github.com/insightic/data .gh-pages
+          cd .gh-pages && git fetch --all
+          git checkout gh-pages
+
+          # Use the commit message from the triggering event
+          COMMIT_MESSAGE=$(echo "${{ github.event.head_commit.message }}")
+          git merge main -m "publish: ${COMMIT_MESSAGE}"
+          git push origin gh-pages
