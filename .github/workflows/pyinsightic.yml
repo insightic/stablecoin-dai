@@ -2,9 +2,7 @@
 name: Workflow test
 
 "on":
-  push:
-    branches:
-      - "dev"
+  workflow_dispatch:
 
 jobs:
   yaml-format-check:
