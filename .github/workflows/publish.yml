@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,8 +30,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
-          git clone https://github.com/insightic/data .gh-pages
-          cd .gh-pages && git fetch --all
+          git fetch --all
           git checkout gh-pages
 
           # Use the commit message from the triggering event
