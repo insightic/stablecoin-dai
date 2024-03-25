@@ -4,6 +4,7 @@ import logging
 from datetime import datetime
 import pyinsightic
 from yaml.scanner import ScannerError
+from pyinsightic.social.helper import stablecoin_mapping
 import log_config
 
 # Configure logging at the start
@@ -25,10 +26,11 @@ class AnalysisRunner:
             )
             return
         logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
-        timestamp = datetime.now().strftime("%Y%m%d")
-        file_name = f"{self.analysis_function.__name__}.json"
+        # timestamp = "20240317"
+        # timestamp = datetime.now().strftime("%Y%m%d")
+        # file_name = f"{self.analysis_function.__name__}.json"
         analysis = self.analysis_function(project_dir=project_dir)
-        analysis.run_analysis(timestamp, file_name=file_name)
+        analysis.run_analysis()
 
 
 # Condition check functions
@@ -36,8 +38,7 @@ def check_stablecoin(data):
     return any(
         item["title"] == "Technological Details"
         for item in data.get("security_and_compliance", [])
-        if "Token launch"
-        in (blockchain["title"] for blockchain in item.get("value", []))
+        if "Token launch" in (blockchain["title"] for blockchain in item.get("value", []))
     )
 
 
@@ -82,14 +83,23 @@ def check_sosovalue(data):
     return True
 
 
+def check_sosovalue_news(data):
+    if data["name"].lower() in stablecoin_mapping.keys():
+        return True
+    return False
+
+
 # AnalysisRunner instances for each analysis
 analyses = [
-    AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
-    AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
-    AnalysisRunner(pyinsightic.Twitter, check_twitter),
-    AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
-    AnalysisRunner(pyinsightic.SmartContractValidator, check_smart_contract_validator),
-    AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment),
+    # AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
+    AnalysisRunner(pyinsightic.ZANAnalysis, check_stablecoin),
+    #     AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
+    #     AnalysisRunner(pyinsightic.Twitter, check_twitter),
+    #     AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
+    #     AnalysisRunner(pyinsightic.SmartContractValidator, check_smart_contract_validator),
+    #     AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment),
+    #     AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news),
+    #     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue),
 ]
 
 
@@ -98,9 +108,7 @@ def main(test_folders=None):
         if test_folders and dir not in test_folders:
             continue
         dir_path = os.path.join(".", dir)
-        if os.path.isdir(dir_path) and os.path.exists(
-            os.path.join(dir_path, "data.yml")
-        ):
+        if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
             logger.info(f"Processing folder: {dir}")
             data_path = os.path.join(dir_path, "data.yml")
             try:
@@ -118,5 +126,5 @@ def main(test_folders=None):
 
 if __name__ == "__main__":
     # main()
-    os.chdir("stablecoin")
-    main(test_folders=["dai", "usdt"])
+    # os.chdir("stablecoin")  # change directory for local test
+    main(test_folders=["usdc"])
