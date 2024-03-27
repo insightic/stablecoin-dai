@@ -117,4 +117,4 @@ def main(test_folders=None):
 
 
 if __name__ == "__main__":
-    main(test_folders=["dai", "usdt", "usdc", "fdusd"])
+    main(test_folders=["dai", "usdt", "usdc", "fdusd", "xsgd"])
