@@ -1,0 +1,111 @@
+binance:
+  type: "Centralized Exchange"
+  registration: "Cayman Islands"
+  logo: assets/logo.png
+  established: 2017
+  website_info:
+    url: "https://www.binance.com/"
+  trading_information:
+    volume_24h: $26,763,528,178.86
+    btc_24h: 381,378 BTC
+    total_assets: $139,146,535,529.63
+    exchange_reserves: $118,987,004,197.61
+    active_pairs: 1201
+    coins: 376
+  most_active_trading_pair:
+    pair: "BTC/FDUSD"
+    volume_24h: $4,111,546,577.88
+  community_data:
+    twitter: "@binance"
+    twitter_followers: 11,580,495
+    recent_monthly_pageviews: 72,289,450.0
+    alexa_rank: 132
+  founders:
+    - name: "Changpeng Zhao (CZ)"
+      role: "CEO"
+      background: "Chinese-Canadian developer and business executive. Former Head of Bloomberg Tradebook Futures Research & Development team, founder of Fusion Systems, and Head of Technology at Blockchain.com."
+    - name: "Yi He"
+      role: "CMO and Head at Binance Labs"
+      background: "Previously Vice President at Yixia Technology and co-founder of OKCoin."
+  launch_info:
+    launch_date: "June 2017"
+    growth: "Became the largest cryptocurrency exchange in the world within 180 days."
+  restricted_countries: 
+    - "United States"
+    - "Singapore"
+    - "Ontario (Canada)"
+    - "China"
+    - "Malaysia"
+    - "Japan"
+    - "UK"
+    - "Thailand"
+    - "Germany"
+    - "Italy"
+    - "The Netherlands"
+  fees:
+    fee_structure:
+      maker_taker_fee: 0.10%
+      zero_fee_pairs:
+        - "BTC"
+        - "ETH/BUSD"
+    deposit: None
+    withdrawal_fees:
+      BNB: 1
+      BTC: 0.0005
+      ETH: 0.005
+      LTC: 0.001
+      NEO: Free
+      QTUM: 0.01
+      SNT: 50
+      BNT: 0.6
+      EOS: 2
+      BCC: 0.0005
+      GAS: Free
+      USDT: 5
+      OAX: 2
+      DNT: 30
+      MCO: 0.15
+      ICN: 0.5
+      WTC: 0.2
+      OMG: 0.1
+      ZRX: 5
+      STRAT: 0.1
+      SNGLS: 4
+      BQX: 2
+      KNC: 1
+      FUN: 50
+      SNM: 10
+      LINK: 5
+      XVG: 0.1
+      CTR: 1
+      SALT: 0.3
+      IOTA: Free
+      MDA: 0.5
+      MTL: 0.15
+  accepted_payment_methods:
+    - P2P
+    - Bank deposit
+    - Debit/Credit Card
+    - Apple Pay
+    - Google Pay
+  margin_trading: 
+    availability: Yes
+    leverage: "Up to 10X on Binance Margin"
+  derivatives_products: 
+    options_description: "Traders can use Binance Futures, settled in USDT, BUSD or other cryptocurrencies and Binance Options to leverage on their trades."
+  trust_score: 9/10
+  cybersecurity_details:
+    penetration_test: Yes
+    proof_of_funds: Yes
+    bug_bounty: Yes
+    last_updated: "2023-06-21"
+  api_coverage:
+    grade: "A"
+    tickers_data: Yes
+    historical_trades_data: Yes
+    orderbook_data: Yes
+    trading_via_api: Yes
+    ohlc_data: Yes
+    websocket: Yes
+    public_documentation: Yes
+    last_updated: "2020-04-03"
