@@ -4,7 +4,7 @@ name: Run PyInsightic Scheduler
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 */2 * *'
+    - cron: '0 16 */2 * *'
 
 jobs:
   yaml-format-check:
