@@ -107,11 +107,12 @@ analyses = [
 
 def main(test_folders=None):
     base_dir = "."  # Define the base directory for operations
-    if test_folders is None:
-        test_folders = [os.path.join(base_dir, "stablecoin"), os.path.join(base_dir, "cex")]
+    list_of_folders = [os.path.join(base_dir, "stablecoin"), os.path.join(base_dir, "cex")]
 
-    for folder in test_folders:
+    for folder in list_of_folders:
         for dir in os.listdir(folder):
+            if dir not in test_folders:
+                continue
             dir_path = os.path.join(folder, dir)
             if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
                 # logger.info(f"Processing folder: {dir}")
