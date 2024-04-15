@@ -1,76 +1,76 @@
-cex:
-  name: "coinbase"
-  type: "Centralized Exchange"
-  registration: "United States"
-  logo: assets/coinbase.svg
-  established: 2012
-  website_info:
-    url: "https://exchange.coinbase.com"
-  trading_information:
-    volume_24h: $4,880,676,872.76
-    btc_24h: 74,805 BTC
-    total_assets: N/A
-    exchange_reserves: N/A
-    active_pairs: 399
-    coins: 241
-  most_active_trading_pair:
-    pair: "BTC/USD"
-    volume_24h: $1,580,577,737.71
-  community_data:
-    twitter: "@Coinbase"
-    twitter_followers: 1,212,856
-    recent_monthly_pageviews: 43,068,947.0
-    alexa_rank: 730
-  founders:
-    - name: "Brian Armstrong"
-      role: "CEO"
-      background: "Former Airbnb engineer, graduated from Rice University with a bachelor's and master's in Computer Science. Worked as a developer at IBM and as a software engineer at Airbnb."
-    - name: "Fred Ehrsam"
-      role: "Co-founder, Left in 2017"
-      background: "Attended Duke University, graduated with bachelor's in computer science and economics. Former Goldman Sachs trader. Co-founded cryptocurrency investment firm Paradigm in 2018."
-  launch_info:
-    launch_date: "June 2012"
-    growth: "Established as a key platform in crypto trading and investment space, with user-friendly interface for both beginners and advanced traders."
-  restricted_countries:
-    - Full list not specified, but functions may be limited in certain countries.
-  fees:
-    fee_structure:
-      maker_taker_fee: "0.00% to 0.40% for maker, 0.05% to 0.60% for taker"
-      zero_fee_pairs: N/A
-    deposit:
-      - "Cryptocurrencies - Free"
-      - "USD Wire Transfer - $10"
-      - "USD ACH Transfer - Free"
-      - "EUR SEPA Withdrawal - €0.15"
-      - "UK SEPA Withdrawal - €0.15"
-    withdrawal_fees:
-      - "Cryptocurrencies - Free"
-      - "EUR SEPA Withdrawal - €0.15"
-      - "UK SEPA Withdrawal - €0.15"
-      - "USD Wire Transfer - $25"
-      - "USD ACH Transfer - Free"
-  accepted_payment_methods:
-    - "PayPal (US only)"
-    - "Bank Account (US only)"
-    - "Deposit Credit/Debit Card"
-  margin_trading:
-    availability: No
-    leverage: N/A
-  derivatives_products:
-    options_description: N/A
-  trust_score: 10/10
-  cybersecurity_details:
-    penetration_test: N/A
-    proof_of_funds: Deloitte - 31 Dec 2021
-    bug_bounty: Yes
-    last_updated: "2023-06-21"
-  api_coverage:
-    grade: "A"
-    tickers_data: Yes
-    historical_trades_data: Yes
-    orderbook_data: Yes
-    trading_via_api: Yes
-    ohlc_data: Yes
-    websocket: Yes
-    public_documentation: Yes
-    last_updated: "2023-01-10"
+---
+name: "coinbase"
+type: "Centralized Exchange"
+registration: "United States"
+logo: assets/coinbase.svg
+established: 2012
+website_info:
+  url: "https://exchange.coinbase.com"
+trading_information:
+  volume_24h: $4,880,676,872.76
+  btc_24h: 74,805 BTC
+  total_assets: N/A
+  exchange_reserves: N/A
+  active_pairs: 399
+  coins: 241
+most_active_trading_pair:
+  pair: "BTC/USD"
+  volume_24h: $1,580,577,737.71
+community_data:
+  twitter: "@Coinbase"
+  twitter_followers: 1,212,856
+  recent_monthly_pageviews: 43,068,947.0
+  alexa_rank: 730
+founders:
+  - name: "Brian Armstrong"
+    role: "CEO"
+    background: "Former Airbnb engineer, graduated from Rice University with a bachelor's and master's in Computer Science. Worked as a developer at IBM and as a software engineer at Airbnb."
+  - name: "Fred Ehrsam"
+    role: "Co-founder, Left in 2017"
+    background: "Attended Duke University, graduated with bachelor's in computer science and economics. Former Goldman Sachs trader. Co-founded cryptocurrency investment firm Paradigm in 2018."
+launch_info:
+  launch_date: "June 2012"
+  growth: "Established as a key platform in crypto trading and investment space, with user-friendly interface for both beginners and advanced traders."
+restricted_countries:
+  - Full list not specified, but functions may be limited in certain countries.
+fees:
+  fee_structure:
+    maker_taker_fee: "0.00% to 0.40% for maker, 0.05% to 0.60% for taker"
+    zero_fee_pairs: N/A
+  deposit:
+    - "Cryptocurrencies - Free"
+    - "USD Wire Transfer - $10"
+    - "USD ACH Transfer - Free"
+    - "EUR SEPA Withdrawal - €0.15"
+    - "UK SEPA Withdrawal - €0.15"
+  withdrawal_fees:
+    - "Cryptocurrencies - Free"
+    - "EUR SEPA Withdrawal - €0.15"
+    - "UK SEPA Withdrawal - €0.15"
+    - "USD Wire Transfer - $25"
+    - "USD ACH Transfer - Free"
+accepted_payment_methods:
+  - "PayPal (US only)"
+  - "Bank Account (US only)"
+  - "Deposit Credit/Debit Card"
+margin_trading:
+  availability: No
+  leverage: N/A
+derivatives_products:
+  options_description: N/A
+trust_score: 10/10
+cybersecurity_details:
+  penetration_test: N/A
+  proof_of_funds: Deloitte - 31 Dec 2021
+  bug_bounty: Yes
+  last_updated: "2023-06-21"
+api_coverage:
+  grade: "A"
+  tickers_data: Yes
+  historical_trades_data: Yes
+  orderbook_data: Yes
+  trading_via_api: Yes
+  ohlc_data: Yes
+  websocket: Yes
+  public_documentation: Yes
+  last_updated: "2023-01-10"
