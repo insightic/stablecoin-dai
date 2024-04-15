@@ -96,13 +96,9 @@ analyses = [
     AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
     AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news),
     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue),
+    AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
+    AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
 ]
-analyses.extend(
-    [
-        AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
-        AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
-    ]
-)
 
 
 def main(test_folders=None):

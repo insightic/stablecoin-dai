@@ -15,20 +15,19 @@ logger = logging.getLogger(__name__)
 
 
 class AnalysisRunner:
-    def __init__(self, analysis_function, check_condition):
+    def __init__(self, analysis_function, check_condition, subdir="stablecoin"):
         self.analysis_function = analysis_function
         self.check_condition = check_condition
+        self.subdir = subdir  # New attribute to override directory
 
-    def __call__(self, project_dir, data):
+    def __call__(self, base_dir, data):
+        project_dir = os.path.join(base_dir, self.subdir)  # Join base_dir with subdir
         if not self.check_condition(data):
             logger.info(
                 f"Required conditions not met for {self.analysis_function.__name__} in {project_dir}. Skipping analysis."
             )
             return
         logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
-        # timestamp = "20240317"
-        # timestamp = datetime.now().strftime("%Y%m%d")
-        # file_name = f"{self.analysis_function.__name__}.json"
         analysis = self.analysis_function(project_dir=project_dir)
         analysis.run_analysis()
 
@@ -92,7 +91,7 @@ def check_sosovalue_news(data):
 # AnalysisRunner instances for each analysis
 analyses = [
     # AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
-    AnalysisRunner(pyinsightic.ZANAnalysis, check_stablecoin),
+    # AnalysisRunner(pyinsightic.ZANAnalysis, check_stablecoin),
     #     AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
     #     AnalysisRunner(pyinsightic.Twitter, check_twitter),
     #     AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
@@ -100,6 +99,8 @@ analyses = [
     #     AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment),
     #     AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news),
     #     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue),
+    AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
+    AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
 ]
 
 
@@ -127,4 +128,4 @@ def main(test_folders=None):
 if __name__ == "__main__":
     # main()
     # os.chdir("stablecoin")  # change directory for local test
-    main(test_folders=["dai", "usdt"])
+    main()
