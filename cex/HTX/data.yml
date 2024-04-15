@@ -1,73 +1,73 @@
-cex:
-  name: "HTX"
-  type: "Centralized Exchange"
-  registration: "Seychelles"
-  logo: assets/HTX-Logo.jpeg
-  established: 2013
-  website_info:
-    url: "https://www.htx.com/en-us/"
-  trading_information:
-    volume_24h: $3,089,725,194
-    btc_24h: 47,698 BTC
-    total_assets: $3,733,400,703.92
-    exchange_reserves: $3,740,234,961.43
-    active_pairs: 763
-    coins: 685
-  most_active_trading_pair:
-    pair: "BTC/USDT"
-    volume_24h: $366,129,803.96
-  community_data:
-    twitter: "@HTX_Global"
-    twitter_followers: 88,629
-    recent_monthly_pageviews: 20,377,526.0
-    alexa_rank: 4416
-  founders:
-    - name: "Leon Li"
-      role: "Founder and CEO"
-      background: "Graduated from Tsinghua University in 2013 with a degree in Automation. Worked as a computer engineer at Oracle Corporation before founding HTX."
-  launch_info:
-    launch_date: "2013"
-    growth: "Founded in China, HTX has expanded its services globally, offering a wide range of trading and investment options to users in over 100 countries."
-  restricted_countries:
-    - "China"
-    - "United States"
-    - "Canada"
-    - "Japan"
-    - "Cuba"
-    - "Iran"
-    - "North Korea"
-    - "Sudan"
-    - "Syria"
-    - "Venezuela"
-    - "Singapore"
-    - "Crimea"
-  fees:
-    fee_structure:
-      maker_taker_fee: "Base fee: 0.2%, reduces after the first $5 million. HT holders get a discount."
-    deposit: None
-    withdrawal_fees: "Varies by coin"
-  accepted_payment_methods:
-    - P2P
-    - Debit/Credit Card
-    - Third Party
-  margin_trading:
-    availability: Yes
-    leverage: "Up to 200X for derivatives, 3X for cross margin"
-  derivatives_products:
-    options_description: "Supports ICO tokens and offers a broad assortment of cryptocurrencies, including spot trading, margin trading, futures trading, derivatives trading, staking, crypto loans, and more."
-  trust_score: 9/10
-  cybersecurity_details:
-    penetration_test: Yes
-    proof_of_funds: Yes
-    bug_bounty: Yes
-    last_updated: "2023-08-30"
-  api_coverage:
-    grade: "A"
-    tickers_data: Yes
-    historical_trades_data: Yes
-    orderbook_data: Yes
-    trading_via_api: Yes
-    ohlc_data: Yes
-    websocket: Yes
-    public_documentation: Yes
-    last_updated: "2019-08-19"
+---
+name: "HTX"
+type: "Centralized Exchange"
+registration: "Seychelles"
+logo: assets/HTX-Logo.jpeg
+established: 2013
+website_info:
+  url: "https://www.htx.com/en-us/"
+trading_information:
+  volume_24h: $3,089,725,194
+  btc_24h: 47,698 BTC
+  total_assets: $3,733,400,703.92
+  exchange_reserves: $3,740,234,961.43
+  active_pairs: 763
+  coins: 685
+most_active_trading_pair:
+  pair: "BTC/USDT"
+  volume_24h: $366,129,803.96
+community_data:
+  twitter: "@HTX_Global"
+  twitter_followers: 88,629
+  recent_monthly_pageviews: 20,377,526.0
+  alexa_rank: 4416
+founders:
+  - name: "Leon Li"
+    role: "Founder and CEO"
+    background: "Graduated from Tsinghua University in 2013 with a degree in Automation. Worked as a computer engineer at Oracle Corporation before founding HTX."
+launch_info:
+  launch_date: "2013"
+  growth: "Founded in China, HTX has expanded its services globally, offering a wide range of trading and investment options to users in over 100 countries."
+restricted_countries:
+  - "China"
+  - "United States"
+  - "Canada"
+  - "Japan"
+  - "Cuba"
+  - "Iran"
+  - "North Korea"
+  - "Sudan"
+  - "Syria"
+  - "Venezuela"
+  - "Singapore"
+  - "Crimea"
+fees:
+  fee_structure:
+    maker_taker_fee: "Base fee: 0.2%, reduces after the first $5 million. HT holders get a discount."
+  deposit: None
+  withdrawal_fees: "Varies by coin"
+accepted_payment_methods:
+  - P2P
+  - Debit/Credit Card
+  - Third Party
+margin_trading:
+  availability: Yes
+  leverage: "Up to 200X for derivatives, 3X for cross margin"
+derivatives_products:
+  options_description: "Supports ICO tokens and offers a broad assortment of cryptocurrencies, including spot trading, margin trading, futures trading, derivatives trading, staking, crypto loans, and more."
+trust_score: 9/10
+cybersecurity_details:
+  penetration_test: Yes
+  proof_of_funds: Yes
+  bug_bounty: Yes
+  last_updated: "2023-08-30"
+api_coverage:
+  grade: "A"
+  tickers_data: Yes
+  historical_trades_data: Yes
+  orderbook_data: Yes
+  trading_via_api: Yes
+  ohlc_data: Yes
+  websocket: Yes
+  public_documentation: Yes
+  last_updated: "2019-08-19"
