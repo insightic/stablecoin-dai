@@ -102,24 +102,26 @@ analyses = [
 
 
 def main(test_folders=None):
-    for dir in os.listdir("."):
-        if test_folders and dir not in test_folders:
-            continue
-        dir_path = os.path.join(".", dir)
-        if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
-            logger.info(f"Processing folder: {dir}")
-            data_path = os.path.join(dir_path, "data.yml")
-            try:
-                with open(data_path, "r") as file:
-                    content = file.read()
-                    # make sure it is spaces instead of tab
-                    fixed_content = content.replace("\t", "    ")
-                    data = yaml.safe_load(fixed_content)
-            except ScannerError:
-                logger.error("Invalid yaml format")
-                return
-            for analysis in analyses:
-                analysis(dir_path, data)
+    base_dir = "."  # Define the base directory for operations
+    if test_folders is None:
+        test_folders = [os.path.join(base_dir, "stablecoin"), os.path.join(base_dir, "cex")]
+
+    for folder in test_folders:
+        for dir in os.listdir(folder):
+            dir_path = os.path.join(folder, dir)
+            if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
+                logger.info(f"Processing folder: {dir}")
+                data_path = os.path.join(dir_path, "data.yml")
+                try:
+                    with open(data_path, "r") as file:
+                        content = file.read()
+                        fixed_content = content.replace("\t", "    ")
+                        data = yaml.safe_load(fixed_content)
+                except ScannerError:
+                    logger.error("Invalid yaml format")
+                    continue  # Continue to next directory instead of returning
+                for analysis in analyses:
+                    analysis(folder, data)  # Pass the modified folder path
 
 
 if __name__ == "__main__":
