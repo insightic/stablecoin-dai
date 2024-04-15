@@ -20,18 +20,20 @@ class AnalysisRunner:
         self.check_condition = check_condition
         self.subdir = subdir  # Can be an empty string if no subdir is needed
 
-    def __call__(self, base_dir, data):
+    def __call__(self, dir_path, data):
         # Only append subdir if it is not already in the base_dir
-        project_dir = (
-            os.path.join(base_dir, self.subdir) if self.subdir and not base_dir.endswith(self.subdir) else base_dir
-        )
+        # project_dir = (
+        #     os.path.join(base_dir, self.subdir) if self.subdir and not base_dir.endswith(self.subdir) else base_dir
+        # )
+        if self.subdir not in dir_path:
+            return
         if not self.check_condition(data):
             logger.info(
-                f"Required conditions not met for {self.analysis_function.__name__} in {project_dir}. Skipping analysis."
+                f"Required conditions not met for {self.analysis_function.__name__} in {dir_path}. Skipping analysis."
             )
             return
-        logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
-        analysis = self.analysis_function(project_dir=project_dir)
+        logger.info(f"Running {self.analysis_function.__name__} for {dir_path}")
+        analysis = self.analysis_function(project_dir=dir_path)
         analysis.run_analysis()
 
 
@@ -116,7 +118,7 @@ def main(test_folders=None):
         for dir in os.listdir(folder):
             dir_path = os.path.join(folder, dir)
             if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
-                logger.info(f"Processing folder: {dir}")
+                # logger.info(f"Processing folder: {dir}")
                 data_path = os.path.join(dir_path, "data.yml")
                 try:
                     with open(data_path, "r") as file:
@@ -127,7 +129,7 @@ def main(test_folders=None):
                     logger.error("Invalid yaml format")
                     continue  # Continue to next directory instead of returning
                 for analysis in analyses:
-                    analysis(folder, data)  # Pass the modified folder path
+                    analysis(dir_path, data)  # Pass the modified folder path
 
 
 if __name__ == "__main__":
