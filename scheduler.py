@@ -20,18 +20,16 @@ class AnalysisRunner:
         self.check_condition = check_condition
         self.subdir = subdir  # Can be an empty string if no subdir is needed
 
-    def __call__(self, base_dir, data):
-        # Only append subdir if it is not already in the base_dir
-        project_dir = (
-            os.path.join(base_dir, self.subdir) if self.subdir and not base_dir.endswith(self.subdir) else base_dir
-        )
+    def __call__(self, dir_path, data):
+        if self.subdir not in dir_path:
+            return
         if not self.check_condition(data):
             logger.info(
-                f"Required conditions not met for {self.analysis_function.__name__} in {project_dir}. Skipping analysis."
+                f"Required conditions not met for {self.analysis_function.__name__} in {dir_path}. Skipping analysis."
             )
             return
-        logger.info(f"Running {self.analysis_function.__name__} for {project_dir}")
-        analysis = self.analysis_function(project_dir=project_dir)
+        logger.info(f"Running {self.analysis_function.__name__} for {dir_path}")
+        analysis = self.analysis_function(project_dir=dir_path)
         analysis.run_analysis()
 
 
@@ -93,12 +91,14 @@ def check_sosovalue_news(data):
 
 # AnalysisRunner instances for each analysis
 analyses = [
-    AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
-    AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
-    AnalysisRunner(pyinsightic.Twitter, check_twitter),
-    AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
-    AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news),
-    AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue),
+    AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin, "stablecoin"),
+    AnalysisRunner(pyinsightic.Linkedin, check_linkedin, "stablecoin"),
+    AnalysisRunner(pyinsightic.Twitter, check_twitter, "stablecoin"),
+    AnalysisRunner(pyinsightic.SosoValue, check_sosovalue, "stablecoin"),
+    AnalysisRunner(pyinsightic.SmartContractValidator, check_smart_contract_validator, "stablecoin"),
+    AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment, "stablecoin"),
+    AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news, "stablecoin"),
+    AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue, "stablecoin"),
     AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
     AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
 ]
@@ -106,15 +106,15 @@ analyses = [
 
 def main(test_folders=None):
     base_dir = "."  # Define the base directory for operations
-    if test_folders is None:
-        test_folders = [os.path.join(base_dir, "stablecoin"), os.path.join(base_dir, "cex")]
+    list_of_folders = [os.path.join(base_dir, "stablecoin"), os.path.join(base_dir, "cex")]
 
-    for folder in test_folders:
+    for folder in list_of_folders:
         for dir in os.listdir(folder):
-            print(folder)
+            if dir not in test_folders:
+                continue
             dir_path = os.path.join(folder, dir)
             if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
-                logger.info(f"Processing folder: {dir}")
+                # logger.info(f"Processing folder: {dir}")
                 data_path = os.path.join(dir_path, "data.yml")
                 try:
                     with open(data_path, "r") as file:
@@ -125,7 +125,7 @@ def main(test_folders=None):
                     logger.error("Invalid yaml format")
                     continue  # Continue to next directory instead of returning
                 for analysis in analyses:
-                    analysis(folder, data)  # Pass the modified folder path
+                    analysis(dir_path, data)  # Pass the modified folder path
 
 
 if __name__ == "__main__":
