@@ -5,7 +5,7 @@ from datetime import datetime
 import pyinsightic
 from yaml.scanner import ScannerError
 from pyinsightic.social.helper import stablecoin_mapping
-import log_config
+import stablecoin.log_config as log_config
 
 # Configure logging at the start
 log_config.setup_logging()
