@@ -1,69 +1,69 @@
-cex:
-  name: "Bitget"
-  type: "Centralized Exchange"
-  registration: "Seychelles"
-  logo: assets/bitget.svg
-  established: 2018
-  website_info:
-    url: "https://www.bitget.com/"
-  trading_information:
-    volume_24h: $3,996,299,016
-    btc_24h: 60,747 BTC
-    total_assets: $2,803,915,817.89
-    exchange_reserves: $3,107,517,275.49
-    active_pairs: 852
-    coins: 764
-  most_active_trading_pair:
-    pair: "BTC/USDT"
-    volume_24h: $1,302,634,149.02
-  community_data:
-    twitter: "@bitgetglobal"
-    twitter_followers: 1,320,133
-    recent_monthly_pageviews: 15,410,660.0
-    alexa_rank: 4266
-  founders:
-    - name: "Sandra Lou"
-      role: "CEO"
-      background: "Background in traditional finance."
-    - name: "Gracy Chen"
-      role: "Managing Director"
-      background: "Background not specified, part of the early team."
-  launch_info:
-    launch_date: "2018"
-    growth: "Empowers over 20 million users across 100 countries with a focus on copy trading and various smart trading tools."
-  restricted_countries:
-    - "United States"
-    - "Singapore"
-    - "North Korea"
-    - "Sudan"
-  fees:
-    fee_structure:
-      maker_taker_fee: "Spot: 0.1% (Maker and Taker), reduced to 0.08% with BGB payment. Futures: Makers 0.02%, Takers 0.06%"
-    deposit: Yes
-    withdrawal_fees: "Varies by asset"
-  accepted_payment_methods:
-    - P2P
-    - Bank Card
-    - Advcash Wallet
-    - SEPA
-  margin_trading:
-    availability: Yes
-    leverage: "Up to 125X for futures, 10X for spot trading"
-  derivatives_products:
-    options_description: "Includes crypto-to-crypto trading, spot trading, futures trading, margin trading, copy trading."
-  trust_score: 9/10
-  cybersecurity_details:
-    penetration_test: Yes
-    proof_of_funds: Yes
-    bug_bounty: Yes
-    last_updated: "2023-10-05"
-  api_coverage:
-    grade: "A"
-    tickers_data: Yes
-    historical_trades_data: Yes
-    orderbook_data: Yes
-    trading_via_api: Yes
-    ohlc_data: Yes
-    websocket: Yes
-    public_documentation: Yes
-    last_updated: "2020-08-13"
+---
+name: "Bitget"
+type: "Centralized Exchange"
+registration: "Seychelles"
+logo: assets/bitget.svg
+established: 2018
+website_info:
+  url: "https://www.bitget.com/"
+trading_information:
+  volume_24h: $3,996,299,016
+  btc_24h: 60,747 BTC
+  total_assets: $2,803,915,817.89
+  exchange_reserves: $3,107,517,275.49
+  active_pairs: 852
+  coins: 764
+most_active_trading_pair:
+  pair: "BTC/USDT"
+  volume_24h: $1,302,634,149.02
+community_data:
+  twitter: "@bitgetglobal"
+  twitter_followers: 1,320,133
+  recent_monthly_pageviews: 15,410,660.0
+  alexa_rank: 4266
+founders:
+  - name: "Sandra Lou"
+    role: "CEO"
+    background: "Background in traditional finance."
+  - name: "Gracy Chen"
+    role: "Managing Director"
+    background: "Background not specified, part of the early team."
+launch_info:
+  launch_date: "2018"
+  growth: "Empowers over 20 million users across 100 countries with a focus on copy trading and various smart trading tools."
+restricted_countries:
+  - "United States"
+  - "Singapore"
+  - "North Korea"
+  - "Sudan"
+fees:
+  fee_structure:
+    maker_taker_fee: "Spot: 0.1% (Maker and Taker), reduced to 0.08% with BGB payment. Futures: Makers 0.02%, Takers 0.06%"
+  deposit: Yes
+  withdrawal_fees: "Varies by asset"
+accepted_payment_methods:
+  - P2P
+  - Bank Card
+  - Advcash Wallet
+  - SEPA
+margin_trading:
+  availability: Yes
+  leverage: "Up to 125X for futures, 10X for spot trading"
+derivatives_products:
+  options_description: "Includes crypto-to-crypto trading, spot trading, futures trading, margin trading, copy trading."
+trust_score: 9/10
+cybersecurity_details:
+  penetration_test: Yes
+  proof_of_funds: Yes
+  bug_bounty: Yes
+  last_updated: "2023-10-05"
+api_coverage:
+  grade: "A"
+  tickers_data: Yes
+  historical_trades_data: Yes
+  orderbook_data: Yes
+  trading_via_api: Yes
+  ohlc_data: Yes
+  websocket: Yes
+  public_documentation: Yes
+  last_updated: "2020-08-13"
