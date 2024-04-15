@@ -15,13 +15,16 @@ logger = logging.getLogger(__name__)
 
 
 class AnalysisRunner:
-    def __init__(self, analysis_function, check_condition, subdir="stablecoin"):
+    def __init__(self, analysis_function, check_condition, subdir=""):
         self.analysis_function = analysis_function
         self.check_condition = check_condition
-        self.subdir = subdir  # New attribute to override directory
+        self.subdir = subdir  # Can be an empty string if no subdir is needed
 
     def __call__(self, base_dir, data):
-        project_dir = os.path.join(base_dir, self.subdir)  # Join base_dir with subdir
+        # Only append subdir if it is not already in the base_dir
+        project_dir = (
+            os.path.join(base_dir, self.subdir) if self.subdir and not base_dir.endswith(self.subdir) else base_dir
+        )
         if not self.check_condition(data):
             logger.info(
                 f"Required conditions not met for {self.analysis_function.__name__} in {project_dir}. Skipping analysis."
