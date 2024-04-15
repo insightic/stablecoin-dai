@@ -21,10 +21,6 @@ class AnalysisRunner:
         self.subdir = subdir  # Can be an empty string if no subdir is needed
 
     def __call__(self, dir_path, data):
-        # Only append subdir if it is not already in the base_dir
-        # project_dir = (
-        #     os.path.join(base_dir, self.subdir) if self.subdir and not base_dir.endswith(self.subdir) else base_dir
-        # )
         if self.subdir not in dir_path:
             return
         if not self.check_condition(data):
@@ -95,17 +91,17 @@ def check_sosovalue_news(data):
 
 # AnalysisRunner instances for each analysis
 analyses = [
-    # AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin),
-    # AnalysisRunner(pyinsightic.ZANAnalysis, check_stablecoin),
-    #     AnalysisRunner(pyinsightic.Linkedin, check_linkedin),
-    #     AnalysisRunner(pyinsightic.Twitter, check_twitter),
-    #     AnalysisRunner(pyinsightic.SosoValue, check_sosovalue),
-    #     AnalysisRunner(pyinsightic.SmartContractValidator, check_smart_contract_validator),
-    #     AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment),
-    #     AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news),
-    #     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue),
-    AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
-    AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
+    AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin, "stablecoin"),
+    AnalysisRunner(pyinsightic.ZANAnalysis, check_stablecoin, "stablecoin"),
+    AnalysisRunner(pyinsightic.Linkedin, check_linkedin, "stablecoin"),
+    AnalysisRunner(pyinsightic.Twitter, check_twitter, "stablecoin"),
+    AnalysisRunner(pyinsightic.SosoValue, check_sosovalue, "stablecoin"),
+    AnalysisRunner(pyinsightic.SmartContractValidator, check_smart_contract_validator, "stablecoin"),
+    AnalysisRunner(pyinsightic.SecurityAssessment, check_security_assessment, "stablecoin"),
+    AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news, "stablecoin"),
+    AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue, "stablecoin"),
+    # AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
+    # AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
 ]
 
 
@@ -135,4 +131,4 @@ def main(test_folders=None):
 if __name__ == "__main__":
     # main()
     # os.chdir("stablecoin")  # change directory for local test
-    main()
+    main(["dai"])
