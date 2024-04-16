@@ -112,7 +112,7 @@ def main(test_folders=None):
 
     for folder in list_of_folders:
         for dir in os.listdir(folder):
-            if dir not in test_folders:
+            if test_folders is not None and dir not in test_folders:
                 continue
             dir_path = os.path.join(folder, dir)
             if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):

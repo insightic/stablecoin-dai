@@ -97,7 +97,7 @@ analyses = [
 
 def main(test_folders=None):
     for dir in os.listdir("."):
-        if test_folders and dir not in test_folders:
+        if test_folders is not None and dir not in test_folders:
             continue
         dir_path = os.path.join(".", dir)
         if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
