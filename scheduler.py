@@ -101,6 +101,7 @@ analyses = [
     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue, "stablecoin"),
     AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
     AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
+    AnalysisRunner(pyinsightic.OkLinkAnalysis, check_sosovalue, "cex"),
 ]
 
 
