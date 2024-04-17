@@ -466,5 +466,239 @@
         },
         "final_score": 41.01041666666667,
         "created_date": "2024-04-16 08:50:49"
+    },
+    {
+        "report_name": "TerraCore-Audit-Report-010922.pdf",
+        "biz_content": "The Terra Core project's business logic/framework is described in the following content from the input text:\n\n- \"The Terra protocol is the leading decentralized and open-source public blockchain protocol for algorithmic stablecoins. Using a combination of open market arbitrage incentives and decentralized oracle voting, the Terra protocol creates stablecoins that consistently track the price of any fiat currency. Users can spend, save, trade, or exchange Terra stablecoins instantly, all on the Terra blockchain. Luna provides its holders with staking rewards and governance power. The Terra ecosystem is a quickly expanding network of decentralized applications, creating a stable demand for Terra and increasing the price of Luna.\" \n  \n- \"Terra is a stablecoin that tracks the price of fiat currencies. Users mint new Terra by burning Luna. Stablecoins are named for their fiat counterparts. For example, the base Terra stablecoin tracks the price of the IMF's SDR, named TerraSDR, or SDT. Other stablecoin denominations include TerraUSD or UST, and TerraKRW or KRT. All Terra denominations exist in the same pool. Luna is the Terra protocol's native staking token that absorbs the price volatility of Terra. Luna is used for governance and in mining. Users stake Luna to validators who record and verify transactions on the blockchain in exchange for rewards from transaction fees. The more Terra is used, the more Luna is worth.\" \n\n- \"The audited code mainly contains three core modules: Market, Oracle and Treasury. Market: The Market module enables atomic swaps between different Terra stablecoin denominations, and between Terra and Luna. This module ensures an available, liquid market, stable prices, and fair exchange rates between the protocol's assets. Oracle: The Oracle module provides the Terra blockchain with an up-to-date and accurate price feed of exchange rates of Luna against various Terra pegs so that the Market may provide fair exchanges between Terra<>Terra currency pairs, as well as Terra<>Luna. Treasury: The Treasury module acts as the 'central bank' of the Terra economy, measuring macroeconomic activity by observing indicators and adjusting monetary policy levers to modulate miner incentives toward stable, long-term growth.\" \n- Economics\n\nReview of the economic incentives, including the intended functions and potential impact;\nWeaknesses in the economic model resulting in user attacks again the Modules;\nAttack vectors that can game the trading environment and cause unnecessary costs to \nordinary users; \n\n- Compliance with Cosmos\n\n06. Severity level reference\n\nEvery issue in this report was assigned a severity level from the following:\n\nCritical severity issues need to be fixed as soon as possible.\n\nHigh severity issues will probably bring problems and should be fixed.\n\nMedium severity issues could potentially bring problems and should eventually be fixed.\n\nLow severity issues are minor details and warnings that can remain unfixed but would be better \nfixed at some point in the future.\n\nNeutral is not an issue or risk but a suggestion for code improvement.\n\n07. List of issues by severity\n",
+        "biz_content_percentage": 0.1046825529078487,
+        "details": [
+            {
+                "prompt": "Please check if the report covers the content related to overall security results? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Please check if the report covers the content related to specific vulnerabilities? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Please check if the report covers the content related to risk mitigation strategies? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the report covers the content related to protocol functionality? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check how easily understandable is the report in explaining the scope? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Please check how easily understandable is the report in explaining the methodology? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Please check how easily understandable is the report in explaining the findings? If it has been very explicitly explained, answer number \"1\"; If it was not even been explained, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Please check if the report provide recommendations for each identified risks? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please assess the actionability and tailored nature of the recommendations provided for addressing identified risks. If very actionable, answer number \"1\"; If not actionable at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Please check if the Static Analysis method was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the Dynamic Analysis method (e.g.: Fuzz Testing, Runtime Security Analysis) was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the Cryptographic Analysis method was conducted for this security assessment process? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Does the report identify any positive practices in the project's execution? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Smart Contract Bugs were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the potential technical risks/security vulnerabilities in terms of Decentralized Application Security were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the potential operational risks/security vulnerabilities in terms of Dependence on Third-party Services were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the potential operational risks/security vulnerabilities in terms of Data Privacy and Confidentiality were assessed/identified? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Does the vulnerabilities categorized based on severity or potential impact? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Does the vulnerabilities prioritized based on severity or potential impact? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Does the report assess/identify any potential security issues? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "If answer \"0\" for preivous question, just ignore this question and answer number \"0\", do not explain anything.If answer \"1\" for preivous question, evaluate whether the report assess/identifies potential security issues before they can be exploited by attackers. If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "For each vulnerability, please check if there is any risk assessment conducted to evaluate its potential impact? If yes for all vulnerabilities, answer number \"1\"; If yes for some of the vulnerabilities, answer 0.5; If no for all vulnerabilities, answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Rate the comprehensiveness of the risk assessment conducted to evaluate the potential impact of each vulnerability. If very comprehensiveness, answer number \"1\"; If not comprehensiveness at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Evaluate how effectively the report identifies the security risks. If very effective, answer number \"1\"; If not effective at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Evaluate how effectively the report analyzes the security risks. If very effective, answer number \"1\"; If not effective at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Evaluate how effectively the report prioritizes the security risks. If very effective, answer number \"1\"; If not effective at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Does the report assess the residual risk remaining after implementing proposed mitigation strategies?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Does the report provide clear and actionable recommendations for remediating the identified vulnerabilities? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Assess the clarity of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Assess the actionability of the recommendations for remediation provided in the report. If very clear, answer number \"1\"; If not clear at all, answer number \"0\"; else answer number \"0.5\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Does the project implement the recommendations and integrate ongoing security monitoring? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Does the report discusses potential future threats or areas for improvement? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Has the audit report resulted in improved security practices and reduced the likelihood of security breaches?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Is the report well-structured with clear headings, sections, visualisations(such as diagrams, flowcharts, tables), and appendices? If all have, answer number \"1\"; If missing either one, answer number \"0.5\"; else answer number \"0\". Answer either \"0\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Does report consistency in style, formatting, and terminology?  If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Does the report written in clear, understandable language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Does the report have any grammatical errors? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Please check if the auditing approach been described? If no, answer number \"0\"; If yes, please check how clear the auditing approach been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "1"
+            },
+            {
+                "prompt": "Please check if the methodologies used for auditing been described? If no, answer number \"0\"; If yes, please check how clear the methodologies used for auditing been described: if not clear at all, answer number \"0.2\"; if very clear, answer number \"1\"; else answer number \"0.5\". Answer either \"0\" or \"0.2\" or \"0.5\" or \"1\", do not explain anything.",
+                "answer": "0.5"
+            },
+            {
+                "prompt": "Please check if the report contains any disclaimers regarding independence and neutrality of the audit team? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Does the report address industry-specific security standards and best practices? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the report contains any disclaimers/content regarding communication between auditors and project teams for effective implementation of remediation plans? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the report begins with an executive summary to provides a high-level overview of the findings, implications, and recommendations in non-technical language? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the report include key takeaways and actionable insights that are easily digestible for non-technical stakeholders? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the report have definitions or explanations of technical terms to help non-technical stakeholders understand the content? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "0"
+            },
+            {
+                "prompt": "Please check if the report is structured with segmented sections catered to different audiences (e.g.: Technical Findings for developers and security professionals; Risk Impact for non-technical stakeholders; Recommendations for all audiences)? If yes, answer number \"1\", else answer number \"0\", don't explain anything.",
+                "answer": "1"
+            }
+        ],
+        "prompt_scores_breakdown": {
+            "content": [
+                5.5,
+                7.0,
+                2.5,
+                0.0,
+                0.0
+            ],
+            "vulnerability_risk": [
+                0.0,
+                10.0,
+                5.0,
+                5.0,
+                0.0
+            ],
+            "mitigation_impact": [
+                3.0,
+                0.0,
+                10.0,
+                0.0
+            ],
+            "presentation_methodology": [
+                2.5,
+                10.0,
+                7.5,
+                0.0
+            ],
+            "relevance_accessibility": [
+                0.0,
+                0.0,
+                3.0
+            ]
+        },
+        "report_summary": "the security assessment report demonstrates meticulous scrutiny encompassing overall security results, including low risk findings, technical risks in decentralized applications, and vulnerabilities sorted by severity, supported by a comprehensive methodology that evaluates code quality and compliance with the cosmos framework. the report proficiently identifies and prioritizes vulnerabilities, provides mitigation strategies, and conveys actionable insights geared towards continuous improvement, despite potential shortcomings in effectively emphasizing the most significant risks and offering specific details on critical issues. main drawbacks include a certain lack of accessibility due to dense disclaimers and the absence of in-depth detail on critical severity issues. in summary, the report is a robust analysis of security standards and vulnerabilities, with areas needing clarity and expanded risk emphasis to ensure improvements and overall system robustness.",
+        "final_score_by_category": {
+            "content": 5.0,
+            "vulnerability_risk": 5.0,
+            "mitigation_impact": 6.5,
+            "presentation_methodology": 3.3333333333333335,
+            "relevance_accessibility": 1.5
+        },
+        "final_score": 46.25,
+        "created_date": "2024-04-17 16:37:36"
     }
 ]
