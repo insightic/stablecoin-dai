@@ -116,7 +116,7 @@ def main(test_folders=None):
                 continue
             dir_path = os.path.join(folder, dir)
             if os.path.isdir(dir_path) and os.path.exists(os.path.join(dir_path, "data.yml")):
-                # logger.info(f"Processing folder: {dir}")
+                logger.info(f"Processing folder: {dir}")
                 data_path = os.path.join(dir_path, "data.yml")
                 try:
                     with open(data_path, "r") as file:
