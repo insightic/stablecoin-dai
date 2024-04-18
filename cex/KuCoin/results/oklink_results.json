@@ -222,5 +222,85 @@
                 ]
             }
         ]
+    },
+    {
+        "created_date": "2024-04-18 19:46:23",
+        "current_por": {
+            "APIDescription": "Get the latest proof of reserves data from centralized exchanges",
+            "institutionName": "KuCoin",
+            "totalBalanceUSDT": "1842617879.3378272",
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 5036.85238,
+                    "balanceUSDT": 320822312.3441
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 90181.6648432848,
+                    "balanceUSDT": 277269841.2772183
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 1109789201.117799,
+                    "balanceUSDT": 1110523428.6188667
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 2341912158922.7197,
+                    "balanceUSDT": 134002297.09764229
+                }
+            ]
+        },
+        "asset_flow": {
+            "APIDescription": "Get the asset flow of exchanges in the past 30 days. The totalValue is in USD.",
+            "institutionName": "KuCoin",
+            "startTime": "2024-03-19",
+            "endTime": "2024-04-18",
+            "inFlow": [
+                {
+                    "entities": "KuCoin",
+                    "totalValue": 89248081.9239217
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 8271246.376215427
+                },
+                {
+                    "entities": "BingX",
+                    "totalValue": 33814.643179896295
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 2704952485.2417088
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 574.97114566692
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "KuCoin",
+                    "totalValue": 34394546.76284686
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 4933220.243963802
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 3422526.5542694656
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 2991022932.8452373
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 9783248.917251384
+                }
+            ]
+        }
     }
 ]

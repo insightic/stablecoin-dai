@@ -252,5 +252,85 @@
                 ]
             }
         ]
+    },
+    {
+        "created_date": "2024-04-18 19:46:47",
+        "current_por": {
+            "APIDescription": "Get the latest proof of reserves data from centralized exchanges",
+            "institutionName": "Bitget",
+            "totalBalanceUSDT": "1139046690.0378106",
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 12410.52317655,
+                    "balanceUSDT": 790488273.7303522
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 29863.1922892894,
+                    "balanceUSDT": 91816475.11688046
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 72106404.90785944,
+                    "balanceUSDT": 72151973.4609425
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 746072413565.4713,
+                    "balanceUSDT": 184589967.72963518
+                }
+            ]
+        },
+        "asset_flow": {
+            "APIDescription": "Get the asset flow of exchanges in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Bitget",
+            "startTime": "2024-03-19",
+            "endTime": "2024-04-18",
+            "inFlow": [
+                {
+                    "entities": "Bitget",
+                    "totalValue": 26047079.994292345
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 9128291.833373725
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 3537837.1911465805
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 161099094.35050094
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 3243093.5217333226
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Binance",
+                    "totalValue": 40864897.190926954
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 15251201.917107245
+                },
+                {
+                    "entities": "Bybit",
+                    "totalValue": 1276586.843166174
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 643322722.8256253
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 2723267.5221133055
+                }
+            ]
+        }
     }
 ]

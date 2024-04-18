@@ -228,5 +228,43 @@
                 "outflow": []
             }
         ]
+    },
+    {
+        "created_date": "2024-04-18 19:42:59",
+        "current_por": {
+            "APIDescription": "Get the latest proof of reserves data from centralized exchanges",
+            "institutionName": "Gate.io",
+            "totalBalanceUSDT": "2273918475.6805835",
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 14626.94321245,
+                    "balanceUSDT": 931663147.9170028
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 167688.2908282889,
+                    "balanceUSDT": 515569388.3319322
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 544391747.2582037,
+                    "balanceUSDT": 544748347.7550498
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 8606456831891.501,
+                    "balanceUSDT": 281937591.67659897
+                }
+            ]
+        },
+        "asset_flow": {
+            "APIDescription": "Get the asset flow of exchanges in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Gate.io",
+            "startTime": "2024-03-19",
+            "endTime": "2024-04-18",
+            "inFlow": [],
+            "outFlow": []
+        }
     }
 ]

@@ -166,5 +166,65 @@
                 ]
             }
         ]
+    },
+    {
+        "created_date": "2024-04-18 19:43:24",
+        "current_por": {
+            "APIDescription": "Get the latest proof of reserves data from centralized exchanges",
+            "institutionName": "Crypto.com",
+            "totalBalanceUSDT": "5265735187.544301",
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 49709.27027704,
+                    "balanceUSDT": 3166231970.2960625
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 245050.5980527115,
+                    "balanceUSDT": 753425217.2549253
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 120623509.95795116,
+                    "balanceUSDT": 120667365.24885866
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 45171596814863.195,
+                    "balanceUSDT": 1225410634.744454
+                }
+            ]
+        },
+        "asset_flow": {
+            "APIDescription": "Get the asset flow of exchanges in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Crypto.com",
+            "startTime": "2024-03-19",
+            "endTime": "2024-04-18",
+            "inFlow": [
+                {
+                    "entities": "Crypto.com",
+                    "totalValue": 319784157.9442201
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 1668275463.5483687
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Crypto.com",
+                    "totalValue": 295936013.6855678
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 210785039.07297
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 1984215512.6070266
+                }
+            ]
+        }
     }
 ]
