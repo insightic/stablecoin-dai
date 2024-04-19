@@ -1,5 +1,5 @@
 ---
-name: Run PyInsightic Scheduler
+name: Run PyInsightic Scheduler Bi Daily
 
 on:
   workflow_dispatch:
@@ -75,7 +75,7 @@ jobs:
 
       - name: Run pyinsightic analysis
         run: |
-          python scheduler.py 2>&1 | tee analysis.log
+          python scheduler_bi_daily.py 2>&1 | tee analysis.log
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
