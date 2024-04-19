@@ -102,7 +102,8 @@ analyses = [
     # AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue, "stablecoin"),
     # AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
     # AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
-    AnalysisRunner(pyinsightic.OkLinkAnalysis, check_sosovalue, "cex"),
+    # AnalysisRunner(pyinsightic.OkLinkAnalysis, check_sosovalue, "cex"),
+    AnalysisRunner(pyinsightic.TransactionCrawler, check_sosovalue, "cex"),
 ]
 
 
@@ -133,4 +134,4 @@ def main(test_folders=None):
 if __name__ == "__main__":
     # main()
     # os.chdir("stablecoin")  # change directory for local test
-    main(["Crypto.com"])
+    main()
