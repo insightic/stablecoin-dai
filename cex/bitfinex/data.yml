@@ -1,0 +1,87 @@
+---
+name: "Bitfinex"
+type: "Centralized Exchange"
+registration: "British Virgin Islands"
+logo: "assets/bitfinex-leaf.svg"
+established: 2012
+website_info:
+  url: "https://www.bitfinex.com"
+trading_information:
+  volume_24h: $357,939,510.77
+  exchange_reserves: $17,924,613,298.42
+  active_pairs: 472
+  coins: 173
+most_active_trading_pair:
+  pair: "BTC/USD"
+  volume_24h: $126,655,644.77
+community_data:
+  twitter: "@bitfinex"
+  twitter_followers: 942,163
+  monthly_pageviews: 1,676,440.0
+  alexa_rank: 10769
+founders:
+  - name: "Raphael Nicolle"
+    role: "Co-founder"
+  - name: "Giancarlo Devasini"
+    role: "Co-founder and CFO"
+restricted_countries:
+  - "Iran"
+  - "North Korea"
+  - "Cuba"
+  - "Syria"
+  - "Crimea"
+  - "Donetsk People's Republic"
+  - "Luhansk People's Republic"
+  - "United States"
+  - "Canada"
+  - "British Virgin Islands"
+  - "Venezuela"
+  - "Austria"
+  - "Italy"
+fees:
+  deposit:
+    free_over_1000_usd: true
+    small_deposit_fee:
+      BTC: 0.0006
+      ETH: 0.0027
+      LTC: 0.001
+      and_more: "Varies by coin"
+  trading:
+    maker: "0% - 0.100%"
+    taker: "0.100% - 0.200%"
+  withdrawal_fees: "Varies by coin"
+accepted_payment_methods:
+  - "Wire transfer"
+margin_trading:
+  availability: Yes
+  leverage: "Up to 10X"
+derivatives_products:
+  description: "Offers margin lending, margin funding, paired trading, OTC trading and more."
+trust_score: 9/10
+cybersecurity_details:
+  penetration_test: Yes
+  proof_of_funds: Yes
+  bug_bounty: Yes
+  last_updated: "2024-03-26"
+api_coverage:
+  grade: "A"
+  tickers_data: Yes
+  historical_trades_data: Yes
+  orderbook_data: Yes
+  trading_via_api: Yes
+  ohlc_data: Yes
+  websocket: Yes
+  public_documentation: Yes
+  last_updated: "2019-08-19"
+products_offered:
+  - "Spot trading"
+  - "Margin trading"
+  - "Futures trading"
+  - "Derivatives trading"
+  - "Staking"
+  - "Crypto loans"
+  - "Bitfinex Borrow"
+  - "Bitfinex Pay"
+  - "Bitfinex Pulse"
+  - "Affiliate Program"
+  - "UNUS SED LEO token"
