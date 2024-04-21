@@ -104,5 +104,58 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-04-21 16:20:47",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Bitfinex",
+            "startTime": "2024-03-22",
+            "endTime": "2024-04-21",
+            "inFlow": [
+                {
+                    "entities": "Kraken",
+                    "totalValue": 834897176.3955088
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 512627588.59863454
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 93777367.47278225
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 7340360569.988301
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 78633529.4094594
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Bitfinex",
+                    "totalValue": 905301958.2123598
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 29814355.40329002
+                },
+                {
+                    "entities": "KuCoin",
+                    "totalValue": 93.88957126692
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 6632680144.949706
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 7.766802954064786
+                }
+            ]
+        }
     }
 ]
