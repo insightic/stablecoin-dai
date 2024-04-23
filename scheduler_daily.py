@@ -91,7 +91,7 @@ def check_sosovalue_news(data):
 
 # AnalysisRunner instances for each analysis
 analyses = [
-    AnalysisRunner(pyinsightic.CoinGeckoCrawler, check_sosovalue, "cex"),
+    AnalysisRunner(pyinsightic.SecurityScoreCrawler, check_sosovalue, "cex"),
     AnalysisRunner(pyinsightic.CoinMarketCapCrawler, check_sosovalue, "cex"),
     AnalysisRunner(pyinsightic.OkLinkAnalysis, check_sosovalue, "cex"),
     AnalysisRunner(pyinsightic.TransactionCrawler, check_sosovalue, "cex"),
