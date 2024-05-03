@@ -58,7 +58,7 @@ jobs:
 
       - name: Run pyinsightic analysis
         run: |
-          cd stablecoin && (python zan_analysis.py 2>&1 | tee analysis.log)
+          cd stablecoin && (python zan_analysis.py 2 2>&1 | tee analysis.log)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
