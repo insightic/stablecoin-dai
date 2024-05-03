@@ -6,6 +6,7 @@ import pyinsightic
 from yaml.scanner import ScannerError
 from pyinsightic.social.helper import stablecoin_mapping
 import log_config
+import sys
 
 # Configure logging at the start
 log_config.setup_logging()
@@ -117,4 +118,10 @@ def main(test_folders=None):
 
 
 if __name__ == "__main__":
-    main(test_folders=["dai", "usdt", "usdc", "fdusd", "xsgd"])
+    part = sys.argv[1]
+    if part == "1":
+        test_folders = ["dai", "usdt", "usdc"]
+    elif part == "2":
+        test_folders = ["fdusd", "xsgd"]
+    print(f"Running for: {test_folders}")
+    main(test_folders)
