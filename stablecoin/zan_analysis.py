@@ -1,5 +1,6 @@
 import os
 import yaml
+import argparse
 import logging
 from datetime import datetime
 import pyinsightic
@@ -118,10 +119,14 @@ def main(test_folders=None):
 
 
 if __name__ == "__main__":
-    part = sys.argv[1]
-    if part == "1":
+    parser = argparse.ArgumentParser(description="Run parts of the zan analysis.")
+    parser.add_argument(
+        "part", type=str, choices=["1", "2"], default="1", help="Specify which part of the analysis to run"
+    )
+    args = parser.parse_args()
+    if args.part == "1":
         test_folders = ["dai", "usdt", "usdc"]
-    elif part == "2":
+    elif args.part == "2":
         test_folders = ["fdusd", "xsgd"]
     print(f"Running for: {test_folders}")
     main(test_folders)
