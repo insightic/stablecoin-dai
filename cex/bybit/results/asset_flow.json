@@ -1325,5 +1325,58 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-05-13 16:16:16",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Bybit",
+            "startTime": "2024-04-13",
+            "endTime": "2024-05-13",
+            "inFlow": [
+                {
+                    "entities": "Bybit",
+                    "totalValue": 625858032.7787006
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 314235016.4323167
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 85454023.94622742
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 8973740296.892591
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 142821503.0363585
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Binance",
+                    "totalValue": 1538040881.418046
+                },
+                {
+                    "entities": "Bybit",
+                    "totalValue": 409697152.67775416
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 108123028.05011591
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 8959409692.85771
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 70532565.8072788
+                }
+            ]
+        }
     }
 ]

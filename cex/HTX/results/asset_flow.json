@@ -833,5 +833,38 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-05-13 16:20:27",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Huobi",
+            "startTime": "2024-04-13",
+            "endTime": "2024-05-13",
+            "inFlow": [
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 363525835.24917924
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Poloniex",
+                    "totalValue": 2060352.6587879814
+                },
+                {
+                    "entities": "Huobi",
+                    "totalValue": 1738170.55669351
+                },
+                {
+                    "entities": "Bybit",
+                    "totalValue": 827069.91588
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 355894951.2697312
+                }
+            ]
+        }
     }
 ]
