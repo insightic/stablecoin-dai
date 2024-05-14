@@ -97,7 +97,7 @@ analyses = [
     # Run once every other days
     AnalysisRunner(pyinsightic.Stablecoin, check_stablecoin, "stablecoin"),
     AnalysisRunner(pyinsightic.Linkedin, check_linkedin, "stablecoin"),
-    AnalysisRunner(pyinsightic.Twitter, check_twitter, "stablecoin"),
+    # AnalysisRunner(pyinsightic.Twitter, check_twitter, "stablecoin"),
     AnalysisRunner(pyinsightic.SosoValue, check_sosovalue, "stablecoin"),
     AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news, "stablecoin"),
     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue, "stablecoin"),
