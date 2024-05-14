@@ -99,7 +99,7 @@ analyses = [
     AnalysisRunner(pyinsightic.Linkedin, check_linkedin, "stablecoin"),
     # AnalysisRunner(pyinsightic.Twitter, check_twitter, "stablecoin"),
     AnalysisRunner(pyinsightic.SosoValue, check_sosovalue, "stablecoin"),
-    AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news, "stablecoin"),
+    # AnalysisRunner(pyinsightic.SosovalueNewsCrawler, check_sosovalue_news, "stablecoin"),
     AnalysisRunner(pyinsightic.DefiLlamaNewsCrawler, check_sosovalue, "stablecoin"),
     AnalysisRunner(pyinsightic.WebsiteReviewCrawler, check_sosovalue, "cex"),
 ]
