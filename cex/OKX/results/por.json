@@ -19614,5 +19614,44 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-05-18 16:29:19",
+        "por": {
+            "APIDescription": "Get the latest por. tokenBalanceChange and balanceUSDTChange are compared to prev record in percentage value. Notice: balanceUSDTChange for symbol=Others not applicable.",
+            "institutionName": "OKX",
+            "historyTime": "2024-05-18 16:29:19",
+            "totalBalanceUSDT": 23635396281.257362,
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 140535.80873773,
+                    "balanceUSDT": 9390532471.950748,
+                    "tokenBalanceChange": -0.0254136456,
+                    "balanceUSDTChange": 0.1877981398
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 1530424.787262808,
+                    "balanceUSDT": 4756571591.870222,
+                    "tokenBalanceChange": -0.0515040478,
+                    "balanceUSDTChange": 1.8123454941
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 6623887922.995338,
+                    "balanceUSDT": 6627028816.981434,
+                    "tokenBalanceChange": -0.179586032,
+                    "balanceUSDTChange": -0.1904819998
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 9020099985617.88,
+                    "balanceUSDT": 2861263400.4549484,
+                    "tokenBalanceChange": 0.272207773,
+                    "balanceUSDTChange": 0.3492761651
+                }
+            ]
+        }
     }
 ]
