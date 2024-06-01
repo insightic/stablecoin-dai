@@ -1416,5 +1416,30 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-06-01 16:33:19",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Huobi",
+            "startTime": "2024-05-02",
+            "endTime": "2024-06-01",
+            "inFlow": [
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 92321989.62193839
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Huobi",
+                    "totalValue": 2395445.81561869
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 76706723.30831869
+                }
+            ]
+        }
     }
 ]

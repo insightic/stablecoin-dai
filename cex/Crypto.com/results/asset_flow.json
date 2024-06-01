@@ -1488,5 +1488,42 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-06-01 16:37:14",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Crypto.com",
+            "startTime": "2024-05-02",
+            "endTime": "2024-06-01",
+            "inFlow": [
+                {
+                    "entities": "Crypto.com",
+                    "totalValue": 24846.63739992421
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 1562144671.329738
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Crypto.com",
+                    "totalValue": 228192765.76683158
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 173293512.3447065
+                },
+                {
+                    "entities": "Gate.io",
+                    "totalValue": 255255.14238803278
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 1489469022.817438
+                }
+            ]
+        }
     }
 ]
