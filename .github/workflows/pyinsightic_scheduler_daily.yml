@@ -1,10 +1,13 @@
 ---
 name: Run PyInsightic Scheduler Daily
 
+env:
+  TZ: "Asia/Singapore"
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   yaml-format-check:
