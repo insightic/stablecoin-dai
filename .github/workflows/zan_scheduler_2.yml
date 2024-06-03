@@ -4,7 +4,7 @@ name: Run PyInsightic Zan Scheduler Part 2
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23 */3 * *'
+    - cron: '0 7 */3 * *'
 
 jobs:
   yaml-format-check:
