@@ -20511,5 +20511,44 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-06-11 09:06:41",
+        "por": {
+            "APIDescription": "Get the latest por. tokenBalanceChange and balanceUSDTChange are compared to prev record in percentage value. Notice: balanceUSDTChange for symbol=Others not applicable.",
+            "institutionName": "Huobi",
+            "historyTime": "2024-06-11 09:06:41",
+            "totalBalanceUSDT": 1240007861.21865,
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 11388.46417875,
+                    "balanceUSDT": 791612046.4560404,
+                    "tokenBalanceChange": -0.2094010668,
+                    "balanceUSDTChange": -0.4029990791
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 6135.8454621173,
+                    "balanceUSDT": 22495850.217760816,
+                    "tokenBalanceChange": 72.6652621283,
+                    "balanceUSDTChange": 70.8257507302
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 50977802.04668993,
+                    "balanceUSDT": 50962388.68085115,
+                    "tokenBalanceChange": -6.2345194681,
+                    "balanceUSDTChange": -6.1716986624
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 1220369304451.7524,
+                    "balanceUSDT": 374937575.86399776,
+                    "tokenBalanceChange": 0.0203389161,
+                    "balanceUSDTChange": 0.1948433765
+                }
+            ]
+        }
     }
 ]
