@@ -2807,5 +2807,58 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-06-13 09:01:02",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Gate.io",
+            "startTime": "2024-05-14",
+            "endTime": "2024-06-13",
+            "inFlow": [
+                {
+                    "entities": "Gate.io",
+                    "totalValue": 201133080.38970143
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 163687093.88949466
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 56099709.55016708
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 4147311032.313568
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 12606631.198493874
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Binance",
+                    "totalValue": 186011980.41587356
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 20327162.596434265
+                },
+                {
+                    "entities": "MEXC Global",
+                    "totalValue": 15414826.80493865
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 3926398715.034482
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 9308274.74974068
+                }
+            ]
+        }
     }
 ]
