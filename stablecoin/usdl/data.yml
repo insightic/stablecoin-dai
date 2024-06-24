@@ -1,0 +1,202 @@
+---
+name: USDL
+description:
+  Lift Dollar (USDL) is a US dollar-backed stablecoin that provides easy access to safe yield generated from cash and cash equivalent assets.
+  The vision is to make financial growth accessible, secure, equitable and efficient.
+logo: assets/logo.png
+rating: A
+links:
+  website: https://liftdollar.com/
+  twitter: https://x.com/LiftDollar_USDL
+  github: https://github.com/paxosglobal/ybs-contract
+  linkedin: https://www.linkedin.com/company/lift-dollar-usdl/
+whitepaper: https://whitepaper.liftdollar.com/index.html
+security_report: https://github.com/paxosglobal/ybs-contract/blob/master/audits/REP-final-20240301T145234Z.pdf
+attestation_report:
+audit_firm_name: Certik
+stablecoin_name: USDL
+overview: |
+  USDL gives eligible users direct access to both US dollars and yield from cash equivalent assets from outside the US. 1 USDL is always worth 1 US dollar.
+
+details:
+  - title: Fiat-Backed Stablecoins
+    value: |
+      1. USDL is a US dollar-backed stablecoin that distributes yield from its cash and cash equivalent reserves to eligible wallets holding it every day.
+      2. USDL is an ERC-20 token issued on the Ethereum blockchain that can always be redeemed at a rate of 1 USDL = 1 US dollar from Paxos International.
+  - title: How is USDL different from other stablecoins
+    value: |
+      1. USDL distributes yield generated from its cash and cash equivalent reserves to all eligible holders.
+      2. US dollars backing USDL are invested by Paxos International in cash equivalent assets that generate yield.
+      3. An Ethereum smart contract built by Paxos International proportionally increases the value of USDL in eligible wallets holding it every day. Holders of USDL see their USDL balance increase daily and do not need to take any action.
+  - title: Backing Assets
+    value: |
+      1. Cash.
+      2. Debt securities with up to three month residual maturity issued by government or central bank of pegged currency, or organizations that are of both a government and international character with a minimum credit rating of “AA-”.
+      3. Reverse repurchase agreements that are overcollateralized by US Government securities and entered into with counterparties that are not Paxos International affiliates and are adequately creditworthy (as defined by the FSRA credit rating requirements), with final maturities not to exceed one business day.
+      4. Institutional Stable NAV USD Government Money Market Funds domiciled in non-US jurisdictions, public money market funds (MMFs) composed of direct investments in cash, US Government securities (USGs) and/or overnight repurchase agreements overcollateralized by USGs.
+  - title: Mint & Burn
+    value: |
+      The mint operation requires the requisite amount of US dollars in the USDL reserve account before Paxos International mints USDL. <br />
+      To remove US dollars from the USDL reserve account, Paxos International must first burn the requisite USDL.
+  - title: Reserve Investment Policy
+    value: |
+      Paxos International is required by its applicable FSRA Regulation to have a Reserve Portfolio Management Policy which establishes the fundamental principles and core processes used to manage the USDL Stablecoin Reserve Portfolio.
+
+team:
+  - avatar: https://liftdollar.com/wp-content/uploads/2024/05/charlotte-nedir-bio-img.png
+    name: Charlotte Nedir
+    title: Executive Director & SEO
+    linkedin: https://www.linkedin.com/in/charlotte-nedir/
+  - avatar: https://liftdollar.com/wp-content/uploads/2024/05/charles-cascarilla-bio-img.jpg
+    name: Charles Cascarilla
+    title: Non-Executive Director
+    linkedin: https://www.linkedin.com/in/charlescascarilla/
+  - avatar: https://liftdollar.com/wp-content/uploads/2024/05/tim-howell-bio-img.jpg
+    name: Tim Howell
+    title: Independent Non-Executive Director
+
+social_media:
+  twitter: # [Last Week, 2 Weeks Ago, 3 Weeks Ago]=> dummy data
+    - title: Tweets
+      value: [6, 5, 36]
+    - title: Views
+      value: [384.45K/64.08K, 495.85K/99.17K, 1.52M/42.35K]
+    - title: Likes
+      value: [1.13K/189.00, 862.00/172.00, 11.46K/318.00]
+    - title: Comments
+      value: [78.00/13.00, 83.00/16.00, 1.17K/32.00]
+    - title: Shares
+      value: [369.00/61.00, 292.00/58.00, 3.16K/87.00]
+
+financial_analysis:
+  financial_audit:
+    auditors: Deloitte & Touche LLP
+    score: N.A.
+    analysis: |
+      Management's assertion that the Fair Value of Assets Held in USDC Reserve is equal to or greater than USDC in
+      Circulation as of the Report Dates in accordance with the criteria defined in the accompanying USDC Reserve
+      Report is fairly stated, in all material respects.
+    reserve_holdings_percentage:
+      - title: U.S. Treasury Repurchase Agreements
+        value: 0.60
+      - title: U.S. TREASURY SECURITIES
+        value: 0.29
+      - title: Cash held at regulated financial institutions
+        value: 0.07
+      - title: Cash held in Circle Reserve Fund
+        value: 0.04
+  market_capitalization_and_liquidity:
+  investments:
+  list_of_investors:
+
+security_and_compliance:
+  - title: Security Assurance
+    value:
+      - title: Smart Contract Audits
+        value: Contracts audited on monthly basis.
+      - title: Security Auditors
+        value: Certik
+      - title: Bug Bounty Programs
+        value:
+      - title: Insurance Coverage
+        value: "No"
+      - title: Security Issue History
+        value: "No"
+      - title: Resolution of Past Incidents
+        value: N.A.
+      - title: Multi-Signature Wallets
+        value:
+      - title: External Security Partners
+        value: Unknown
+      - title: Decentralized Security Measures
+        value: Unknown
+      - title: Two-Factor Authentication (2FA)
+        value: Unknown
+      - title: Incident Response Plan
+        value: Unknown
+      - title: Community Security Awareness
+        value:
+      - title: Network Security Measures
+        value: Unknown
+
+  - title: Regulatory Compliance
+    value:
+      - title: Regulatory Framework
+        value:
+      - title: Licenses Obtained
+        value:
+      - title: AML/CFT Compliance KYC Procedures
+        value:
+      - title: Data Protection
+        value:
+      - title: Consumer Protection Measures
+        value:
+      - title: Reporting and Transparency
+        value:
+      - title: Jurisdictional Operation Limits
+        value:
+      - title: Tax Compliance
+        value:
+      - title: Legal Entity Structure
+        value:
+      - title: Ongoing Compliance Monitoring
+        value:
+      - title: Regulatory Engagement
+        value:
+      - title: External Compliance Audits
+        value:
+      - title: Operational Compliance
+        value:
+
+  - title: Technological Details
+    value:
+      - title: Technical Documents
+        value: https://whitepaper.liftdollar.com/technology.html
+      - title: Smart Contract
+        value: https://etherscan.io/token/0xbdc7c08592ee4aa51d06c27ee23d5087d65adbcd#code#F1#L1
+      - title: Token launch
+        value: |
+          * Ethereum: 0xbdC7c08592Ee4aa51D06C27Ee23D5087D65aDbcD
+      - title: Detailed Description of Technology
+        value: |
+          * The USDL token is deployed on the Ethereum network.
+          * The USDL smart contract is audited by both Certik and Trail of Bits to ensure that the code is sound and operates as intended.
+          * The token is centrally minted and burned by Paxos International.
+
+  - title: Governance and Decentralization
+    value:
+      - title: Governance Structure
+        value: |
+
+      - title: Voting Rights
+        value: |
+
+      - title: Token Governance
+        value: |
+
+      - title: Proposal Submission Process
+        value: |
+
+      - title: Voting Mechanism
+        value: |
+
+      - title: Token Distribution
+        value: |
+
+      - title: Stakeholder Diversity
+        value: |
+
+      - title: On-chain Governance Participation
+        value: |
+
+      - title: Reserve Management
+        value: |
+
+      - title: Fork Management
+        value: |
+
+      - title: Compliance Oversight
+        value: |
+
+      - title: Accountability Mechanisms
+        value: |
