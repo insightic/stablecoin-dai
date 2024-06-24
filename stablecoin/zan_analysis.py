@@ -127,6 +127,6 @@ if __name__ == "__main__":
     if args.part == "1":
         test_folders = ["dai", "usdt", "usdc"]
     elif args.part == "2":
-        test_folders = ["fdusd", "xsgd"]
+        test_folders = ["fdusd", "xsgd", "usdl"]
     print(f"Running for: {test_folders}")
     main(test_folders)
