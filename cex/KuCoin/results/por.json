@@ -3625,5 +3625,44 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-07-29 09:19:41",
+        "por": {
+            "APIDescription": "Get the latest por. tokenBalanceChange and balanceUSDTChange are compared to prev record in percentage value. Notice: balanceUSDTChange for symbol=Others not applicable.",
+            "institutionName": "KuCoin",
+            "historyTime": "2024-07-29 09:19:41",
+            "totalBalanceUSDT": 7304752530.399481,
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 12268.64083245,
+                    "balanceUSDT": 837488348.1891744,
+                    "tokenBalanceChange": 0.32774842,
+                    "balanceUSDTChange": 0.8611738831
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 106462.3777380779,
+                    "balanceUSDT": 348381097.16742194,
+                    "tokenBalanceChange": 0.0103812524,
+                    "balanceUSDTChange": 0.70713327
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 979107851.8272959,
+                    "balanceUSDT": 979522526.7168378,
+                    "tokenBalanceChange": -0.3965801744,
+                    "balanceUSDTChange": -0.4023807876
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 2748025967694.0513,
+                    "balanceUSDT": 5139360558.326047,
+                    "tokenBalanceChange": -0.2499779697,
+                    "balanceUSDTChange": -0.0658171141
+                }
+            ]
+        }
     }
 ]
