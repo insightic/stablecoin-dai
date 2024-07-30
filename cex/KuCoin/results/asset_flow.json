@@ -5088,5 +5088,58 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-07-30 09:32:23",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "KuCoin",
+            "startTime": "2024-06-30",
+            "endTime": "2024-07-30",
+            "inFlow": [
+                {
+                    "entities": "Binance",
+                    "totalValue": 20230868.758618
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 10408419.5098164
+                },
+                {
+                    "entities": "KuCoin",
+                    "totalValue": 240779.04047395842
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 1521382083.5186872
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 212464.44985308882
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "OKX",
+                    "totalValue": 52583385.3330657
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 605531.8387390021
+                },
+                {
+                    "entities": "Crypto.com",
+                    "totalValue": 121685.24412095509
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 1520271428.5907228
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 273020.2156555165
+                }
+            ]
+        }
     }
 ]
