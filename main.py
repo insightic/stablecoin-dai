@@ -134,6 +134,6 @@ def main(test_folders=None):
 
 
 if __name__ == "__main__":
-    # main()
+    main()
     # os.chdir("stablecoin")  # change directory for local test
-    main(["dai"])
+    # main(["dai"])
