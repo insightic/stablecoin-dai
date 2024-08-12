@@ -5619,5 +5619,58 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-08-12 09:05:13",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Bitfinex",
+            "startTime": "2024-07-13",
+            "endTime": "2024-08-12",
+            "inFlow": [
+                {
+                    "entities": "Binance",
+                    "totalValue": 323947672.1498981
+                },
+                {
+                    "entities": "Tether",
+                    "totalValue": 320835733.8988499
+                },
+                {
+                    "entities": "Bitfinex",
+                    "totalValue": 167812757.4288304
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 4428751252.588692
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 212597124.79992825
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "Bitfinex",
+                    "totalValue": 441997686.18552077
+                },
+                {
+                    "entities": "Tether",
+                    "totalValue": 319340794.53006995
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 47074513.1973637
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 3489505782.780621
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 90477641.79466738
+                }
+            ]
+        }
     }
 ]
