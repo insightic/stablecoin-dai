@@ -74,7 +74,7 @@ jobs:
 
       - name: Install NLTK Data
         run: |
-          python -m nltk.downloader punkt stopwords vader_lexicon
+          python -m nltk.downloader punkt stopwords vader_lexicon punkt_tab
 
       - name: Run pyinsightic analysis
         run: |
