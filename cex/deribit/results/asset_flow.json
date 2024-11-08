@@ -7533,5 +7533,50 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-11-08 09:19:46",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Deribit",
+            "startTime": "2024-10-09",
+            "endTime": "2024-11-08",
+            "inFlow": [
+                {
+                    "entities": "Binance",
+                    "totalValue": 30063376.523157913
+                },
+                {
+                    "entities": "OKX",
+                    "totalValue": 9893580.658188602
+                },
+                {
+                    "entities": "Bybit",
+                    "totalValue": 4531608.830411637
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 653638158.3247657
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 8593834.394312922
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "OKX",
+                    "totalValue": 9715109.61671558
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 526441753.5082113
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 187721273.45383623
+                }
+            ]
+        }
     }
 ]
