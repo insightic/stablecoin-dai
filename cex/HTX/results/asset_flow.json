@@ -7594,5 +7594,58 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-11-25 09:33:10",
+        "asset_flow": {
+            "APIDescription": "Get the asset flow in the past 30 days. The totalValue is in USD.",
+            "institutionName": "Huobi",
+            "startTime": "2024-10-26",
+            "endTime": "2024-11-25",
+            "inFlow": [
+                {
+                    "entities": "OKX",
+                    "totalValue": 21722271.476685196
+                },
+                {
+                    "entities": "Huobi",
+                    "totalValue": 136.5532101
+                },
+                {
+                    "entities": "KuCoin",
+                    "totalValue": 75.09825
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 5125713355.161178
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 0.0
+                }
+            ],
+            "outFlow": [
+                {
+                    "entities": "OKX",
+                    "totalValue": 71330813.23302568
+                },
+                {
+                    "entities": "Huobi",
+                    "totalValue": 5031442.546812323
+                },
+                {
+                    "entities": "Binance",
+                    "totalValue": 1648.6665173
+                },
+                {
+                    "entities": "Non institutional",
+                    "totalValue": 5086004363.975985
+                },
+                {
+                    "entities": "OTHER",
+                    "totalValue": 270.20520000000005
+                }
+            ]
+        }
     }
 ]
