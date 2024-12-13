@@ -25464,5 +25464,44 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2024-12-13 09:25:23",
+        "por": {
+            "APIDescription": "Get the latest por. tokenBalanceChange and balanceUSDTChange are compared to prev record in percentage value. Notice: balanceUSDTChange for symbol=Others not applicable.",
+            "institutionName": "Binance",
+            "historyTime": "2024-12-13 09:25:23",
+            "totalBalanceUSDT": 303837528291.44794,
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 651827.64546219,
+                    "balanceUSDT": 65217246228.66395,
+                    "tokenBalanceChange": -0.0311295096,
+                    "balanceUSDTChange": -1.1640793531
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 5440674.887441364,
+                    "balanceUSDT": 20954440624.532158,
+                    "tokenBalanceChange": 1.1768026723,
+                    "balanceUSDTChange": 2.4902608729
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 39909161778.459114,
+                    "balanceUSDT": 39912126137.982185,
+                    "tokenBalanceChange": 0.1132834814,
+                    "balanceUSDTChange": 0.0740728648
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 395974334711.2549,
+                    "balanceUSDT": 177753715300.26962,
+                    "tokenBalanceChange": 0.1203149744,
+                    "balanceUSDTChange": -0.360061314
+                }
+            ]
+        }
     }
 ]
