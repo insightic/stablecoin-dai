@@ -13296,5 +13296,44 @@
                 }
             ]
         }
+    },
+    {
+        "created_date": "2025-01-01 09:28:15",
+        "por": {
+            "APIDescription": "Get the latest por. tokenBalanceChange and balanceUSDTChange are compared to prev record in percentage value. Notice: balanceUSDTChange for symbol=Others not applicable.",
+            "institutionName": "Gate.io",
+            "historyTime": "2025-01-01 09:28:15",
+            "totalBalanceUSDT": 7691261588.32185,
+            "balanceDetails": [
+                {
+                    "symbol": "BTC",
+                    "tokenBalance": 13010.660194,
+                    "balanceUSDT": 1215652831.2570055,
+                    "tokenBalanceChange": -0.2210558208,
+                    "balanceUSDTChange": 0.6787658596
+                },
+                {
+                    "symbol": "ETH",
+                    "tokenBalance": 270547.8319381715,
+                    "balanceUSDT": 859875804.4023509,
+                    "tokenBalanceChange": -3.3992112268,
+                    "balanceUSDTChange": -4.0921825902
+                },
+                {
+                    "symbol": "Stablecoin",
+                    "tokenBalance": 604453621.4338932,
+                    "balanceUSDT": 603604161.8525639,
+                    "tokenBalanceChange": -1.2136055522,
+                    "balanceUSDTChange": -1.1736916904
+                },
+                {
+                    "symbol": "Others",
+                    "tokenBalance": 4086855919.00643,
+                    "balanceUSDT": 5012128790.809931,
+                    "tokenBalanceChange": 0.0081636322,
+                    "balanceUSDTChange": 0.152319447
+                }
+            ]
+        }
     }
 ]
